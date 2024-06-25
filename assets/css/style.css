@@ -23,6 +23,7 @@ header .header-data {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 0;
 }
 header .header-data h3 {
   color: #ffffff;
