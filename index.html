@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-data">
+          <h3>教城主頁</h3>
+          <div class="header-right">
+            <img src="assets/images/Layer 2 1.png" alt="" />
+            <h3>Jay Chu</h3>
+            <h4>English</h4>
+            <img src="assets/images/HouseDoorFill.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- --main-- -->
+    <section class="main">
+      <div class="container">
+        <div class="main-data">
+          <div>
+            <img src="assets/images/image 1.png" class="logo-img" alt="" />
+          </div>
+          <div class="main-tab-box">
+                <a href="#" class="main-left-data">
+                  <img src="assets/images/main1.png" alt="" />
+                  <div class="main-border">
+                    <h3>活動概覽</h3>
+                  </div>
+                </a>
+                <a href="#" class="main-left-data">
+                  <img src="assets/images/main2.png" alt="" />
+                  <div class="main-border">
+                    <h3>EdMall</h3>
+                  </div>
+                </a>
+                <a href="#" class="main-left-data">
+                  <img src="assets/images/main3.png" alt="" />
+                  <div class="main-border">
+                    <h3 class="text-orange">個人中心</h3>
+                  </div>
+                </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_data">
+        <div class="container-fluid p-0">
+          <div class="main-data_flex">
+            <div class="left-sidebar">
+                <ul class="left-sidelist">
+                    <li><a href="#">信息中心</a></li>
+                    <li><a href="#" class="active no-space" >Go eLearning</a></li>
+                    <li><a href="#">報價紀錄</a></li>
+                    <li><a href="#">活動報名紀錄</a></li>
+                    <li><a href="#">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="right-sidebar">
+                <div class="rightside-title">
+                  <h2>Go eLearning</h2>
+                </div>
+                <div class="d-flex justify-content-center justify-content-sm-end yellow-btn">
+                  <button class="btn"><span>連接到</span> Go eLearning</button>
+                </div>
+                <div class="content">
+                  <h4>
+                    教師從Go eLearning的「我的CPD」系統已觀看的影片數目和總時數記錄
+                  </h4>
+                  <h3 class="updated-h3">*觀看記錄將於5日內顯示更新</h3>
+                  <div class="content-box">
+                    <div class="box video">
+                      <i class="fa-solid fa-video"></i>
+                      <h3>13部影片</h3>
+                    </div>
+                    <div class="box clock">
+                      <i class="fa-solid fa-clock"></i>
+                      <h3>4小時5分鐘</h3>
+                    </div>
+                  </div>
+                  <div class="table-nav">
+                     <div class="watch-history">
+                        <h3 class="watch-history-h3">觀看紀錄</h3>
+                     </div>
+                     <div class="hours-div">
+                        <h2>我的觀看時數：</h2>
+                        <h2>4小時5分鐘</h2>
+                        <button class="btn">列印紀錄</button>
+                     </div>
+                  </div>
+                  <div class="date-range">
+                      <h3>日期範圍 </h3>
+                      <span>由</span>
+                      <form>
+                        <input type="date" class="form-control">
+                    </form>
+                    <span>至</span>
+                    <form>
+                        <input type="date" class="form-control">
+                    </form>
+                  </div>
+                  <div class="table-data table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" class="select-all" name="select-all" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th></th>
+                                <th >節目名稱</th>
+                                <th >我的觀看時數</th>
+                                <th>最近觀看日期</th>
+                            </tr>
+                        </thead>
+                       <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" class="select-all" name="select-all" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td><img src="assets/images/image 3.png" alt=""></td>
+                            <td class="min-td">運用擴增實境及虛擬實境技術...</td>
+                            <td class="min-td">0小時31分鐘</td>
+                            <td class="min-td">2019/12/20</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" class="select-all" name="select-all" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td><img src="assets/images/image 4.png" alt=""></td>
+                            <td class="min-td">如何使用影片製作AR</td>
+                            <td class="min-td">0小時2分鐘</td>
+                            <td class="min-td">2019/12/20</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" class="select-all" name="select-all" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td><img src="assets/images/image 5.png" alt=""></td>
+                            <td class="min-td">教師專業交流月2018論壇...</td>
+                            <td class="min-td">1小時42分鐘    </td>
+                            <td class="min-td">2018/10/07</td>
+                        </tr>
+                       </tbody>
+                      
+                    </table>
+                  </div>
+                </div>
+              </div>
+           
+          </div>
+        </div>
+      </section>
+   
+
+    <footer>
+        <div class="container">
+            <div class="footer-data">
+                <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+                <ul class="footer-right">
+                    <li>私隱政策聲明</li>
+                    <li>版權及知識產權政策</li>
+                    <li>免責聲明</li>
+                    <li>促進種族平等政策</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
+
