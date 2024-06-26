@@ -199,6 +199,9 @@ header {
   @media (max-width: #{$med}) {
     width: 100%;
   }
+  &.msg_leftside{
+    height: auto;
+  }
   .left-sidelist {
     padding-top: 81px;
     margin: 0 10px 0 13px;

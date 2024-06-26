@@ -172,6 +172,9 @@ header .header-data .header-right h4::before {
     width: 100%;
   }
 }
+.left-sidebar.msg_leftside {
+  height: auto;
+}
 .left-sidebar .left-sidelist {
   padding-top: 81px;
   margin: 0 10px 0 13px;
