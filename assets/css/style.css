@@ -992,8 +992,8 @@ footer .footer-data .footer-right li:last-child::after {
   line-height: 30px;
   font-weight: 700;
   margin-bottom: 32px;
-  position: relative;
   text-decoration: underline;
+  text-underline-offset: 10px;
 }
 @media (max-width: 575px) {
   .message-detail .detail-data .detail-data-title h2 {
@@ -1013,6 +1013,9 @@ footer .footer-data .footer-right li:last-child::after {
   .message-detail .detail-data .detail-data-img {
     margin-bottom: 28px;
   }
+}
+.message-detail .detail-data .detail-data-img img {
+  width: 100%;
 }
 .message-detail .detail-data .detail-data-content p {
   letter-spacing: 2px;
@@ -1056,7 +1059,7 @@ footer .footer-data .footer-right li:last-child::after {
   line-height: 30px;
   font-weight: 400;
   color: #46464E;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 @media (max-width: 575px) {
   .message-detail .detail-data .detail-data-list ul li {
