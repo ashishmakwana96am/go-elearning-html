@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-data">
+            <h3>教城主頁</h3>
+            <div class="header-right">
+              <img src="assets/images/Layer 2 1.png" alt="" />
+              <h3>Jay Chu</h3>
+              <h4>English</h4>
+              <img src="assets/images/HouseDoorFill.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- --main-- -->
+    <section class="main">
+        <div class="container">
+          <div class="main-data">
+            <div>
+              <img src="assets/images/image 1.png" class="logo-img" alt="" />
+            </div>
+            <div class="main-tab-box">
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main1.png" alt="" />
+                    <div class="main-border">
+                      <h3>活動概覽</h3>
+                    </div>
+                  </a>
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main2.png" alt="" />
+                    <div class="main-border">
+                      <h3>EdMall</h3>
+                    </div>
+                  </a>
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main3.png" alt="" />
+                    <div class="main-border">
+                      <h3 class="text-orange">個人中心</h3>
+                    </div>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main_data">
+        <div class="container-fluid p-0">
+          <div class="main-data_flex">
+            <div class="left-sidebar mt-4">
+                <ul class="left-sidelist">
+                    <li><a href="broadcast_message.html"  >信息中心</a></li>
+                    <li><a href="index.html" class=" no-space" >Go eLearning</a></li>
+                    <li><a href="quotation.html" class="active">報價紀錄</a></li>
+                    <li><a href="#">活動報名紀錄</a></li>
+                    <li><a href="profile_edit.html">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="right-sidebar quotation-main">
+                <div class="rightside-title quotation-title">
+                  <h2 class="title_space ">報價紀錄</h2> 
+                  <form>
+                    <input type="text" class="form-control" placeholder="輸入網上報價號碼/報價號碼 /關鍵字">
+                   <span> <img src="assets/images/Vector.png" alt=""></span>
+                  </form>
+                </div>
+                <div class="quotation-tab">
+                  <div class="orange-tab">進行中</div>
+                  <div class="gray-tab">已結束</div>
+                </div>
+                <div class="quotation-table table-responsive">
+                   <table class="table-striped table">
+                    <thead>
+                        <tr>
+                            <th>報價日期</th>
+                            <th>網上報價編號</th>
+                            <th>服務名稱</th>
+                            <th>服務日期範圍</th>
+                            <th>服務狀態</th>
+                            <th>報價金額</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024/02/28</td>
+                            <td>S0A123331</td>
+                            <td>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</td>
+                            <td>2024/01/01 - 2024/08/31</td>
+                            <td><button class="state-td btn orange-btn">已確認報價</button></td>
+                            <td>$5000.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023/12/20</td>
+                            <td>S0A123435</td>
+                            <td>SUEP Reading Package 23/24(100 books )</td>
+                            <td>2023/09/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$3450.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023/11/21</td>
+                            <td>S0A123331</td>
+                            <td>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</td>
+                            <td>2023/09/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$2500.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023/10/10</td>
+                            <td>S0A056434</td>
+                            <td>DSE Online Question Bank - School Subscription</td>
+                            <td>2023/09/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$3950.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024/02/28</td>
+                            <td>S0A123331</td>
+                            <td>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</td>
+                            <td>2024/01/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$5000.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023/12/20</td>
+                            <td>S0A123435 </td>
+                            <td>SUEP Reading Package 23/24(100 books )</td>
+                            <td>2023/09/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$2500.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023/11/21</td>
+                            <td>S0A123331 </td>
+                            <td>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</td>
+                            <td>2023/09/01 - 2024/08/31</td>
+                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
+                            <td>$2500.00</td>
+                            <td>
+                                <div class="action-td">
+                                    <img src="assets/images/upload.png" alt="">
+                                    <img src="assets/images/dowonload.png" alt="">
+                                    <img src="assets/images/erro.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                   </table>
+                </div>
+                <div class="table-pagination">
+                 <ul>
+                     <li class="active">1</li>
+                     <li>2</li>
+                     <li>3</li>
+                     <li>4</li>
+                     <li>5</li>
+                     <li>...</li>
+                 </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+            <div class="footer-data">
+                <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+                <ul class="footer-right">
+                    <li>私隱政策聲明</li>
+                    <li>版權及知識產權政策</li>
+                    <li>免責聲明</li>
+                    <li>促進種族平等政策</li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
