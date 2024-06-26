@@ -176,6 +176,11 @@ header .header-data .header-right h4::before {
   height: auto;
   margin-bottom: -10px;
 }
+@media (max-width: 768px) {
+  .left-sidebar.msg_leftside {
+    margin-bottom: 0;
+  }
+}
 .left-sidebar .left-sidelist {
   padding-top: 81px;
   margin: 0 10px 0 13px;
@@ -743,6 +748,11 @@ footer .footer-data .footer-right li:last-child::after {
   color: #787878;
 }
 
+@media (max-width: 768px) {
+  .right-sidebar {
+    padding: 0 20px;
+  }
+}
 .right-sidebar.msg_rightside {
   width: 82%;
 }

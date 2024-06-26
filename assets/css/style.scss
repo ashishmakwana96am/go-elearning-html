@@ -202,6 +202,9 @@ header {
   &.msg_leftside{
     height: auto;
     margin-bottom: -10px;
+    @media (max-width: #{$med}) {
+      margin-bottom: 0;
+    }
   }
   .left-sidelist {
     padding-top: 81px;
@@ -748,6 +751,9 @@ footer {
 // --cast message start----
 
 .right-sidebar {
+  @media (max-width: #{$med}) {
+    padding: 0 20px;
+       }
   &.msg_rightside{
     width: 82%;
     @media (max-width: #{$xl}) {
