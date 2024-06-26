@@ -993,7 +993,6 @@ footer .footer-data .footer-right li:last-child::after {
   font-weight: 700;
   margin-bottom: 32px;
   position: relative;
-  width: max-content;
 }
 .message-detail .detail-data .detail-data-title h2::after {
   position: absolute;
