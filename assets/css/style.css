@@ -219,7 +219,7 @@ header .header-data .header-right h4::before {
 }
 
 .right-sidebar {
-  width: 69%;
+  width: 68%;
 }
 @media (max-width: 1440px) {
   .right-sidebar {
