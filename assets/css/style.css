@@ -992,6 +992,17 @@ footer .footer-data .footer-right li:last-child::after {
   line-height: 30px;
   font-weight: 700;
   margin-bottom: 32px;
+  position: relative;
+  width: max-content;
+}
+.message-detail .detail-data .detail-data-title h2::after {
+  position: absolute;
+  content: "";
+  background-color: #008BD5;
+  width: 100%;
+  height: 2px;
+  bottom: -7px;
+  left: 0;
 }
 @media (max-width: 575px) {
   .message-detail .detail-data .detail-data-title h2 {
