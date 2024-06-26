@@ -301,6 +301,18 @@ header .header-data .header-right h4::before {
     font-size: 18px;
   }
 }
+@media (max-width: 375px) {
+  .right-sidebar .yellow-btn a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .right-sidebar .yellow-btn a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .right-sidebar .yellow-btn span {
   letter-spacing: 5px;
 }
@@ -644,7 +656,7 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .right-sidebar .profile_data {
-    padding: 33px 10px;
+    padding: 33px 26px;
   }
 }
 .right-sidebar .profile_data .account-h3 {
@@ -663,6 +675,11 @@ footer .footer-data .footer-right li:last-child::after {
     margin-bottom: 26px;
   }
 }
+@media (max-width: 320px) {
+  .right-sidebar .profile_data .login-data {
+    margin-bottom: 16px;
+  }
+}
 .right-sidebar .profile_data .login-data.mb-35 {
   margin-bottom: 35px;
 }
@@ -671,10 +688,10 @@ footer .footer-data .footer-right li:last-child::after {
     margin-bottom: 26px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .right-sidebar .profile_data .login-data.mb-35 li {
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
   }
 }
 .right-sidebar .profile_data .login-data .dot-style {
@@ -711,14 +728,14 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .right-sidebar .profile_data .login-data li h4 {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
-@media (max-width: 375px) {
-  .right-sidebar .profile_data .login-data li h4 {
     font-size: 14px;
     line-height: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .right-sidebar .profile_data .login-data li h4 {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

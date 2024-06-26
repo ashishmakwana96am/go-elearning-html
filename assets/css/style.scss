@@ -11,6 +11,7 @@ $lg: 992px;
 $med: 768px;
 $sm: 575px;
 $xs: 375px;
+$xss: 320px;
 
 body {
   font-family: $font-stack;
@@ -313,6 +314,15 @@ header {
       @media (max-width: #{$sm}) {
         font-size: 18px;
       }
+      @media (max-width: #{$xs}) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media (max-width: #{$xss}) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      
   }
     
     span {
@@ -656,7 +666,7 @@ footer {
       width: 100%;
     }
     @media (max-width: #{$sm}) {
-      padding: 33px 10px;
+      padding: 33px 26px;
     }
 
     .account-h3{
@@ -671,16 +681,18 @@ font-weight: 700;
       @media (max-width: #{$sm}) {
         margin-bottom: 26px;
       }
-      
+      @media (max-width: #{$xss}) {
+        margin-bottom: 16px;
+      }
       &.mb-35{
         margin-bottom: 35px;
         @media (max-width: #{$sm}) {
           margin-bottom: 26px;
         }
         li{
-          @media (max-width: #{$xs}) {
+          @media (max-width: #{$sm}) {
            flex-direction: column;
-           gap: 10px;
+           gap: 6px;
           }
         }
       }
@@ -716,13 +728,18 @@ font-weight: 700;
         #3A3A3A;
 
         @media (max-width: #{$sm}) {
-          font-size: 16px;
-          line-height: 18px;
-        }
-        @media (max-width: #{$xs}) {
           font-size: 14px;
           line-height: 16px;
         }
+        @media (max-width: #{$xss}) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+        
+        // @media (max-width: #{$xs}) {
+        //   font-size: 14px;
+        //   line-height: 16px;
+        // }
        }
      }
     }
