@@ -1655,7 +1655,7 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .grid-table .table-head img {
-    width: 244px;
+    width: 230px;
     height: 145px;
   }
 }
