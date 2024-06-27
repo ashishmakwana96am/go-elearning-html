@@ -48,8 +48,8 @@ img {
   background-size: cover;
 }
 @mixin pading{
-  padding-left: 6px;
-       padding-right: 6px;
+  padding-left: 10px;
+       padding-right: 10px;
 }
 @mixin latter-space {
   letter-spacing: 5px;
@@ -149,7 +149,8 @@ header {
     @media (max-width: #{$sm}) {
       flex-direction: row;
       justify-content: space-between;
-     @include pading();
+     padding-left: 6px;
+     padding-right: 6px;
     }
     .logo-img {
       @media (max-width: #{$xl}) {
