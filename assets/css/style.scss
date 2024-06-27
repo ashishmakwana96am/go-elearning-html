@@ -59,6 +59,9 @@ img {
   line-height: 28px;
   @include latter-space();
   font-weight: 700;
+  @media (max-width: #{$med}) {
+    padding: 10px 0 11px 0;
+   }
   @media (max-width: #{$sm}) {
     font-size: 16px;
     line-height: 20px;
@@ -68,12 +71,15 @@ img {
 
 header {
   background-color: $primary-color;
+  
   .header-data {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
-
+    @media (max-width: #{$sm}) {
+      padding: 17px 0 26px 12px;
+     }
     h3 {
       color: $white-color;
       margin-bottom: 0;
@@ -124,22 +130,32 @@ header {
   padding-top: 35px;
   padding-bottom: 40px;
 
+  @media (max-width: #{$sm}) {
+    padding-top: 19px;
+  padding-bottom: 21px;
+  }
+
   .main-data {
     display: flex;
     align-items: center;
-    // justify-content: space-evenly;
     gap: 99px;
 
     @media (max-width: #{$xll}) {
       flex-direction: column;
       gap: 0px;
     }
+    @media (max-width: #{$sm}) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .logo-img {
       @media (max-width: #{$xll}) {
         margin-bottom: 30px;
       }
       @media (max-width: #{$sm}) {
-        width: 200px;
+        width: 153px;
+        height: 46px;
+        margin-bottom: 0;
       }
     }
     .main-tab-box {
@@ -189,6 +205,108 @@ header {
         }
       }
     }
+    .modal{
+      background-color: $white-color;
+      .modal-dialog{
+        margin: 0;
+      }
+      .modal-header{
+        padding: 0;
+        display: block;
+        border-radius: 0;
+        .header-data {
+          h3 {
+            color: $white-color;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            padding: 17px 0 26px 24px;
+          }
+        }
+      }
+      .modal-dialog-scrollable .modal-content {
+        height: 100% !important;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+      .modal-header{
+        background-color: $primary-color;
+        padding: 0 20px;
+    
+        .mobile-logo{
+          padding-bottom: 55px;
+          padding-top: 14px;
+          display: flex;
+          justify-content: space-between;
+        align-items: center;
+        }
+        .language{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 44px;  padding: 0 24px;
+          .language-div{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 25px;
+            gap: 18px;
+            font-weight: 700;
+            span{
+              color: #FBEE6C;
+            }
+            h3{
+              color: $white-color;
+              margin-bottom: 0;
+              position: relative;
+              &::after{
+                position: absolute;
+                content: "";
+                background-color: $white-color;
+                width: 2px;
+                height: 20px;
+                top: 5px;
+                left: -10px;
+              }
+            }
+          }
+          h2{
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 700;
+            color: $white-color;
+          }
+        }
+      }
+      }
+      .modal-body{
+        padding: 35px 28px 35px 24px;
+        .modal-list{
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include latter-space();
+            color: 
+            #444444;
+            margin-bottom: 32px;
+            &.no-space{
+              letter-spacing: 0;
+            }
+            h3{
+              font-size: 22px;
+              line-height: 30px;
+              font-weight: 700;
+            }
+            a{ color: 
+              #444444;
+
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -213,6 +331,9 @@ header {
   }
   @media (max-width: #{$med}) {
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
   }
   &.msg_leftside {
     height: auto;
@@ -231,7 +352,8 @@ header {
       align-items: center;
     }
     @media (max-width: #{$sm}) {
-      flex-wrap: wrap;
+      padding-top: 14px;
+      
     }
     li {
       @include latter-space();
@@ -245,6 +367,13 @@ header {
         margin-left: 10px;
         margin-right: 10px;
         padding-left: 0;
+        border-bottom: 0;
+        text-align: center;
+      }
+      @media (max-width: #{$xss}) {
+        margin-left: 5px;
+        margin-right: 5px;
+        
       }
       .no-space {
         letter-spacing: 0;
@@ -254,12 +383,13 @@ header {
         font-size: 16px;
         line-height: 22px;
         font-weight: 600;
-        // &:focus {
-        //   color: #fbee6c !important;
-        // }
         &.active {
           color: #fbee6c !important;
         }
+        @media (max-width: #{$xs}) {
+          font-size: 12px;
+          line-height: 16px;
+         }
       }
     }
   }
@@ -278,7 +408,6 @@ header {
   .rightside-title {
     @media (max-width: #{$sm}) {
       display: flex;
-      justify-content: center;
     }
     @media (max-width: #{$med}) {
       &.quotation-title {
@@ -298,6 +427,14 @@ header {
         font-size: 24px;
         line-height: 28px;
       }
+      @media (max-width: #{$med}) {
+        font-size: 24px;
+      }
+      @media (max-width: #{$sm}) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 34px;
+      }
 
       &::after {
         position: absolute;
@@ -307,10 +444,10 @@ header {
         content: "";
         width: 12px;
         height: 25px;
-      }
-
-      @media (max-width: #{$med}) {
-        font-size: 24px;
+        @media (max-width: #{$med}) {
+          top: 4px;
+          height: 17px;
+        }
       }
     }
   }
@@ -337,20 +474,19 @@ header {
       font-weight: 700;
       line-height: 27px;
       margin-bottom: 26px;
-      @media (max-width: #{$med}) {
-        padding: 8px 19px 8px 27px;
-      }
-      @media (max-width: #{$sm}) {
-        font-size: 18px;
+      @media (max-width: #{$xss}) {
+        font-size: 14px;
+        line-height: 16px;
       }
       @media (max-width: #{$xs}) {
         font-size: 16px;
         line-height: 20px;
       }
-      @media (max-width: #{$xss}) {
-        font-size: 14px;
-        line-height: 16px;
+      @media (max-width: #{$sm}) {
+        font-size: 18px;
+        margin-bottom: 42px;
       }
+    
     }
 
     span {
@@ -358,15 +494,16 @@ header {
     }
   }
   .content {
-    @media (max-width: #{$sm}) {
-      text-align: center;
-    }
+
     h4 {
       font-size: 18px;
       line-height: 24px;
       font-weight: 500;
       color: #3a3a3a;
       margin-bottom: 9px;
+      @media (max-width: #{$sm}) {
+        margin-bottom: 14px;
+      }
     }
     .updated-h3 {
       font-size: 15px;
@@ -375,6 +512,9 @@ header {
       color: #454545;
       margin-bottom: 26px;
       letter-spacing: 2px;
+      @media (max-width: #{$sm}) {
+       margin-bottom: 30px;
+      }
     }
   }
   .content-box {
@@ -412,9 +552,7 @@ header {
       i {
         font-size: 46px;
         color: $white-color;
-        @media (max-width: #{$med}) {
-          font-size: 33px;
-        }
+       
       }
       h3 {
         font-size: 28px;
@@ -423,29 +561,11 @@ header {
         color: $white-color;
         margin-bottom: 0;
 
-        @media (max-width: #{$med}) {
-          font-size: 20px;
-        }
       }
 
-      @media (max-width: #{$xl}) {
-        width: 233px;
-        height: 119px;
-      }
     }
   }
   .table-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
-    align-items: center;
-
-    @media (max-width: #{$xll}) {
-      flex-wrap: wrap;
-    }
-    @media (max-width: #{$sm}) {
-      justify-content: center;
-    }
 
     .watch-history .watch-history-h3 {
       color: #31b762;
@@ -453,19 +573,17 @@ header {
       line-height: 28px;
       @include latter-space();
       font-weight: 700;
-      margin-bottom: 0;
+      margin-bottom: 29px;
 
-      @media (max-width: #{$med}) {
-        margin-bottom: 10px;
-      }
     }
     .hours-div {
       display: flex;
       gap: 10px;
       align-items: center;
+      margin-bottom: 29px;
       @media (max-width: #{$med}) {
         flex-wrap: wrap;
-        justify-content: center;
+        margin-bottom: 20px;
       }
       h2 {
         font-size: 18px;
@@ -473,6 +591,9 @@ header {
         color: #3a3a3a;
         line-height: 24px;
         margin-bottom: 0;
+        @media (max-width: #{$sm}) {
+         margin-bottom: 25px;
+        }
       }
       .btn {
         padding: 5px 22px;
@@ -483,6 +604,10 @@ header {
         font-weight: 700;
         border: 1px solid #31b762;
         border-radius: 20px;
+        @media (max-width: #{$sm}) {
+          padding: 13px 22px;
+          margin-bottom: 28px;
+        }
       }
     }
   }
@@ -490,12 +615,12 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-bottom: 26px;
-
+    margin-bottom: 29px;
     @media (max-width: #{$sm}) {
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: start;
     }
+  
     h3,
     span {
       font-size: 18px;
@@ -503,6 +628,10 @@ header {
       font-weight: 700;
       color: #3a3a3a;
       margin-bottom: 0;
+     
+      @media (max-width: #{$sm}) {
+        margin-bottom: 20px;
+      }
     }
     span {
       font-weight: 500;
@@ -518,6 +647,14 @@ header {
         &:focus {
           outline: none;
           box-shadow: none;
+        }
+        @media (max-width: #{$sm}) {
+         width: 317px;
+         height: 50px;
+        }
+        @media (max-width: #{$xss}) {
+         width: 274px;
+         height: 50px;
         }
       }
     }
@@ -541,13 +678,23 @@ header {
           line-height: 24px;
           font-weight: 500;
           color: #3a3a3a;
+
+          img{
+           max-width: none;
+          }
         }
         .min-td {
           @media (max-width: #{$xl}) {
             min-width: 250px;
           }
           @media (max-width: #{$xl}) {
-            min-width: 194px;
+            min-width: 183px;
+          }
+          @media (max-width: #{$lg}) {
+            min-width: 180px;
+          }
+          @media (max-width: 767px) {
+            min-width: 155px;
           }
         }
         .custom-checkbox {
@@ -555,14 +702,20 @@ header {
           display: inline-block;
           width: 24px;
           height: 24px;
-
+          @media (max-width: #{$sm}) {
+            width: 50px;
+            height: 50px;
+           }
           input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
             height: 0;
             width: 0;
-
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
             &:checked ~ .checkmark:after {
               display: block;
             }
@@ -601,10 +754,15 @@ header {
 footer {
   padding-top: 60px;
   padding-bottom: 31px;
+  margin-bottom: 61px;
 
   @media (max-width: #{$med}) {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  @media (max-width: #{$sm}) {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
   .footer-data {
     display: flex;
@@ -778,7 +936,7 @@ footer {
 
 .right-sidebar {
   @media (max-width: #{$med}) {
-    padding: 0 20px;
+    padding: 0 8px;
   }
   &.msg_rightside {
     width: 82%;
@@ -1082,9 +1240,15 @@ footer {
     width: 88%;
     padding-right: 20px;
 
+    @media (max-width: #{$xlll}) {
+      width: 84%;
+     }
     @media (max-width: 1299px) {
       width: 81%;
     }
+    @media (max-width: #{$xl}) {
+      width: 77%;
+     }
     @media (max-width: 992px) {
       width: 76%;
     }
@@ -1107,9 +1271,14 @@ footer {
           width: 475px;
           height: 54px;
           position: relative;
-
+          
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
           @media (max-width: #{$sm}) {
             width: 374px;
+            height: 44px;
           }
           @media (max-width: #{$xs}) {
             width: 300px;
@@ -1136,9 +1305,12 @@ footer {
           position: absolute;
           right: 21px;
           top: 12px;
+          @media (max-width: #{$sm}) {
+            top: 8px;
+          }
           img {
             @media (max-width: #{$sm}) {
-              width: 30px;
+              width: 20px;
             }
           }
         }
@@ -1150,6 +1322,9 @@ footer {
   display: flex;
   text-align: center;
   margin-bottom: 15px;
+  a{
+    width: 100%;
+  }
   .orange-tab {
     background-color: #f28d30;
     @include quotation-tab();
@@ -1177,10 +1352,15 @@ footer {
     margin-bottom: 49px;
     thead {
       tr {
+      
         th {
+          cursor: pointer;
           background-color: $green-color;
           color: $white-color;
           padding: 15px 10px 17px 10px;
+          @media (max-width: #{$med}) {
+           padding: 10px;
+          }
           &:first-child {
             padding-left: 20px;
           }
@@ -1188,6 +1368,7 @@ footer {
       }
     }
     tbody {
+      
       td {
         padding: 14px 10px;
         min-width: 148px;
@@ -1198,6 +1379,8 @@ footer {
         @media (max-width: #{$sm}) {
           font-size: 14px;
           line-height: 16px;
+          min-width: 116px;
+          padding: 10px 10px;
         }
         &:first-child {
           padding-left: 20px;
@@ -1218,6 +1401,13 @@ footer {
         .action-td {
           display: flex;
           gap: 31px;
+          img{
+            cursor: pointer;
+            
+            @media (max-width: #{$sm}) {
+              width: 20px;
+            }
+          }
         }
         .state-td {
           // padding: 5px 24px 4px 27px;
@@ -1260,3 +1450,213 @@ footer {
     }
   }
 }
+
+
+// ---grid-table
+.grid-table{
+  .table-head{
+    display: flex;
+    gap: 100px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    @media (max-width: 1299px) {
+      gap: 60px;
+     }
+    @media (max-width: 991px) {
+      gap: 27px;
+     }
+     @media (max-width: #{$sm}) {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+     }
+    &.bg-green{
+      background-color: $green-color;
+      color: $white-color;
+    }
+    &.bg-gray{
+      background-color: 
+      #F8F7F3;
+    }
+    &.bg-gray1{
+      background-color: 
+      #EBEBEB;
+    }
+    .mobile-table-data{
+      display: flex;
+      gap: 10px;
+      .last-flex{
+        gap: 133px;
+        align-items: center;
+        @media (max-width: 1299px) {
+          gap: 79px;
+         }
+         @media (max-width: #{$xl}) {
+         gap: 20px;
+         }
+         @media (max-width: #{$sm}) {
+          flex-direction: column;
+          gap: 0;
+          align-items: start;
+         }
+        
+      }
+    }
+   
+    .checkbox-td{
+         display: flex;
+         gap: 30px;
+         align-items: center;
+
+         @media (max-width: #{$lg}) {
+         gap: 18px;
+         align-items: center;
+         }
+         
+         .custom-checkbox {
+          position: relative;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          @media (max-width: #{$sm}) {
+            width: 50px;
+            height: 50px;
+           }
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 24px;
+            width: 24px;
+            background-color: #fff;
+            @media (max-width: #{$sm}) {
+             width: 50px;
+             height: 50px;
+             }
+
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 8px;
+              top: 4px;
+              width: 8px;
+              height: 16px;
+              border: solid white;
+              border-width: 0 4px 4px 0;
+              transform: rotate(45deg);
+
+              @media (max-width: #{$sm}) {
+                left: 19px;
+                top: 8px;
+                width: 12px;
+                height: 29px;
+               }
+            }
+          }
+
+          input:checked ~ .checkmark {
+            background-color: #2196f3;
+          }
+        }
+    }
+
+    img{
+      max-width: none;
+      object-fit: cover;
+      @media (max-width: #{$sm}) {
+        width: 244px;
+        height: 145px;
+       }
+      @media (max-width: #{$xss}) {
+          width: 176px;
+          height: 116px;
+       }
+    }
+  }
+}
+
+.w-2{
+  width: 18px;
+}
+.head-w{
+  width: 160px;
+  @media (max-width: #{$sm}) {
+    width: 100%;
+   }
+}
+.custm-w-1{
+  width: 250px;
+  @media (max-width: #{$lg}) {
+    width: 200px;
+   }
+  @media (max-width: 991px) {
+    width: 169px;
+   }
+   @media (max-width: #{$med}) {
+    width: 250px;
+   }
+   @media (max-width: 690px) {
+    width: 163px;
+   }
+   @media (max-width: #{$sm}) {
+    width: auto;
+   }
+}
+.custm-w-2{
+  width: 100px;
+  @media (max-width: #{$sm}) {
+    width:auto;
+   }
+}
+.custm-w-3{
+  width: 100px;
+  @media (max-width: #{$sm}) {
+    width: auto;
+   }
+}
+  .last-flex{
+    gap: 133px;
+    @media (max-width: 1299px) {
+      gap: 79px;
+     }
+     @media (max-width: #{$xl}) {
+     gap: 20px;
+     }
+     @media (max-width: #{$sm}) {
+      gap: 0;
+     }
+  }
+  .mobile-table-data{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    @media (max-width: #{$xss}) {
+      font-size: 14px;
+    line-height: 20px;
+     }
+    .mobile-div1{
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 700;
+      @media (max-width: #{$xss}) {
+        font-size: 12px;
+      line-height: 20px;
+       }
+    }
+  }

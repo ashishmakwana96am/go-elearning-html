@@ -32,7 +32,7 @@
       <div class="container">
         <div class="header-data">
           <h3>教城主頁</h3>
-          <div class="header-right">
+          <div class="header-right d-none d-sm-flex">
             <img src="assets/images/Layer 2 1.png" alt="" />
             <h3>Jay Chu</h3>
             <h4>English</h4>
@@ -48,7 +48,7 @@
           <div>
             <img src="assets/images/image 1.png" class="logo-img" alt="" />
           </div>
-          <div class="main-tab-box">
+          <div class="main-tab-box d-none d-sm-flex">
                 <a href="#" class="main-left-data">
                   <img src="assets/images/main1.png" alt="" />
                   <div class="main-border">
@@ -68,6 +68,38 @@
                   </div>
                 </a>
           </div>
+            <div class="menubar d-sm-none ">
+                <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class=" modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                        <div class="header-data">
+                          <h3>教城主頁</h3>
+                      </div>
+                    <div class="mobile-logo">
+                      <img src="assets/images/image 2.png" alt="">
+                      <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                    </div>
+                    <div class="language">
+                      <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                      <h2>會員登入</h2>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                     <ul class="modal-list">
+                      <li><h3>活動概覽</h3>
+                        <a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li class="no-space"><h3>Ed Mall</h3>
+                      <a href="#">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><h3>個人中心</h3>
+                       <a href="#"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -106,88 +138,132 @@
                       <h3>4小時5分鐘</h3>
                     </div>
                   </div>
-                  <div class="table-nav">
-                     <div class="watch-history">
+                  <div class="row table-nav align-items-center">
+                    <div class="col-12 col-sm-3 order-0">
+                      <div class="watch-history">
                         <h3 class="watch-history-h3">觀看紀錄</h3>
                      </div>
-                     <div class="hours-div">
+                    </div>
+                    <div class="col-12 col-sm-9 order-2 order-sm-1 justify-content-sm-end d-flex">
+                      <div class="hours-div ">
                         <h2>我的觀看時數：</h2>
                         <h2>4小時5分鐘</h2>
                         <button class="btn">列印紀錄</button>
                      </div>
-                  </div>
-                  <div class="date-range">
-                      <h3>日期範圍 </h3>
-                      <span>由</span>
-                      <form>
-                        <input type="date" class="form-control">
-                    </form>
-                    <span>至</span>
-                    <form>
-                        <input type="date" class="form-control">
-                    </form>
-                  </div>
-                  <div class="table-data table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" class="select-all" name="select-all" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </th>
-                                <th></th>
-                                <th >節目名稱</th>
-                                <th >我的觀看時數</th>
-                                <th>最近觀看日期</th>
-                            </tr>
-                        </thead>
-                       <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" class="select-all" name="select-all" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </td>
-                            <td><img src="assets/images/image 3.png" alt=""></td>
-                            <td class="min-td">運用擴增實境及虛擬實境技術...</td>
-                            <td class="min-td">0小時31分鐘</td>
-                            <td class="min-td">2019/12/20</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" class="select-all" name="select-all" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </td>
-                            <td><img src="assets/images/image 4.png" alt=""></td>
-                            <td class="min-td">如何使用影片製作AR</td>
-                            <td class="min-td">0小時2分鐘</td>
-                            <td class="min-td">2019/12/20</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" class="select-all" name="select-all" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </td>
-                            <td><img src="assets/images/image 5.png" alt=""></td>
-                            <td class="min-td">教師專業交流月2018論壇...</td>
-                            <td class="min-td">1小時42分鐘    </td>
-                            <td class="min-td">2018/10/07</td>
-                        </tr>
-                       </tbody>
-                      
-                    </table>
-                  </div>
+                    </div>
+                    <div class="col-12 order-1 order-sm-2">
+                      <div class="date-range">
+                        <h3>日期範圍 </h3>
+                        <form class="d-flex gap-1 align-items-center">
+                          <span class="mb-0">由</span>
+                          <input type="date" class="form-control">
+                      </form>
+                      <form class="d-flex gap-1 align-items-center">
+                        <span class="mb-0">至</span>
+                          <input type="date" class="form-control">
+                      </form>
+                    </div>
+                    </div>
+                  </div>                
+               <div class="grid-table">
+                   <div class="table-head bg-green">
+                    <div class="d-flex head-w">
+                       <div class="checkbox-td">
+                         <div class="ps-2 w-2">  </div>
+                         <label class="custom-checkbox">
+                           <input type="checkbox" class="select-all" name="select-all" />
+                           <span class="checkmark"></span>
+                       </label>
+                       </div>
+                      <div>
+                      </div>
+                      <h3 class="ms-4 mt-2 d-sm-none ">全選</h3>
+                    </div>
+                    <div class="d-flex last-flex d-none d-sm-flex">
+                      <div class="custm-w-1">節目名稱</div>
+                      <div class="custm-w-2">我的觀看時數</div>
+                      <div class="custm-w-3">最近觀看日期</div>
+                    </div>
+                   </div>
+                   <div class="table-head bg-gray">
+                    <div class="d-flex head-w">
+                       <div class="checkbox-td">
+                         <div class="ps-2 w-2">1</div>
+                       <div>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="select-all" name="select-all" />
+                          <span class="checkmark"></span>
+                      </label>
+                       </div>
+                       <div><img src="assets/images/image 3.png" alt=""></div>
+                       </div>
+                      <div></div>
+                    </div>
+                    <div class="mobile-table-data">
+                     <div class="d-sm-none">
+                      <div class="mb-2 mobile-div1">節目名稱...</div>
+                      <div class="mb-2 mobile-div1">我的觀看時數</div>
+                      <div class="mb-2 mobile-div1">最近觀看日期</div>
+                     </div>
+                     <div class="d-flex last-flex">
+                      <div class="custm-w-1 mb-2 mb-sm-0">運用擴增實境及虛擬實境技術...</div>
+                      <div class="custm-w-2 mb-2 mb-sm-0">0小時31分鐘</div>
+                      <div class="custm-w-3 mb-2 mb-sm-0">2019/12/20</div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="table-head bg-gray1">
+                    <div class="d-flex head-w">
+                       <div class="checkbox-td">
+                         <div class="ps-2 w-2">2</div>
+                         <label class="custom-checkbox">
+                           <input type="checkbox" class="select-all" name="select-all" />
+                           <span class="checkmark"></span>
+                       </label>
+                       <div><img src="assets/images/image 4.png" alt=""></div>
+                       </div>
+                      <div></div>
+                    </div>
+                    <div class="mobile-table-data">
+                      <div class="d-sm-none">
+                       <div class="mb-2 mobile-div1">節目名稱...</div>
+                       <div class="mb-2 mobile-div1">我的觀看時數</div>
+                       <div class="mb-2 mobile-div1">最近觀看日期</div>
+                      </div>
+                      <div class="d-flex last-flex">
+                       <div class="custm-w-1 mb-2 mb-sm-0">如何使用影片製作AR</div>
+                       <div class="custm-w-2 mb-2 mb-sm-0">0小時2分鐘</div>
+                       <div class="custm-w-3 mb-2 mb-sm-0">2019/12/20</div>
+                      </div>
+                     </div>
+                   </div>
+                   <div class="table-head bg-gray">
+                    <div class="d-flex head-w">
+                       <div class="checkbox-td">
+                         <div class="ps-2 w-2">3</div>
+                         <label class="custom-checkbox">
+                           <input type="checkbox" class="select-all" name="select-all" />
+                           <span class="checkmark"></span>
+                       </label>
+                       <div><img src="assets/images/image 5.png" alt=""></div>
+                       </div>
+                      <div></div>
+                    </div>
+                    <div class="mobile-table-data">
+                     <div class="d-sm-none">
+                      <div class="mb-2 mobile-div1">節目名稱...</div>
+                      <div class="mb-2 mobile-div1">我的觀看時數</div>
+                      <div class="mb-2 mobile-div1">最近觀看日期</div>
+                     </div>
+                     <div class="d-flex last-flex">
+                      <div class="custm-w-1 mb-2 mb-sm-0">教師專業交流月2018論壇...</div>
+                      <div class="custm-w-2 mb-2 mb-sm-0">1小時42分鐘</div>
+                      <div class="custm-w-3 mb-2 mb-sm-0">2018/10/07</div>
+                     </div>
+                    </div>
+                   </div>
+                
+               </div>
                 </div>
               </div>
            
