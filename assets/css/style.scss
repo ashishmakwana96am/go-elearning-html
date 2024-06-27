@@ -416,9 +416,8 @@ header {
   }
 }
 .right-sidebar {
-  width: 68%;
-
-  @media (max-width: #{$xlll}) {
+  width: 82.4%;
+  @media (max-width:1699px) {
     width: 73%;
   }
 
@@ -429,13 +428,13 @@ header {
   .rightside-title {
     
     @media (max-width: #{$med}) {
+      @include pading();
       &.quotation-title {
         flex-direction: column;
       }
     }
     @media (max-width: #{$sm}) {
       display: flex;
-     @include pading();
     }
 
     h2 {
@@ -524,9 +523,11 @@ header {
       font-weight: 500;
       color: #3a3a3a;
       margin-bottom: 9px;
+      @media (max-width: #{$med}) {
+        // @include pading();
+      }
       @media (max-width: #{$sm}) {
         margin-bottom: 14px;
-        @include pading();
       }
     }
     .updated-h3 {
@@ -536,10 +537,12 @@ header {
       color: #454545;
       margin-bottom: 26px;
       letter-spacing: 2px;
+      @media (max-width: #{$med}) {
+      //  @include pading();
+       
+      }
       @media (max-width: #{$sm}) {
        margin-bottom: 30px;
-       @include pading();
-       
       }
     }
   }
@@ -548,13 +551,15 @@ header {
     gap: 51px;
     margin-bottom: 53px;
 
+    @media (max-width: #{$med}) {
+      // @include pading();
+    }
     @media (max-width: #{$sm}) {
       gap: 11px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-bottom: 24px;
-      @include pading();
     }
     .box {
       width: 246px;
@@ -601,8 +606,8 @@ header {
       @include latter-space();
       font-weight: 700;
       margin-bottom: 29px;
-      @media (max-width: #{$sm}) {
-        @include pading();
+      @media (max-width: #{$med}) {
+        // @include pading();
       }
     }
     .hours-div {
@@ -612,9 +617,9 @@ header {
       margin-bottom: 29px;
       @media (max-width: #{$med}) {
         margin-bottom: 20px;
+        // @include pading();
       }
       @media (max-width: #{$sm}) {
-        @include pading();
         flex-direction: column;
         align-items: start;
       }
@@ -649,10 +654,12 @@ header {
     gap: 10px;
     align-items: center;
     margin-bottom: 29px;
+    @media (max-width: #{$med}) {
+      // @include pading();
+    }
     @media (max-width: #{$sm}) {
       flex-direction: column;
       align-items: start;
-      @include pading();
     }
   
     h3,
@@ -1297,6 +1304,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 33px;
+
       form {
         position: relative;
         input {

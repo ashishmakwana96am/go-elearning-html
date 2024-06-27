@@ -390,9 +390,9 @@ header .header-data .header-right h4::before {
 }
 
 .right-sidebar {
-  width: 68%;
+  width: 82.4%;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1699px) {
   .right-sidebar {
     width: 73%;
   }
@@ -404,6 +404,10 @@ header .header-data .header-right h4::before {
   }
 }
 @media (max-width: 768px) {
+  .right-sidebar .rightside-title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .right-sidebar .rightside-title.quotation-title {
     flex-direction: column;
   }
@@ -411,8 +415,6 @@ header .header-data .header-right h4::before {
 @media (max-width: 575px) {
   .right-sidebar .rightside-title {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .right-sidebar .rightside-title h2 {
@@ -513,8 +515,6 @@ header .header-data .header-right h4::before {
 @media (max-width: 575px) {
   .right-sidebar .content h4 {
     margin-bottom: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .right-sidebar .content .updated-h3 {
@@ -528,8 +528,6 @@ header .header-data .header-right h4::before {
 @media (max-width: 575px) {
   .right-sidebar .content .updated-h3 {
     margin-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .right-sidebar .content-box {
@@ -544,8 +542,6 @@ header .header-data .header-right h4::before {
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .right-sidebar .content-box .box {
@@ -588,12 +584,6 @@ header .header-data .header-right h4::before {
   font-weight: 700;
   margin-bottom: 29px;
 }
-@media (max-width: 575px) {
-  .right-sidebar .table-nav .watch-history .watch-history-h3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 .right-sidebar .table-nav .hours-div {
   display: flex;
   gap: 10px;
@@ -607,8 +597,6 @@ header .header-data .header-right h4::before {
 }
 @media (max-width: 575px) {
   .right-sidebar .table-nav .hours-div {
-    padding-left: 10px;
-    padding-right: 10px;
     flex-direction: column;
     align-items: start;
   }
@@ -651,8 +639,6 @@ header .header-data .header-right h4::before {
   .right-sidebar .date-range {
     flex-direction: column;
     align-items: start;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .right-sidebar .date-range h3,
