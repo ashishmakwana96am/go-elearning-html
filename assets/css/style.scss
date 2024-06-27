@@ -47,7 +47,10 @@ img {
   width: 100%;
   background-size: cover;
 }
-
+@mixin pading{
+  padding-left: 6px;
+       padding-right: 6px;
+}
 @mixin latter-space {
   letter-spacing: 5px;
 }
@@ -140,17 +143,18 @@ header {
     align-items: center;
     gap: 99px;
 
-    @media (max-width: #{$xll}) {
-      flex-direction: column;
-      gap: 0px;
+    @media (max-width:991px) {
+     gap: 51px;
     }
     @media (max-width: #{$sm}) {
       flex-direction: row;
       justify-content: space-between;
+     @include pading();
     }
     .logo-img {
-      @media (max-width: #{$xll}) {
-        margin-bottom: 30px;
+      @media (max-width: #{$xl}) {
+        // margin-bottom: 30px;
+        width: 180px;
       }
       @media (max-width: #{$sm}) {
         width: 153px;
@@ -164,11 +168,9 @@ header {
 
       @media (max-width: #{$xll}) {
         justify-content: center;
-        flex-wrap: nowrap;
       }
       @media (max-width: #{$med}) {
         justify-content: center;
-        flex-wrap: wrap;
       }
 
       .main-left-data {
@@ -183,6 +185,16 @@ header {
           left: 0;
           margin: 5px 6px;
           padding: 19px 55px;
+          @media (max-width: 1199px) {
+            padding: 12px 34px;
+          }
+          @media (max-width: 1024px) {
+            padding: 15px 50px;
+          }
+          @media (max-width: 991px) {
+            padding: 7px 24px;
+          }
+         
           &:hover {
             cursor: pointer;
           }
@@ -198,6 +210,14 @@ header {
             margin-bottom: 0;
             text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
               2px 2px 0 white;
+              @media (max-width: 1024px) {
+                font-size: 18px;
+            line-height: 26px;
+              }
+              @media (max-width: 699px) {
+                font-size: 14px;
+                line-height: 22px
+              }
           }
           .text-orange {
             color: #f6774e;
@@ -406,13 +426,15 @@ header {
     padding: 0 10px;
   }
   .rightside-title {
-    @media (max-width: #{$sm}) {
-      display: flex;
-    }
+    
     @media (max-width: #{$med}) {
       &.quotation-title {
         flex-direction: column;
       }
+    }
+    @media (max-width: #{$sm}) {
+      display: flex;
+     @include pading();
     }
 
     h2 {
@@ -503,6 +525,7 @@ header {
       margin-bottom: 9px;
       @media (max-width: #{$sm}) {
         margin-bottom: 14px;
+        @include pading();
       }
     }
     .updated-h3 {
@@ -514,6 +537,8 @@ header {
       letter-spacing: 2px;
       @media (max-width: #{$sm}) {
        margin-bottom: 30px;
+       @include pading();
+       
       }
     }
   }
@@ -528,6 +553,7 @@ header {
       justify-content: center;
       align-items: center;
       margin-bottom: 24px;
+      @include pading();
     }
     .box {
       width: 246px;
@@ -574,7 +600,9 @@ header {
       @include latter-space();
       font-weight: 700;
       margin-bottom: 29px;
-
+      @media (max-width: #{$sm}) {
+        @include pading();
+      }
     }
     .hours-div {
       display: flex;
@@ -582,8 +610,12 @@ header {
       align-items: center;
       margin-bottom: 29px;
       @media (max-width: #{$med}) {
-        flex-wrap: wrap;
         margin-bottom: 20px;
+      }
+      @media (max-width: #{$sm}) {
+        @include pading();
+        flex-direction: column;
+        align-items: start;
       }
       h2 {
         font-size: 18px;
@@ -592,7 +624,7 @@ header {
         line-height: 24px;
         margin-bottom: 0;
         @media (max-width: #{$sm}) {
-         margin-bottom: 25px;
+         margin-bottom: 10px;
         }
       }
       .btn {
@@ -619,6 +651,7 @@ header {
     @media (max-width: #{$sm}) {
       flex-direction: column;
       align-items: start;
+      @include pading();
     }
   
     h3,
