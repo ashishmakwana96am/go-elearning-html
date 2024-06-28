@@ -315,17 +315,13 @@ header .header-data .header-right h4::before {
   width: 208px;
   height: 120vh;
 }
-@media (max-width: 1440px) {
-  .left-sidebar {
-    height: auto;
-  }
-}
 @media (max-width: 768px) {
   .left-sidebar {
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 999;
+    height: auto;
   }
 }
 .left-sidebar.msg_leftside {
@@ -788,12 +784,12 @@ header .header-data .header-right h4::before {
 footer {
   padding-top: 60px;
   padding-bottom: 31px;
-  margin-bottom: 61px;
 }
 @media (max-width: 768px) {
   footer {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 61px;
   }
 }
 @media (max-width: 575px) {
@@ -855,7 +851,7 @@ footer .footer-data .footer-right {
   footer .footer-data .footer-right {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 17px;
   }
 }
 footer .footer-data .footer-right li {
@@ -1318,12 +1314,6 @@ footer .footer-data .footer-right li:last-child::after {
     margin-bottom: 16px;
   }
 }
-@media (max-width: 575px) {
-  .message-detail .detail-data .detail-data-content p {
-    line-height: 24px;
-    font-size: 14px;
-  }
-}
 .message-detail .detail-data .detail-data-list h3 {
   color: #31b762;
   letter-spacing: 2px;
@@ -1345,12 +1335,6 @@ footer .footer-data .footer-right li:last-child::after {
   font-weight: 400;
   color: #46464e;
   letter-spacing: 1px;
-}
-@media (max-width: 575px) {
-  .message-detail .detail-data .detail-data-list ul li {
-    font-size: 14px;
-    line-height: 26px;
-  }
 }
 .message-detail .detail-data .detail-data-list p:last-child {
   width: 100%;

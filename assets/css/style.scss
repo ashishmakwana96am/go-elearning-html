@@ -398,14 +398,15 @@ header {
   background-color: $primary-color;
   width: 208px;
   height: 120vh;
-  @media (max-width: #{$xlll}) {
-    height: auto;
-  }
+  // @media (max-width: #{$xlll}) {
+  //   height: auto;
+  // }
   @media (max-width: #{$med}) {
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 999;
+    height: auto;
   }
   &.msg_leftside {
     height: auto;
@@ -843,11 +844,11 @@ header {
 footer {
   padding-top: 60px;
   padding-bottom: 31px;
-  margin-bottom: 61px;
 
   @media (max-width: #{$med}) {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 61px;
   }
   @media (max-width: #{$sm}) {
     padding-top: 30px;
@@ -894,7 +895,7 @@ footer {
       @media (max-width: #{$sm}) {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 17px;
       }
       li {
         font-size: 14px;
@@ -1315,10 +1316,10 @@ footer {
             margin-bottom: 16px;
           }
         }
-        @media (max-width: #{$sm}) {
-          line-height: 24px;
-          font-size: 14px;
-        }
+        // @media (max-width: #{$sm}) {
+        //   line-height: 24px;
+        //   font-size: 14px;
+        // }
       }
     }
     .detail-data-list {
@@ -1340,10 +1341,10 @@ footer {
           font-weight: 400;
           color: #46464e;
           letter-spacing: 1px;
-          @media (max-width: #{$sm}) {
-            font-size: 14px;
-            line-height: 26px;
-          }
+          // @media (max-width: #{$sm}) {
+          //   font-size: 14px;
+          //   line-height: 26px;
+          // }
         }
       }
       p {
