@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-data">
+            <h3>教城主頁</h3>
+            <div class="header-right d-none d-sm-flex">
+              <img src="assets/images/Layer 2 1.png" alt="" />
+              <h3>Jay Chu</h3>
+              <h4>English</h4>
+              <img src="assets/images/HouseDoorFill.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <!-- --main-- -->
+      <section class="main">
+        <div class="container">
+          <div class="main-data">
+            <div>
+              <img src="assets/images/image 1.png" class="logo-img" alt="" />
+            </div>
+            <div class="main-tab-box d-none d-sm-flex">
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main1.png" alt="" />
+                    <div class="main-border">
+                      <h3>活動概覽</h3>
+                    </div>
+                  </a>
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main2.png" alt="" />
+                    <div class="main-border">
+                      <h3>EdMall</h3>
+                    </div>
+                  </a>
+                  <a href="#" class="main-left-data">
+                    <img src="assets/images/main3.png" alt="" />
+                    <div class="main-border">
+                      <h3 class="text-orange">個人中心</h3>
+                    </div>
+                  </a>
+            </div>
+              <div class="menubar d-sm-none ">
+                  <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              </div>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class=" modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                          <div class="header-data">
+                            <h3>教城主頁</h3>
+                        </div>
+                      <div class="mobile-logo">
+                        <img src="assets/images/image 2.png" alt="">
+                        <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                      </div>
+                      <div class="language">
+                        <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                        <h2>會員登入</h2>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                       <ul class="modal-list">
+                        <li><h3>活動概覽</h3>
+                          <a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li class="no-space"><h3>Ed Mall</h3>
+                        <a href="#">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><h3>個人中心</h3>
+                         <a href="#"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                       </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+            <div class="detail-back">
+                <a href="event_registration.html">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <span>返回</span>
+                </a>
+              </div>
+              <div class="quotation-progress">
+                <div class="quotation-title">
+                 <button class="btn">取消報價</button>
+                 <button class="btn">上傳確認報價文件</button>
+                </div>
+                <div class="quotation-status">
+                  <div class="detail-title">
+                    <h2 class="ps-4">報價情況</h2>
+                  </div>
+                  <button class="status-btn btn"><i class="fa-solid fa-circle-info"></i>報價情況進度詳細內容</button>
+                </div>
+                <div class="quontation-table">
+                  <div class="que-head d-none d-md-flex green-bg quatation-gap">
+                    <div><h4>報價日期</h4></div>
+                    <div><h4>網上報價編號</h4></div>
+                    <div class="exception-tab"><h4>服務日期範圍</h4></div>
+                    <div ><h4>服務狀態</h4></div>
+                    <div><h4>報價金額</h4></div>
+                    <div><h4></h4></div>
+                  </div>
+                  <div class="que-body">
+                    <div class="que-tr que-light quatation-gap">
+                        <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/10/10</h4></div>
+                        <div class="que-gray-flex"><h3>報價日期</h3><h4>S0A056434</h4></div>
+                        <div class="que-gray-flex exception-tab"><h3>報價日期</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                        <div class="que-gray-flex"><h3>報價日期</h3><h4><button class="state-td btn puprple-btn">開始報價</button></h4></div>
+                        <div class="que-gray-flex"><h3>報價日期</h3><h4>$3950.00</h4></div>
+                        <h4 class="d-none d-sm-block"> 
+                          <div class="action-td">
+                          <img src="assets/images/dowonload.png" alt="">
+                      </div></h4>
+                      <div  class="que-gray-flex d-sm-none action-mobile">
+                        <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="progress-data">
+                  <div class="bookdata">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="progress-img"><img src="assets/images/im.png" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="progress-right">
+                          <h2>  教城閱讀組合 23/24</h2>
+                          <ul>
+                            <li><span>數量 :</span> <span>100本</span></li>
+                            <li><span>年份：</span> <span>1年</span></li>
+                            <li><span>全校人數 :</span> <span>401-600人</span></li>
+                          </ul>
+                          <p>學校可訂購「e悅讀學校計劃」的「教城閱讀組合23/24」全年服務。此閱讀組合以100本電子書為基本，學校可選擇增加訂閱書籍數目，數量以每50本為倍數遞增（即150、200、250本……如此類推）</p>
+                          <p>備註</p>
+                          <p>-</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-content">
+                    <h3>條款及細則</h3>
+                   <div class="height-para">
+                   <div>
+                    <p>歡迎使用香港教育城有限公司（以下統稱「教城」)提供的服務。閣下可以以訪客身份或註冊為會員，使用教城的服務。教城服務主要通過我們的主網站 edcity.hk 以及由教城擁有及／或管理的其他網站、雲端服務、移動應用程式及數碼平台所提供（所有以上的服務發放渠道統稱為「教城網站」，其包括教城指定的任何後繼發放渠道）。通過教城網站，教城為閣下提供各類資源，包括學與教資料和內容、電子書、聊天室、互動設施等。通過使用我們的服務，教城的用戶（ 統稱「用戶」）表示同意以下服務條款（「條款」）</p>
+                   </div>
+                   <div>
+                    <p>資料、密碼及保安條款</p>
+                    <p>
+                      1.1.   閣下同意︰ –</p>
+                      <p>
+                        (一)   在遞交予教城的所有在線及離線登記表上及其他文件中，提供所有必要的資料，而該等資料必須是準確、現行及完整的；</p>
+                        <p> (二)   不時維持及更新所有遞交予教城的資料，使其保持準確、現行及完整。</p>
+                   </div>
+                   </div>
+                  </div>
+                  </div>
+                </div>
+                <ul class="nav nav-pills bottom-table-title" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">發票下載</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">收據下載</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"> 
+                    <div class="quontation-table">
+                    <div class="que-head d-none d-md-flex orange-bg quatation-gap">
+                      <div><h4>收據狀態</h4></div>
+                      <div><h4>收據編號</h4></div>
+                      <div ><h4>發出收據日期</h4></div>
+                      <div ><h4>報價金額</h4></div>
+                      <div><h4></h4></div>
+                    </div>
+                    <div class="que-body">
+                      <div class="que-tr que-light quatation-gap">
+                          <div class="que-gray-flex"><h3>收據狀態</h3><h4>生效</h4></div>
+                          <div class="que-gray-flex"><h3>收據編號</h3><h4>S0A056434-REC-01</h4></div>
+                          <div class="que-gray-flex "><h3>發出收據日期</h3><h4>2023/10/20</h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$2950.00</h4></div>
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/dowonload.png" alt="">
+                        </div></h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"> <div class="quontation-table">
+                    <div class="que-head d-none d-md-flex orange-bg quatation-gap">
+                      <div><h4>收據狀態</h4></div>
+                      <div><h4>收據編號</h4></div>
+                      <div ><h4>發出收據日期</h4></div>
+                      <div ><h4>報價金額</h4></div>
+                      <div><h4></h4></div>
+                    </div>
+                    <div class="que-body">
+                      <div class="que-tr que-light quatation-gap">
+                          <div class="que-gray-flex"><h3>收據狀態</h3><h4>生效</h4></div>
+                          <div class="que-gray-flex"><h3>收據編號</h3><h4>S0A056434-REC-01</h4></div>
+                          <div class="que-gray-flex "><h3>發出收據日期</h3><h4>2023/10/20</h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$2950.00</h4></div>
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/dowonload.png" alt="">
+                        </div></h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                        </div>
+                        </div>
+                    </div>
+                  </div></div>
+                </div>
+               
+              </div>
+        </div>
+      </section>
+
+      <footer class="mb-0">
+        <div class="container">
+            <div class="footer-data">
+                <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+                <ul class="footer-right">
+                    <li>私隱政策聲明</li>
+                    <li>版權及知識產權政策</li>
+                    <li>免責聲明</li>
+                    <li>促進種族平等政策</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
