@@ -1738,19 +1738,22 @@ footer {
       gap: 20px;
       }
     li {
-      color: #444444;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 400;
-      &.active {
-        color: #f6774e;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        @media (max-width: #{$sm}) {
-         border: 1px solid #f6774e;
-         padding: 3px 5px;  
-         text-decoration: none;
-          }
+      a{
+
+        color: #444444;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        &.active {
+          color: #f6774e;
+          text-decoration: underline;
+          text-underline-offset: 4px;
+          @media (max-width: #{$sm}) {
+           border: 1px solid #f6774e;
+           padding: 3px 5px;  
+           text-decoration: none;
+            }
+        }
       }
     }
   }

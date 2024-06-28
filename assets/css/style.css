@@ -1781,19 +1781,19 @@ footer .footer-data .footer-right li:last-child::after {
     gap: 20px;
   }
 }
-.table-pagination ul li {
+.table-pagination ul li a {
   color: #444444;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
-.table-pagination ul li.active {
+.table-pagination ul li a.active {
   color: #f6774e;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 @media (max-width: 575px) {
-  .table-pagination ul li.active {
+  .table-pagination ul li a.active {
     border: 1px solid #f6774e;
     padding: 3px 5px;
     text-decoration: none;
