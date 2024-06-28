@@ -1521,6 +1521,11 @@ footer .footer-data .footer-right li:last-child::after {
     padding: 13px 0 14px 0;
   }
 }
+@media (max-width: 320px) {
+  .quotation-tab .orange-tab {
+    font-size: 18px;
+  }
+}
 .quotation-tab .gray-tab {
   border-top-right-radius: 45px !important;
   display: flex;
@@ -1541,6 +1546,11 @@ footer .footer-data .footer-right li:last-child::after {
 @media (max-width: 575px) {
   .quotation-tab .gray-tab {
     padding: 13px 0 14px 0;
+  }
+}
+@media (max-width: 320px) {
+  .quotation-tab .gray-tab {
+    font-size: 18px;
   }
 }
 .quotation-tab .gray-tab:after {
