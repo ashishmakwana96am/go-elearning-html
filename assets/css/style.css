@@ -1487,7 +1487,17 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .quotation-tab li .nav-link {
+    padding: 13px 35px 14px 35px;
+  }
+}
+@media (max-width: 375px) {
+  .quotation-tab li .nav-link {
     padding: 13px 30px 14px 30px;
+  }
+}
+@media (max-width: 320px) {
+  .quotation-tab li .nav-link {
+    padding: 13px 20px 14px 20px;
   }
 }
 .quotation-tab .orange-tab {

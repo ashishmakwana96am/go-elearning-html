@@ -1464,7 +1464,13 @@ footer {
         background-color: #f28d30;
       }
       @media (max-width: #{$sm}) {
+       padding: 13px 35px 14px 35px;
+      }
+      @media (max-width: #{$xs}) {
        padding: 13px 30px 14px 30px;
+      }
+      @media (max-width: #{$xss}) {
+       padding: 13px 20px 14px 20px;
       }
     }
   }
