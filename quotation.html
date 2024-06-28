@@ -28,49 +28,82 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-          <div class="header-data">
-            <h3>教城主頁</h3>
-            <div class="header-right">
-              <img src="assets/images/Layer 2 1.png" alt="" />
-              <h3>Jay Chu</h3>
-              <h4>English</h4>
-              <img src="assets/images/HouseDoorFill.png" alt="" />
+  <header>
+    <div class="container">
+      <div class="header-data">
+        <h3>教城主頁</h3>
+        <div class="header-right d-none d-sm-flex">
+          <img src="assets/images/Layer 2 1.png" alt="" />
+          <h3>Jay Chu</h3>
+          <h4>English</h4>
+          <img src="assets/images/HouseDoorFill.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --main-- -->
+  <section class="main">
+    <div class="container">
+      <div class="main-data">
+        <div>
+          <img src="assets/images/image 1.png" class="logo-img" alt="" />
+        </div>
+        <div class="main-tab-box d-none d-sm-flex">
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main1.png" alt="" />
+                <div class="main-border">
+                  <h3>活動概覽</h3>
+                </div>
+              </a>
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main2.png" alt="" />
+                <div class="main-border">
+                  <h3>EdMall</h3>
+                </div>
+              </a>
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main3.png" alt="" />
+                <div class="main-border">
+                  <h3 class="text-orange">個人中心</h3>
+                </div>
+              </a>
+        </div>
+          <div class="menubar d-sm-none ">
+              <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class=" modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                      <div class="header-data">
+                        <h3>教城主頁</h3>
+                    </div>
+                  <div class="mobile-logo">
+                    <img src="assets/images/image 2.png" alt="">
+                    <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="language">
+                    <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                    <h2>會員登入</h2>
+                  </div>
+                </div>
+                <div class="modal-body">
+                   <ul class="modal-list">
+                    <li><h3>活動概覽</h3>
+                      <a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="no-space"><h3>Ed Mall</h3>
+                    <a href="#">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><h3>個人中心</h3>
+                     <a href="#"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                   </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-        <!-- --main-- -->
-    <section class="main">
-        <div class="container">
-          <div class="main-data">
-            <div>
-              <img src="assets/images/image 1.png" class="logo-img" alt="" />
-            </div>
-            <div class="main-tab-box">
-                  <a href="#" class="main-left-data">
-                    <img src="assets/images/main1.png" alt="" />
-                    <div class="main-border">
-                      <h3>活動概覽</h3>
-                    </div>
-                  </a>
-                  <a href="#" class="main-left-data">
-                    <img src="assets/images/main2.png" alt="" />
-                    <div class="main-border">
-                      <h3>EdMall</h3>
-                    </div>
-                  </a>
-                  <a href="#" class="main-left-data">
-                    <img src="assets/images/main3.png" alt="" />
-                    <div class="main-border">
-                      <h3 class="text-orange">個人中心</h3>
-                    </div>
-                  </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       <section class="main_data">
         <div class="container-fluid p-0">
@@ -92,247 +125,230 @@
                    <span> <img src="assets/images/Vector.png" alt=""></span>
                   </form>
                 </div>
-                <div class="quotation-tab">
-               <a href="#"><div class="orange-tab">進行中</div></a>   
-                 <a href="#"><div class="gray-tab">已結束</div></a> 
-                </div>
-                <!-- <div class="quotation-table table-responsive">
-                   <table class="table-striped table searchable sortable ">
-                    <thead>
-                        <tr>
-                            <th>報價日期</th>
-                            <th>網上報價編號</th>
-                            <th>服務名稱</th>
-                            <th>服務日期範圍</th>
-                            <th>服務狀態</th>
-                            <th>報價金額</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2024/02/28</td>
-                            <td>S0A123331</td>
-                            <td>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</td>
-                            <td>2024/01/01 - 2024/08/31</td>
-                            <td><button class="state-td btn orange-btn">已確認報價</button></td>
-                            <td>$5000.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2023/12/20</td>
-                            <td>S0A123435</td>
-                            <td>SUEP Reading Package 23/24(100 books )</td>
-                            <td>2023/09/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$3450.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2023/11/21</td>
-                            <td>S0A123331</td>
-                            <td>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</td>
-                            <td>2023/09/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$2500.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2023/10/10</td>
-                            <td>S0A056434</td>
-                            <td>DSE Online Question Bank - School Subscription</td>
-                            <td>2023/09/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$3950.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2024/02/28</td>
-                            <td>S0A123331</td>
-                            <td>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</td>
-                            <td>2024/01/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$5000.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2023/12/20</td>
-                            <td>S0A123435 </td>
-                            <td>SUEP Reading Package 23/24(100 books )</td>
-                            <td>2023/09/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$2500.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2023/11/21</td>
-                            <td>S0A123331 </td>
-                            <td>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</td>
-                            <td>2023/09/01 - 2024/08/31</td>
-                            <td><button class="state-td btn puprple-btn">開始報價</button></td>
-                            <td>$2500.00</td>
-                            <td>
-                                <div class="action-td">
-                                    <img src="assets/images/upload.png" alt="">
-                                    <img src="assets/images/dowonload.png" alt="">
-                                    <img src="assets/images/erro.png" alt="">
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                   </table>
-                </div> -->
-                <div class="quontation-table">
-                  <div class="que-head d-none d-md-flex">
-                    <h4>報價日期</h4>
-                    <h4>網上報價編號</h4>
-                    <h4>服務名稱</h4>
-                    <h4>服務日期範圍</h4>
-                    <h4>服務狀態</h4>
-                    <h4>報價金額</h4>
-                    <h4></h4>
-                  </div>
-                  <div class="que-body">
-                    <!-- <div class="que-tr que-gray">
-                      <div><h3>報價日期</h3><h4>2024/02/28</h4></div>
-                      <div><h3>網上報價編號</h3><h4>S0A123331</h4></div>
-                      <div><h3></h3><h4>S0A123331</h4></div>
-                      <div><h3>服務狀態</h3><h4>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</h4></div>
-                      <div><h3></h3><h4>2024/01/01 - 2024/08/31</h4></div>
-                      <h4><button class="state-td btn orange-btn">已確認報價</button></h4>
-                      <h4>$5000.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
-                    </div> -->
-                    <div class="que-tr que-light">
-                      <h4>2023/12/20</h4>
-                      <h4>S0A123435</h4>
-                      <h4>SUEP Reading Package 23/24(100 books )</h4>
-                      <h4>2023/09/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$3450.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
+                <ul class="nav nav-pills quotation-tab" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active orange-tab" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">進行中</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link gray-tab" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">已結束</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="quontation-table">
+                      <div class="que-head d-none d-md-flex">
+                        <div><h4>報價日期</h4></div>
+                        <div><h4>網上報價編號</h4></div>
+                        <div><h4>服務名稱</h4></div>
+                        <div><h4>服務日期範圍</h4></div>
+                        <div><h4>服務狀態</h4></div>
+                        <div><h4>報價金額</h4></div>
+                        <div><h4></h4></div>
+                      </div>
+                      <div class="que-body">
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2024/02/28</h4></div>
+                          <div class="que-gray-flex"><h3>網上報價編號</h3><h4>S0A123331</h4></div>
+                          <div class="que-gray-flex"><h3>服務名稱</h3><h4>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</h4></div>
+                          <div class="que-gray-flex"><h3>服務日期範圍</h3><h4>2024/01/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>服務狀態</h3><h4><button class="state-td btn orange-btn">已確認報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$5000.00</h4></div>                    
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                        </div></h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                          <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                        </div>
+                        </div>
+                        <div class="que-tr que-light">
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/12/20</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>S0A123435</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>SUEP Reading Package 23/24(100 books )</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4><button class="state-td btn puprple-btn">開始報價</button></h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>$3450.00</h4></div>
+                            <h4 class="d-none d-sm-block"> 
+                              <div class="action-td">
+                              <img src="assets/images/upload.png" alt="">
+                              <img src="assets/images/dowonload.png" alt="">
+                              <img src="assets/images/erro.png" alt="">
+                          </div></h4>
+                          <div  class="que-gray-flex d-sm-none action-mobile">
+                            <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                            <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                            <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                          </div>
+                          </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/11/21</h4></div>
+                          <div class="que-gray-flex"><h3>網上報價編號</h3><h4>S0A123331</h4></div>
+                          <div class="que-gray-flex"><h3>服務名稱</h3><h4>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</h4></div>
+                          <div class="que-gray-flex"><h3>服務日期範圍</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>服務狀態</h3><h4><button class="state-td btn orange-btn">開始報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$2500.00</h4></div>                    
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                            </div>
+                      </h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                          <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                        </div>
+                        </div>
+                        <div class="que-tr que-light">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/10/10</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>S0A056434</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>DSE Online Question Bank - School Subscription</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4><button class="state-td btn puprple-btn">開始報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>$3950.00</h4></div>
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                            </div>
+                      </h4>
+                          <div  class="que-gray-flex d-sm-none action-mobile">
+                            <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                            <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                            <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                          </div>
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2024/02/28</h4></div>
+                          <div class="que-gray-flex"><h3>網上報價編號</h3><h4>S0A123331</h4></div>
+                          <div class="que-gray-flex"><h3>服務名稱</h3><h4>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</h4></div>
+                          <div class="que-gray-flex"><h3>服務日期範圍</h3><h4>2024/01/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>服務狀態</h3><h4><button class="state-td btn orange-btn">開始報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$5000.00</h4></div>                    
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                            </div>
+                      </h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                          <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                        </div>
+                        </div>
+                        <div class="que-tr que-light">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/12/20</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>S0A123435</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>SUEP Reading Package 23/24(100 books )</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4><button class="state-td btn puprple-btn">開始報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>$3450.00</h4></div>
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                            </div>
+                      </h4>
+                          <div  class="que-gray-flex d-sm-none action-mobile">
+                            <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                            <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                            <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                          </div>
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2023/11/21</h4></div>
+                          <div class="que-gray-flex"><h3>網上報價編號</h3><h4>S0A123331</h4></div>
+                          <div class="que-gray-flex"><h3>服務名稱</h3><h4>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</h4></div>
+                          <div class="que-gray-flex"><h3>服務日期範圍</h3><h4>2023/09/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>服務狀態</h3><h4><button class="state-td btn orange-btn">開始報價</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$2500.00</h4></div>                    
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/upload.png" alt="">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                            </div>
+                      </h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/upload.png" alt=""> <span>上載</span></div>
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                          <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                        </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="que-tr que-gray">
-                      <h4>2023/11/21</h4>
-                      <h4>S0A123331</h4>
-                      <h4>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</h4>
-                      <h4>2023/09/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$2500.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
-                    </div>
-                    <div class="que-tr que-light">
-                      <h4>2023/10/10</h4>
-                      <h4>S0A056434</h4>
-                      <h4>DSE Online Question Bank - School Subscription</h4>
-                      <h4>2023/09/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$3950.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
-                    </div>
-                    <div class="que-tr que-gray">
-                      <h4>2024/02/28</h4>
-                      <h4>S0A123331</h4>
-                      <h4>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(250 eBooks)</h4>
-                      <h4>2024/01/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$5000.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
-                    </div>
-                    <div class="que-tr que-light">
-                      <h4>2023/12/20</h4>
-                      <h4>S0A123435</h4>
-                      <h4>SUEP Reading Package 23/24(100 books )</h4>
-                      <h4>2023/09/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$3450.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
-                    </div>
-                    <div class="que-tr que-gray">
-                      <h4>2023/11/21</h4>
-                      <h4>S0A123331</h4>
-                      <h4>EdCity Reading Package 23/24 (Top Ten Special Edition) - Primary School</h4>
-                      <h4>2023/09/01 - 2024/08/31</h4>
-                      <h4><button class="state-td btn puprple-btn">開始報價</button></h4>
-                      <h4>$2500.00</h4>
-                      <h4> <div class="action-td">
-                        <img src="assets/images/upload.png" alt="">
-                        <img src="assets/images/dowonload.png" alt="">
-                        <img src="assets/images/erro.png" alt="">
-                    </div></h4>
+                    <div class="table-pagination">
+                     <ul>
+                         <li class="active">1</li>
+                         <li>2</li>
+                         <li>3</li>
+                         <li>4</li>
+                         <li>5</li>
+                         <li>...</li>
+                     </ul>
                     </div>
                   </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="quontation-table">
+                      <div class="que-head d-none d-md-flex">
+                        <div><h4>報價日期</h4></div>
+                        <div><h4>網上報價編號</h4></div>
+                        <div><h4>服務名稱</h4></div>
+                        <div><h4>服務日期範圍</h4></div>
+                        <div><h4>服務狀態</h4></div>
+                        <div><h4>報價金額</h4></div>
+                        <div><h4></h4></div>
+                      </div>
+                      <div class="que-body">
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>報價日期</h3><h4>2024/02/18</h4></div>
+                          <div class="que-gray-flex"><h3>網上報價編號</h3><h4>S0A12091</h4></div>
+                          <div class="que-gray-flex"><h3>服務名稱</h3><h4>Young Scientist - STEM Reading Package 23/24 (Half-Year Services)(150 eBooks)</h4></div>
+                          <div class="que-gray-flex"><h3>服務日期範圍</h3><h4>2024/01/01 - 2024/08/31</h4></div>
+                          <div class="que-gray-flex"><h3>服務狀態</h3><h4><button class="state-td btn gray-btn">已完成</button></h4></div>
+                          <div class="que-gray-flex"><h3>報價金額</h3><h4>$3050.00</h4></div>                    
+                          <h4 class="d-none d-sm-block"> 
+                            <div class="action-td">
+                            <img src="assets/images/dowonload.png" alt="">
+                            <img src="assets/images/erro.png" alt="">
+                        </div></h4>
+                        <div  class="que-gray-flex d-sm-none action-mobile">
+                          <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                          <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                        </div>
+                        </div>
+                        <div class="que-tr que-light">
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>2024/01/06</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>S0A11990</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>SUEP Reading Package 23/24(100 books )</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>2024/01/01 - 2024/08/31</h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4><button class="state-td btn gray-btn">已完成</button></h4></div>
+                            <div class="que-gray-flex"><h3>報價日期</h3><h4>$3450.00</h4></div>
+                            <h4 class="d-none d-sm-block"> 
+                              <div class="action-td">
+                              <img src="assets/images/dowonload.png" alt="">
+                              <img src="assets/images/erro.png" alt="">
+                          </div></h4>
+                          <div  class="que-gray-flex d-sm-none action-mobile">
+                            <div class="action-btn"><img src="assets/images/dowonload.png" alt=""> <span>下載</span></div>
+                            <div class="action-btn"><img src="assets/images/erro.png" alt=""> <span>詳情</span></div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  
+                  </div>
                 </div>
-                <div class="table-pagination">
-                 <ul>
-                     <li class="active">1</li>
-                     <li>2</li>
-                     <li>3</li>
-                     <li>4</li>
-                     <li>5</li>
-                     <li>...</li>
-                 </ul>
-                </div>
+              
               </div>
           </div>
         </div>

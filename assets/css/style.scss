@@ -55,6 +55,7 @@ img {
   letter-spacing: 5px;
 }
 @mixin quotation-tab {
+  display: flex;
   width: 100%;
   padding: 13px 0 14px 0;
   color: $white-color;
@@ -66,17 +67,33 @@ img {
     padding: 10px 0 11px 0;
   }
   @media (max-width: #{$sm}) {
-    font-size: 16px;
-    line-height: 20px;
+    padding: 13px 0 14px 0;
   }
+ 
 }
 
 @mixin table-width {
-  width: 226px;
+  width: 187px;
+  @media (max-width: #{$xlll}) {
+    width: 138px;
+  }
+  @media (max-width: #{$sm}) {
+    width: 100%;
+  }
+  // @media (max-width: #{$sm}) {
+  //   width: 197px;
+  // }
+  // @media (max-width: #{$xs}) {
+  //   width: 194px;
+  // }
 }
 @mixin table-width-3rd {
+  width: 240px;
   @media (max-width: #{$xlll}) {
-    width: 399px;
+    width: 260px;
+  }
+  @media (max-width: #{$sm}) {
+    width: 100%;
   }
 }
 //   ---header---
@@ -1411,22 +1428,29 @@ footer {
 }
 .quotation-tab {
   display: flex;
-  text-align: center;
   margin-bottom: 15px;
+  width: 100%;
   @media (max-width: 767px) {
    margin-bottom: 0;
   }
-  a {
-    width: 100%;
+  li{
+    width: 50%;
+    
+    .nav-link{
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .orange-tab {
     background-color: #f28d30;
     @include quotation-tab();
-    border-top-left-radius: 45px;
+    border-top-left-radius: 45px !important;
   }
   .gray-tab {
     background-color: #909090;
-    border-top-right-radius: 45px;
+    border-top-right-radius: 45px !important;
     @include quotation-tab();
     position: relative;
     &:after {
@@ -1528,25 +1552,32 @@ footer {
   .que-head {
     background-color: $green-color;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    // justify-content: space-between;
+    gap: 28px;
     padding: 15px 10px 17px 20px;
+    @media (max-width: #{$xlll}) {
+      padding: 10px;
+      gap: 10px;
+    }
     @media (max-width: #{$xl}) {
       padding: 10px;
     }
-    h4 {
-      color: $white-color;
-      @include latter-space();
-      font-size: 16px;
-      line-height: 22px;
+    div{
       @include table-width();
-      font-weight: 700;
-      @media (max-width: #{$xl}) {
-        font-size: 14px;
-        line-height: 18px;
-      }
       &:nth-child(3) {
         @include table-width-3rd();
+      }
+      h4 {
+        color: $white-color;
+        @include latter-space();
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        @media (max-width: #{$xl}) {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      
       }
     }
   }
@@ -1555,9 +1586,18 @@ footer {
     .que-tr {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      // justify-content: space-between;
+      gap: 28px;
       padding: 14px 10px 14px 20px;
+      @media (max-width: #{$xlll}) {
+       gap: 10px;
+       padding: 10px;
+      }
+      @media (max-width: #{$sm}) {
+      flex-direction: column;
+      align-items: start;
+      padding: 19px 10px;
+      }
       &.que-gray {
         background-color: #f8f7f3;
       }
@@ -1568,22 +1608,30 @@ footer {
         font-weight: 500;
         line-height: 25px;
         font-size: 16px;
-        @include table-width();
+        // @include table-width();
         @media (max-width: #{$xl}) {
           font-size: 14px;
           line-height: 18px;
         }
-
-        &:nth-child(3) {
-          @include table-width-3rd();
+        @media (max-width: #{$sm}) {
+          width: 300px;
+          line-height: 25px;
+        font-size: 16px;
         }
+
+        // &:nth-child(3) {
+        //   @include table-width-3rd();
+        // }
 
         .action-td {
           display: flex;
-          gap: 5px;
+          gap: 30px;
           justify-content: space-evenly;
           flex-wrap: wrap;
           
+          @media (max-width: #{$xlll}) {
+           gap: 20px;
+          }
           @media (max-width: #{$xl}) {
            justify-content: start;
            gap: 8px;
@@ -1607,6 +1655,64 @@ footer {
           &.puprple-btn {
             background-color: #b44fb0;
           }
+          &.gray-btn{
+            background-color: #494F5A;
+          }
+        }
+      }
+      .que-gray-flex{
+        
+        @include table-width();
+        &:nth-child(3) {
+          @include table-width-3rd();
+        }
+        @media (max-width: #{$sm}) {
+          display: flex;
+          width: 100%;
+          // justify-content: space-between;
+          gap: 10px;
+          }
+        @media (max-width: #{$xs}) {
+          gap: 10px;
+          }
+        h3{
+          display: none;
+          font-size: 16px;
+          line-height: 700;
+          width: 120px;
+          letter-spacing: 4px;
+          line-height: 22px;
+          @media (max-width: #{$sm}) {
+          display: block;
+          width: 170px;
+          }
+        }
+        &.action-mobile{
+        gap: 12px;
+        .action-btn{
+          display: flex;
+          justify-content: space-between;
+          gap: 3px;
+          color: 
+          #9B4545;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 700;
+          @include latter-space();
+          padding: 11px 8px;
+          border: 1px solid;
+          border-radius: 20px;
+
+  @media (max-width: #{$xss}) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+          img{
+            width: 32px;
+            height: 29px;
+            object-fit: contain;
+          }
+        }
         }
       }
     }
@@ -1614,11 +1720,18 @@ footer {
 }
 .table-pagination {
   text-align: end;
+  @media (max-width: #{$sm}) {
+  text-align: center;
+    }
   ul {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 11px;
+    @media (max-width: #{$sm}) {
+      justify-content: center;
+      gap: 20px;
+      }
     li {
       color: #444444;
       font-size: 16px;
@@ -1628,6 +1741,11 @@ footer {
         color: #f6774e;
         text-decoration: underline;
         text-underline-offset: 4px;
+        @media (max-width: #{$sm}) {
+         border: 1px solid #f6774e;
+         padding: 3px 5px;  
+         text-decoration: none;
+          }
       }
     }
   }
