@@ -1480,9 +1480,12 @@ footer .footer-data .footer-right li:last-child::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #909090;
+}
+.quotation-tab li .nav-link.active {
+  background-color: #f28d30;
 }
 .quotation-tab .orange-tab {
-  background-color: #f28d30;
   display: flex;
   width: 100%;
   padding: 13px 0 14px 0;
@@ -1504,7 +1507,6 @@ footer .footer-data .footer-right li:last-child::after {
   }
 }
 .quotation-tab .gray-tab {
-  background-color: #909090;
   border-top-right-radius: 45px !important;
   display: flex;
   width: 100%;

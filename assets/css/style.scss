@@ -1441,15 +1441,19 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #909090;
+      &.active{
+        background-color: #f28d30;
+      }
     }
   }
   .orange-tab {
-    background-color: #f28d30;
+   
     @include quotation-tab();
     border-top-left-radius: 45px !important;
   }
   .gray-tab {
-    background-color: #909090;
+    
     border-top-right-radius: 45px !important;
     @include quotation-tab();
     position: relative;
