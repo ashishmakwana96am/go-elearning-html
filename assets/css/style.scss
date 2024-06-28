@@ -96,6 +96,26 @@ img {
     width: 100%;
   }
 }
+
+@mixin register-btn{
+  padding: 7px 30px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 20px;
+  width: 100px;
+  height: 58px;
+  @media (max-width: #{$med}) {
+    padding: 7px 20px;
+    width: 80px;
+  }
+  @media (max-width: #{$sm}) {
+    line-height: 15px;
+    width: 120px;
+    height: 30px;
+    padding: 7px 20px;
+  }
+}
 //   ---header---
 
 header {
@@ -1554,11 +1574,17 @@ footer {
 // }
 .quontation-table {
   .que-head {
-    background-color: $green-color;
+    
     display: flex;
     // justify-content: space-between;
     gap: 28px;
     padding: 15px 10px 17px 20px;
+    &.green-bg{
+      background-color: $green-color;
+    }
+    &.puprple-bg{
+      background-color: #B44FB0;
+    }
     @media (max-width: #{$xlll}) {
       padding: 10px;
       gap: 10px;
@@ -1568,7 +1594,7 @@ footer {
     }
     div{
       @include table-width();
-      &:nth-child(3) {
+      &.exception-tab{
         @include table-width-3rd();
       }
       h4 {
@@ -1601,6 +1627,7 @@ footer {
       flex-direction: column;
       align-items: start;
       padding: 19px 10px;
+      gap: 8px;
       }
       &.que-gray {
         background-color: #f8f7f3;
@@ -1622,10 +1649,6 @@ footer {
           line-height: 25px;
         font-size: 16px;
         }
-
-        // &:nth-child(3) {
-        //   @include table-width-3rd();
-        // }
 
         .action-td {
           display: flex;
@@ -1665,9 +1688,8 @@ footer {
         }
       }
       .que-gray-flex{
-        
         @include table-width();
-        &:nth-child(3) {
+        &.exception-tab {
           @include table-width-3rd();
         }
         @media (max-width: #{$sm}) {
@@ -1718,6 +1740,18 @@ footer {
             object-fit: contain;
           }
         }
+        }
+        .register-btn{
+          border: 1px solid 
+          #CF4CDB;
+          color: 
+          #CF4CDB;
+          @include register-btn();
+        }
+        .red-btn{
+          color: #E95075;
+          border: 1px solid #E95075;
+          @include register-btn();
         }
       }
     }

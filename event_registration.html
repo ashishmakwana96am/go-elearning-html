@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-data">
+            <h3>教城主頁</h3>
+            <div class="header-right d-none d-sm-flex">
+              <img src="assets/images/Layer 2 1.png" alt="" />
+              <h3>Jay Chu</h3>
+              <h4>English</h4>
+              <img src="assets/images/HouseDoorFill.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+  <!-- --main-- -->
+  <section class="main">
+    <div class="container">
+      <div class="main-data">
+        <div>
+          <img src="assets/images/image 1.png" class="logo-img" alt="" />
+        </div>
+        <div class="main-tab-box d-none d-sm-flex">
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main1.png" alt="" />
+                <div class="main-border">
+                  <h3>活動概覽</h3>
+                </div>
+              </a>
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main2.png" alt="" />
+                <div class="main-border">
+                  <h3>EdMall</h3>
+                </div>
+              </a>
+              <a href="#" class="main-left-data">
+                <img src="assets/images/main3.png" alt="" />
+                <div class="main-border">
+                  <h3 class="text-orange">個人中心</h3>
+                </div>
+              </a>
+        </div>
+          <div class="menubar d-sm-none ">
+              <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class=" modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                      <div class="header-data">
+                        <h3>教城主頁</h3>
+                    </div>
+                  <div class="mobile-logo">
+                    <img src="assets/images/image 2.png" alt="">
+                    <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="language">
+                    <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                    <h2>會員登入</h2>
+                  </div>
+                </div>
+                <div class="modal-body">
+                   <ul class="modal-list">
+                    <li><h3>活動概覽</h3>
+                      <a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li class="no-space"><h3>Ed Mall</h3>
+                    <a href="#">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><h3>個人中心</h3>
+                     <a href="#"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+      <section class="main_data">
+        <div class="container-fluid p-0">
+          <div class="main-data_flex">
+            <div class="left-sidebar mt-4">
+                <ul class="left-sidelist">
+                    <li><a href="broadcast_message.html"  >信息中心</a></li>
+                    <li><a href="index.html" class=" no-space" >Go eLearning</a></li>
+                    <li><a href="quotation.html" >報價紀錄</a></li>
+                    <li><a href="event_registration.html" class="active">活動報名紀錄</a></li>
+                    <li><a href="profile_edit.html">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="right-sidebar quotation-main">
+                <div class="rightside-title quotation-title">
+                  <h2 class="title_space ">活動報名紀錄</h2> 
+                  <form>
+                    <input type="text" class="form-control" placeholder="輸入活動名稱 /關鍵字">
+                   <span> <img src="assets/images/Vector.png" alt=""></span>
+                  </form>
+                </div>
+                <ul class="nav nav-pills quotation-tab" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active orange-tab" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">即將舉行的活動</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link gray-tab" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">已完成的活動</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="quontation-table">
+                      <div class="que-head d-none d-md-flex puprple-bg">
+                        <div><h4>登記日期</h4></div>
+                        <div class="exception-tab"><h4>活動報名名稱</h4></div>
+                        <div><h4>活動日期</h4></div>
+                        <div><h4>地點</h4></div>
+                        <div><h4>費用</h4></div>
+                        <div><h4>活動詳情 </h4></div>
+                        <div><h4>活動詳情</h4></div>
+                      </div>
+                      <div class="que-body">
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/04/15</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>【研討會】教師持續專業發展系列︰推廣閱讀文化</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/05/09</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>沙田沙角邨香港教育城</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>免費</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/03/12</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>「e世代網絡喜航」家長講座（五）︰電子學習護眼心法 認清網絡陷阱</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/06/28</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>網上研討會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>免費</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/02/08</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>學生獎勵計劃2023/24</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/10/09</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>網上研討會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>$100.00</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/01/28</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>第一屆智醒消費學堂</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/10/09</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>網上研討會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>$100.00</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/01/28</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>第一屆智醒消費學堂</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/07/12</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>消費者委員會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>免費</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/02/08</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>學生獎勵計劃2023/24</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/10/09</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>網上研討會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>$100.00</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                        <div class="que-tr que-gray">
+                          <div class="que-gray-flex"><h3>登記日期</h3><h4>2024/01/28</h4></div>
+                          <div class="que-gray-flex exception-tab"><h3>活動報名名稱</h3><h4>第一屆智醒消費學堂</h4></div>
+                          <div class="que-gray-flex"><h3>活動日期</h3><h4>2024/07/12</h4></div>
+                          <div class="que-gray-flex"><h3>地點</h3><h4>消費者委員會</h4></div>
+                          <div class="que-gray-flex"><h3>費用</h3><h4>免費</h4></div>
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button class="register-btn pink-btn">活動詳情</button></h4></div>                    
+                          <div class="que-gray-flex"><h3>活動詳情</h3><h4><button  class="register-btn red-btn">活動詳情</button></h4></div>       
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-pagination">
+                     <ul>
+                         <li class="active">1</li>
+                         <li>2</li>
+                         <li>3</li>
+                         <li>4</li>
+                         <li>5</li>
+                         <li>...</li>
+                     </ul>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                      
+                  </div>
+                </div>
+              
+              </div>
+          </div>
+        </div>
+      </section>
+
+<footer>
+    <div class="container">
+        <div class="footer-data">
+            <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+            <ul class="footer-right">
+                <li>私隱政策聲明</li>
+                <li>版權及知識產權政策</li>
+                <li>免責聲明</li>
+                <li>促進種族平等政策</li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</html>
