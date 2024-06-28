@@ -115,7 +115,11 @@ img {
   @media (max-width: #{$sm}) {
     width: 100px;
     height: 58px;
+    padding: 7px 28px;
   }
+}
+@mixin no-space{
+  letter-spacing: 0;
 }
 //   ---header---
 
@@ -365,7 +369,7 @@ header {
             color: #444444;
             margin-bottom: 32px;
             &.no-space {
-              letter-spacing: 0;
+              @include no-space();
             }
             h3 {
               font-size: 22px;
@@ -447,7 +451,7 @@ header {
         margin-right: 5px;
       }
       .no-space {
-        letter-spacing: 0;
+     @include no-space();
       }
       a {
         color: $white-color !important;
@@ -1247,6 +1251,7 @@ footer {
       }
     }
   }
+  
   .detail-data {
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -2012,3 +2017,259 @@ footer {
   height: 200px;
 }
 // ---dashboard table end
+
+
+// --registration record--start
+.record-qr{
+  @media (max-width: #{$sm}) {
+  padding: 0 20px;
+  }
+  .detail-title {
+    h2 {
+      @include latter-space();
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      color: #444444;
+      position: relative;
+      margin-bottom: 21px;
+
+      @media (max-width: #{$xll}) {
+        padding-left: 4px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @media (max-width: #{$med}) {
+        padding-left: 13px;
+        font-size: 16px;
+      }
+      @media (max-width: #{$sm}) {
+        margin-bottom: 16px;
+       }
+      @media (max-width: #{$xss}) {
+        padding-left: 13px;
+        font-size: 14px;
+      }
+      &:after {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        background-color: $green-color;
+        content: "";
+        width: 12px;
+        height: 25px;
+        @media (max-width: #{$xll}) {
+          top: 2px;
+        }
+      }
+    }
+  }
+  .detail-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    @media (max-width: #{$sm}) {
+      margin-bottom: 38px;
+     }
+    span,
+    i {
+      font-size: 18px;
+      line-height: 24px;
+      @include latter-space();
+      color: #6c6c6c;
+      font-weight: 700;
+      @media (max-width: #{$xss}) {
+        font-size: 16px;
+      }
+    }
+  }
+  .online-title{
+    width: 776px;
+    margin: 0 auto;
+    @media (max-width: #{$xl}) {
+      width: 720px;
+    }
+ @media (max-width: #{$med}) {
+      width: 580px;
+    }
+ @media (max-width: #{$sm}) {
+      width: 100%;
+    }
+    h3{
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 19px;
+      color: 
+      #555555;
+      line-height: 22px;
+      @include latter-space();
+    }
+    p{
+      margin-bottom: 7px;
+      font-size: 16px;
+      line-height: 21px;
+      color: 
+      #008BD5;
+      font-weight: 700;
+    }
+    .mb-online{
+      margin-bottom: 33px;
+      a{
+        font-size: 16px;
+        line-height: 21px;
+        color: 
+        #008BD5;
+        margin-bottom: 33px;
+        color: 
+        #000000;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        word-wrap: break-word;
+      }
+    }
+  }
+  .record-detail{
+    padding: 35px 110px 57px 160px;
+    box-shadow: 0 0 6px 0  
+  rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
+  width: 776px;
+  &.online_record{
+    padding: 49px 120px 49px 150px;
+    @media (max-width: #{$xl}) {
+      width: 720px;
+      padding: 35px 100px 57px 130px;
+    }
+ @media (max-width: #{$med}) {
+      width: 580px;
+      padding: 35px 80px 57px 80px;
+    }
+ @media (max-width: #{$sm}) {
+      width: 100%;
+      padding: 35px 23px 57px 23px;
+    }
+  }
+   @media (max-width: #{$xl}) {
+        width: 720px;
+        padding: 35px 100px 57px 130px;
+      }
+   @media (max-width: #{$med}) {
+        width: 580px;
+        padding: 35px 80px 57px 80px;
+      }
+   @media (max-width: #{$sm}) {
+        width: 100%;
+        padding: 35px 23px 57px 23px;
+      }
+  .qr-img{
+    margin-bottom: 37px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    @media (max-width: #{$sm}) {
+      width: 269px;
+      height: 269px;
+      margin-bottom: 30px;
+    }
+  
+  }
+  }
+ 
+  }
+}
+.record-list{
+  &.mb-36{
+    margin-bottom: 36px;
+    @media (max-width: #{$sm}) {
+      margin-bottom: 59px;
+     }
+    @media (max-width: #{$xss}) {
+      margin-bottom: 39px;
+     }
+  }
+  &.mb-34{
+    margin-bottom: 34px;
+    @media (max-width: #{$sm}) {
+      margin-bottom: 59px;
+     }
+     @media (max-width: #{$xss}) {
+      margin-bottom: 39px;
+     }
+  }
+  &.mb-71{
+    margin-bottom: 71px;
+    @media (max-width: #{$sm}) {
+      margin-bottom: 59px;
+     }
+     @media (max-width: #{$xss}) {
+      margin-bottom: 39px;
+     }
+  }
+  .record-title{
+    @include latter-space();
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: 
+    #F6774E;
+    margin-bottom: 15px;
+  }
+  ul{
+    li{
+      display: flex;
+      justify-content: start;
+      gap: 20px;
+      h4,h3{
+        color: 
+        #555555;
+        font-size: 16px;
+        line-height: 22px;
+       letter-spacing: 2px;
+        font-weight: 500;
+      }
+      h3{
+        width: 170px;
+      }
+      h4{
+        width: 340px;
+      }
+    }
+  }
+}
+.record-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+  @media (max-width: #{$sm}) {
+   flex-direction: column;
+   gap: 33px;
+  }
+  .btn{
+    width: 184px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 20px;
+    &.orange-btn{
+      color: $white-color;
+      background-color: 
+      #F6774E;
+    }
+    &.blue-btn{
+    color: #008BD5;
+    border: 1px solid #008BD5;
+    }
+    @media (max-width: #{$sm}) {
+     width: 207px;
+     height: 60px;
+     }
+  }
+}
+.no-space{
+letter-spacing: 0 !important;
+}
+// --registration record end
