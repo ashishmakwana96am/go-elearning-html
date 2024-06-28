@@ -110,10 +110,8 @@ img {
     width: 80px;
   }
   @media (max-width: #{$sm}) {
-    line-height: 15px;
-    width: 120px;
-    height: 30px;
-    padding: 7px 20px;
+    width: 100px;
+    height: 58px;
   }
 }
 //   ---header---
@@ -1464,6 +1462,9 @@ footer {
       background-color: #909090;
       &.active{
         background-color: #f28d30;
+      }
+      @media (max-width: #{$sm}) {
+       padding: 13px 30px 14px 30px;
       }
     }
   }

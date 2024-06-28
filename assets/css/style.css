@@ -1485,6 +1485,11 @@ footer .footer-data .footer-right li:last-child::after {
 .quotation-tab li .nav-link.active {
   background-color: #f28d30;
 }
+@media (max-width: 575px) {
+  .quotation-tab li .nav-link {
+    padding: 13px 30px 14px 30px;
+  }
+}
 .quotation-tab .orange-tab {
   display: flex;
   width: 100%;
@@ -1785,10 +1790,8 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .quontation-table .que-body .que-tr .que-gray-flex .register-btn {
-    line-height: 15px;
-    width: 120px;
-    height: 30px;
-    padding: 7px 20px;
+    width: 100px;
+    height: 58px;
   }
 }
 .quontation-table .que-body .que-tr .que-gray-flex .red-btn {
@@ -1810,10 +1813,8 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 575px) {
   .quontation-table .que-body .que-tr .que-gray-flex .red-btn {
-    line-height: 15px;
-    width: 120px;
-    height: 30px;
-    padding: 7px 20px;
+    width: 100px;
+    height: 58px;
   }
 }
 
