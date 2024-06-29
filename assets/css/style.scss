@@ -2639,9 +2639,7 @@ body {
     z-index: 99999;
 }
 
-button {
-    margin: 10px;
-}
+
 .dropdown-toggle::after{
   display: none !important;
 }
@@ -3062,3 +3060,227 @@ p{
 }
 
 // ---quotation-progress--end
+
+
+
+// ---register-list----start
+.register-list{
+  img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 35px;
+  }
+}
+.register-list-form{
+  margin-bottom: 87px;
+  .form-list{
+    background-color: #F6774E;
+    margin: 0 160px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    .form-list-data{
+      input{
+        height: 50px;
+        &::placeholder{
+          color: #9A9A9A;
+          font-size: 16px;
+          line-height: 22px;
+          @include latter-space();
+         font-weight: 500;        
+}
+      }
+      .btn{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: 
+        #444444;
+      }
+        .btn1{
+            color: $white-color;
+            border: 2px solid $white-color;
+            border-radius: 20px;
+            padding: 10px 15px;
+            margin-right: 9px;
+            width: 100%;
+            @include latter-space();
+            @media (max-width: #{$xlll}) {
+              width: 140px;
+            }
+        }
+        .btn2{
+              background-color: #FBEE6C;
+              color: #000;
+              padding: 10px 18px 10px 24px;
+              border-radius: 20px;
+              width: 70%;
+              @include latter-space();
+              @media (max-width: #{$xlll}) {
+                width: 99px;
+              }
+      }
+      .form-list-content{
+        background-color: 
+        #FFFEEF;
+        padding: 26px 24px;
+        margin-top: 39px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.list-slider{
+  padding-left: 85px;
+  .list-slider-left{
+    position: relative;
+    .left-img{
+      width: 70%;
+      @media (max-width: #{$xll}) {
+        width: auto;
+      }
+    }
+    h2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 60px;
+      line-height: 82px;
+      letter-spacing: 8px;
+      font-weight: 100;
+      color: transparent; 
+      -webkit-text-stroke: 1px #FB4B13;
+      text-stroke: 1px 1px  #FB4B13; 
+      width: 100%;max-width: 200px;
+    }
+    .btn{
+      background-color: #FBEE6C;
+      padding: 14px 51px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+      color: 
+      #444444;
+      letter-spacing: 7px;
+      border-radius: 20px;
+    }
+  }
+  
+}
+.slider{
+  .slide-card{
+    // width: 276px;
+    position: relative;
+    margin-bottom: 27px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+   
+   .top-img{
+    width: 100%;
+   }
+    .slider-data{
+      padding: 27px 15px 47px 15px;
+    }
+    .content{
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #3A3A3A;
+      margin-bottom: 12px;
+    }
+    ul {
+      li{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+       color: #787878;
+       margin-bottom: 4px;
+       display: flex;
+       align-items: baseline;
+       gap: 10px;
+       img{
+        object-fit: contain;
+       }
+      }
+    }
+  }
+  .owl-carousel .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background: #c20e0e;
+    border-radius: 50%;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
+    background: #000;
+  }
+  
+  .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .owl-dots{
+    margin-top: 0;
+  }
+  .owl-nav{
+    position: absolute;
+    top: 0;left: 0;
+  }
+}
+.btm-slider{
+  background-color: 
+  #F0F9F3;
+  padding: 28px 75px 68px 40px;
+  margin-top: 74px;
+  .left-btm-data{
+    position: relative;
+    .empty {
+      .div1{
+        background-color: $green-color;
+        height: 20px;
+        width: 99px;
+        margin-bottom: 46px;
+      }
+      .div2{
+        position: absolute;
+        top: 33px;
+        left: -70px;
+        background-color: $primary-color;
+        height: 20px;
+        width: 131px;
+      }
+    }
+    .strock-h2 {
+      h2{
+        font-size: 60px;
+        line-height: 82px;
+        letter-spacing: 8px;
+        font-weight: 100;
+        color: transparent; 
+        -webkit-text-stroke: 1px 
+        #29B45C;
+        text-stroke: 1px 1px  
+        #29B45C; 
+        width: 100%;
+        max-width: 192px;
+        margin-bottom: 30px;
+      }
+    }
+    .btn{
+      background-color: 
+      #FBEE6C;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 5px;
+      font-size: 20px;
+      color: #444444;
+      padding: 15px 12px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 100px;
+      
+    }
+  }
+}
+
+// --register -list end--

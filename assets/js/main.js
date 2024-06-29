@@ -27,3 +27,8 @@ document.querySelectorAll('.closePopup').forEach(button => {
 
 // Optional: Close popup when clicking outside of it
 document.getElementById('popupOverlay').addEventListener('click', closePopup);
+
+
+
+// ---slider--
+
