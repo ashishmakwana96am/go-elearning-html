@@ -2299,18 +2299,17 @@ footer .footer-data .footer-right li:last-child::after {
   font-weight: 600;
   color: #444444;
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  padding-left: 18px;
 }
 @media (max-width: 1199px) {
   .record-qr .detail-title h2 {
-    padding-left: 4px;
     font-size: 24px;
     line-height: 28px;
   }
 }
 @media (max-width: 768px) {
   .record-qr .detail-title h2 {
-    padding-left: 13px;
     font-size: 16px;
   }
 }
@@ -2321,7 +2320,6 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 320px) {
   .record-qr .detail-title h2 {
-    padding-left: 13px;
     font-size: 14px;
   }
 }
@@ -2507,6 +2505,11 @@ footer .footer-data .footer-right li:last-child::after {
 .record-list ul li h3 {
   width: 170px;
 }
+@media (max-width: 575px) {
+  .record-list ul li h3.excep-h3 {
+    width: 70px;
+  }
+}
 .record-list ul li h4 {
   width: 340px;
 }
@@ -2524,12 +2527,12 @@ footer .footer-data .footer-right li:last-child::after {
   }
 }
 .record-btn .btn {
-  width: 184px;
-  height: 38px;
+  padding: 8px 42px;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   border-radius: 20px;
+  letter-spacing: 5px;
 }
 .record-btn .btn.orange-btn {
   color: #ffffff;
@@ -2539,10 +2542,16 @@ footer .footer-data .footer-right li:last-child::after {
   color: #008BD5;
   border: 1px solid #008BD5;
 }
+@media (max-width: 768px) {
+  .record-btn .btn {
+    padding: 8px 28px;
+  }
+}
 @media (max-width: 575px) {
   .record-btn .btn {
     width: 207px;
     height: 60px;
+    padding: 0;
   }
 }
 
@@ -2607,7 +2616,7 @@ footer .footer-data .footer-right li:last-child::after {
 .quotation-progress .quotation-status .status-btn {
   padding: 12px 38px 11px 49px;
   background-color: #39C2AD;
-  border-radius: 50px;
+  border-radius: 20px;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
@@ -2770,6 +2779,11 @@ footer .footer-data .footer-right li:last-child::after {
   margin: 0;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -2863,14 +2877,14 @@ button:focus:not(:focus-visible) {
     width: 448px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .title-popup-1st .popup-data {
     width: 373px;
   }
 }
 @media (max-width: 375px) {
   .title-popup-1st .popup-data {
-    width: 337px;
+    width: 330px;
     height: 578px;
   }
 }
@@ -2908,9 +2922,9 @@ button:focus:not(:focus-visible) {
 }
 .title-popup-1st .popup-data h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 27px;
-  color: #444444;
+  color: #787878;
   letter-spacing: 5px;
 }
 @media (max-width: 320px) {
@@ -2936,7 +2950,7 @@ button:focus:not(:focus-visible) {
 .title-popup-1st .popup-data span {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 600;
   color: #787878;
 }
 .title-popup-1st .popup-data form input {
@@ -3004,14 +3018,14 @@ button:focus:not(:focus-visible) {
     width: 448px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .title-popup-1st .popup-data2 {
     width: 373px;
   }
 }
 @media (max-width: 375px) {
   .title-popup-1st .popup-data2 {
-    width: 337px;
+    width: 330px;
     height: 578px;
   }
 }
@@ -3110,14 +3124,14 @@ button:focus:not(:focus-visible) {
     width: 448px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .title-popup-1st .popup-data3 {
     width: 373px;
   }
 }
 @media (max-width: 375px) {
   .title-popup-1st .popup-data3 {
-    width: 337px;
+    width: 330px;
     height: 578px;
   }
 }
@@ -3189,14 +3203,14 @@ button:focus:not(:focus-visible) {
     width: 448px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .title-popup-1st .popup-data4 {
     width: 373px;
   }
 }
 @media (max-width: 375px) {
   .title-popup-1st .popup-data4 {
-    width: 337px;
+    width: 330px;
     height: 578px;
   }
 }
@@ -3229,23 +3243,24 @@ button:focus:not(:focus-visible) {
 @media (max-width: 575px) {
   .title-popup-1st .popup-data4.fourth-pop {
     width: 448px;
-    height: 603px;
+    height: 610px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .title-popup-1st .popup-data4.fourth-pop {
     width: 373px;
+    padding: 71px 30px 80px 30px;
   }
 }
 @media (max-width: 375px) {
   .title-popup-1st .popup-data4.fourth-pop {
     width: 337px;
+    height: 580px;
   }
 }
 @media (max-width: 320px) {
   .title-popup-1st .popup-data4.fourth-pop {
     width: 293px;
-    height: 712px;
   }
 }
 @media (max-width: 320px) {
@@ -3273,6 +3288,11 @@ button:focus:not(:focus-visible) {
 @media (max-width: 575px) {
   .title-popup-1st .popup-data4 h3 {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: xs) {
+  .title-popup-1st .popup-data4 h3 {
+    margin-bottom: 6px;
   }
 }
 .title-popup-1st .popup-data4 h4 {
@@ -3309,7 +3329,20 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 768px) {
   .title-popup-1st .popup-data4 .list::after {
-    display: none;
+    left: 147px;
+    top: 15px;
+    height: 210px;
+  }
+}
+@media (max-width: 575px) {
+  .title-popup-1st .popup-data4 .list::after {
+    left: 13px;
+    height: 287px;
+  }
+}
+@media (max-width: 320px) {
+  .title-popup-1st .popup-data4 .list::after {
+    height: 258px;
   }
 }
 .title-popup-1st .popup-data4 .list .popup-list {
@@ -3325,6 +3358,12 @@ button:focus:not(:focus-visible) {
 @media (max-width: 575px) {
   .title-popup-1st .popup-data4 .list .popup-list {
     flex-direction: column;
+    padding-left: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .title-popup-1st .popup-data4 .list .popup-list {
+    padding-left: 40px;
   }
 }
 .title-popup-1st .popup-data4 .list .popup-list li {
@@ -3342,13 +3381,24 @@ button:focus:not(:focus-visible) {
     width: 100%;
   }
 }
+@media (max-width: 320px) {
+  .title-popup-1st .popup-data4 .list .popup-list li {
+    margin-bottom: 8px;
+  }
+}
 .title-popup-1st .popup-data4 .list .popup-list li:nth-child(2) {
   width: 100px;
   text-align: center;
 }
 @media (max-width: 768px) {
   .title-popup-1st .popup-data4 .list .popup-list li:nth-child(2) {
-    display: none;
+    width: 140px;
+  }
+}
+@media (max-width: 575px) {
+  .title-popup-1st .popup-data4 .list .popup-list li:nth-child(2) {
+    position: absolute;
+    left: -56px;
   }
 }
 .title-popup-1st .popup-data4 .list .popup-list li:first-child {

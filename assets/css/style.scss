@@ -2167,22 +2167,23 @@ footer {
       font-weight: 600;
       color: #444444;
       position: relative;
-      margin-bottom: 21px;
+      margin-bottom: 20px;
+      padding-left: 18px;
 
       @media (max-width: #{$xll}) {
-        padding-left: 4px;
+        // padding-left: 4px;
         font-size: 24px;
         line-height: 28px;
       }
       @media (max-width: #{$med}) {
-        padding-left: 13px;
+        // padding-left: 13px;
         font-size: 16px;
       }
       @media (max-width: #{$sm}) {
         margin-bottom: 16px;
        }
       @media (max-width: #{$xss}) {
-        padding-left: 13px;
+        // padding-left: 13px;
         font-size: 14px;
       }
       &:after {
@@ -2348,6 +2349,11 @@ footer {
       }
       h3{
         width: 170px;
+        &.excep-h3{
+          @media (max-width: #{$sm}) {
+            width: 70px;
+           }
+        }
       }
       h4{
         width: 340px;
@@ -2365,12 +2371,14 @@ footer {
    gap: 33px;
   }
   .btn{
-    width: 184px;
-    height: 38px;
+    // width: 184px;
+    // height: 38px;
+    padding: 8px 42px;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
     border-radius: 20px;
+    @include latter-space();
     &.orange-btn{
       color: $white-color;
       background-color: 
@@ -2380,9 +2388,13 @@ footer {
     color: #008BD5;
     border: 1px solid #008BD5;
     }
+    @media (max-width: #{$med}) {
+     padding: 8px 28px;
+     }
     @media (max-width: #{$sm}) {
      width: 207px;
      height: 60px;
+    padding: 0;
      }
   }
 }
@@ -2447,7 +2459,7 @@ margin: 0;
       // width: 306px;
       // height: 48px;
       background-color: #39C2AD;
-      border-radius: 50px;
+      border-radius: 20px;
       color: $white-color;
       font-size: 18px;
       line-height: 24px;
@@ -2607,7 +2619,10 @@ margin-bottom: 51px;
     }
   }
 }
-
+.dropdown-item.active, .dropdown-item:active{
+  background-color: transparent !important;
+  color: #000 !important;
+ }
 
 // --popup---start
 $overlay-bg-color: 
@@ -2700,11 +2715,11 @@ button:focus:not(:focus-visible){
      @media (max-width: #{$sm}) {
       width: 448px;
      }
-     @media (max-width: 425px) {
+     @media (max-width: 430px) {
        width: 373px;
       }
       @media (max-width: #{$xs}) {
-       width: 337px;
+       width: 330px;
        height: 578px;
       }
       @media (max-width: #{$xss}) {
@@ -2744,10 +2759,12 @@ button:focus:not(:focus-visible){
   }
  h4{
     font-size: 20px;
-    font-weight: 600;
+    // font-weight: 600;
+    font-weight: 400;
     line-height: 27px;
-    color: 
-    #444444;
+    // color: 
+    // #444444;
+    color: #787878;
     @include latter-space();
     @media (max-width: #{$xss}) {
      font-size: 18px;
@@ -2772,9 +2789,10 @@ button:focus:not(:focus-visible){
     
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 600;
     color: 
-    #787878;
+    
+#787878;
   }
   form{
 
@@ -2933,17 +2951,18 @@ p{
      }
      @media (max-width: #{$sm}) {
       width: 448px;
-      height: 603px;
+      height: 610px;
      }
-     @media (max-width: 425px) {
+     @media (max-width: 430px) {
        width: 373px;
+       padding: 71px 30px 80px 30px;
       }
       @media (max-width: #{$xs}) {
        width: 337px;
+       height: 580px;
       }
       @media (max-width: #{$xss}) {
        width: 293px;
-       height: 712px;
       }
   }
   padding: 71px 57px 80px 57px;
@@ -2963,6 +2982,9 @@ p{
     margin-bottom: 37px;
     @media (max-width: #{$sm}) {
      margin-bottom: 20px;
+     }
+      @media (max-width: #{xs}) {
+     margin-bottom: 6px;
      }
   }
   h4{
@@ -2993,7 +3015,16 @@ p{
         left: 171px;
         }
         @media (max-width: #{$med}) {
-          display: none;
+          left: 147px;
+          top: 15px;
+          height: 210px;
+           }
+        @media (max-width: #{$sm}) {
+         left: 13px;
+         height: 287px;
+           }
+        @media (max-width: #{$xss}) {
+         height: 258px;
            }
     }
     .popup-list{
@@ -3005,6 +3036,10 @@ p{
          }
       @media (max-width: #{$sm}) {
         flex-direction: column;
+        padding-left: 60px;
+         }
+      @media (max-width: #{$xs}) {
+        padding-left: 40px;
          }
       // gap: 20px;
       li{
@@ -3020,13 +3055,23 @@ p{
           margin-bottom: 20px;
           width: 100%;
          }
+        @media (max-width: #{$xs}) {
+        // margin-bottom: 14px;
+         }
+        @media (max-width: #{$xss}) {
+        margin-bottom: 8px;
+         }
+        
         &:nth-child(2){
           width: 100px;
           text-align: center;
           @media (max-width: #{$med}) {
-           display: none;
+           width: 140px;
             }
-
+          @media (max-width: #{$sm}) {
+           position: absolute;
+           left: -56px;
+            }
         }
         &:first-child{
           width: 144px;
