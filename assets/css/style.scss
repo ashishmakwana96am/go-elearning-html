@@ -3432,8 +3432,11 @@ p{
   .list-slider-left{
     position: relative;
     .left-img{
-      width: 70%;
-      margin-top: 40px;
+      width: 65%;
+      @media (max-width: #{$xlll}) {
+        width: 70%;
+        margin-top: 40px;
+      }
       @media (max-width: #{$xll}) {
         width: auto;
       }
@@ -3452,7 +3455,7 @@ p{
     h2 {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 25px;
       font-size: 60px;
       line-height: 82px;
       letter-spacing: 8px;
@@ -3463,6 +3466,9 @@ p{
       width: 100%;max-width: 200px;
 
 
+      @media (max-width: #{$xlll}) {
+        right: 0;
+          }
       @media (max-width: #{$xl}) {
         right: -60px;
           }
@@ -3489,9 +3495,12 @@ p{
     }
     .btn{
       position: absolute;
-      right: 41px;
+      right: 113px;
       bottom: -50px;
      @include btn-yel();
+     @media (max-width: #{$xlll}) {
+    right: 41px;
+    }
      @media (max-width: #{$xl}) {
     right: 0;
     }

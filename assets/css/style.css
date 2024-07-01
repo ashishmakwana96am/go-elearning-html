@@ -3770,8 +3770,13 @@ button:focus:not(:focus-visible) {
   position: relative;
 }
 .list-slider .list-slider-left .left-img {
-  width: 70%;
-  margin-top: 40px;
+  width: 65%;
+}
+@media (max-width: 1440px) {
+  .list-slider .list-slider-left .left-img {
+    width: 70%;
+    margin-top: 40px;
+  }
 }
 @media (max-width: 1199px) {
   .list-slider .list-slider-left .left-img {
@@ -3798,7 +3803,7 @@ button:focus:not(:focus-visible) {
 .list-slider .list-slider-left h2 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 25px;
   font-size: 60px;
   line-height: 82px;
   letter-spacing: 8px;
@@ -3808,6 +3813,11 @@ button:focus:not(:focus-visible) {
   text-stroke: 1px 1px #FB4B13;
   width: 100%;
   max-width: 200px;
+}
+@media (max-width: 1440px) {
+  .list-slider .list-slider-left h2 {
+    right: 0;
+  }
 }
 @media (max-width: 1024px) {
   .list-slider .list-slider-left h2 {
@@ -3841,7 +3851,7 @@ button:focus:not(:focus-visible) {
 }
 .list-slider .list-slider-left .btn {
   position: absolute;
-  right: 41px;
+  right: 113px;
   bottom: -50px;
   background-color: #FBEE6C;
   padding: 14px 51px;
@@ -3851,6 +3861,11 @@ button:focus:not(:focus-visible) {
   color: #444444;
   letter-spacing: 7px;
   border-radius: 20px;
+}
+@media (max-width: 1440px) {
+  .list-slider .list-slider-left .btn {
+    right: 41px;
+  }
 }
 @media (max-width: 1024px) {
   .list-slider .list-slider-left .btn {
