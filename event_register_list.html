@@ -110,18 +110,20 @@
 
       <section class="register-list">
         <div>
-            <img src="assets/images/Vector (7).png" alt="">
+            <img src="assets/images/Vector (7).png" alt="" class="d-none d-sm-block">
+            <img src="assets/images/Vector (8).png" alt="" class="d-sm-none">
+            <h1>活動概覽</h1>
         </div>
       </section>
       <section class="register-list-form">
         <div class="container">
-            <div class="form-list">
+            <div class="form-list position-relative">
                 <form>
-                    <div class="row form-list-data">
+                    <div class="row form-list-data ">
                         <div class="col-12 col-sm-6 col-lg-8 col-xl-9"><div> <input type="text" class="form-control" placeholder="輸入活動關鏈字"></div></div>
                          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-none d-sm-block"> <div class="d-flex"><div class="btn btn1 show-advanced">進階搜尋</div><button class="btn btn2">搜尋</button></div></div>
                          <div class="col-12 custm-col12 hidden">
-                            <div class="form-list-content ">
+                            <div class="form-list-content">
                                 <div class="form-data">
                                     <h3>活動日期</h3>
                                     <ul>
@@ -283,16 +285,12 @@
                                   </ul>
                               </div>
                             </div>
-                            <div class="btm-errow d-none d-sm-block show-advanced">
+                            <div class="btm-errow show-advanced">
                               <img src="assets/images/ChevronDoubleUp.png" alt="">
                           </div>
                          </div>
                          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-sm-none mobile-show-btn"> <div class="d-flex justify-content-center"><div class="d-flex"><div class="btn btn1 show-advanced">進階搜尋</div><button class="btn btn2">搜尋</button></div>
                         </div>
-                        <div class="btm-errow show-advanced custm-col12 hidden">
-                         <img src="assets/images/ChevronDoubleUp.png" alt="">
-                     </div>
-                         
                     </div>
                 </form>
             </div>
@@ -467,7 +465,10 @@
             },
             1440:{
                 items:2.5
-            }
+            },
+            1499:{
+                items:3.5
+            },
         },
         navText: [
   "<span aria-label='Previous'><i class='fa-solid fa-arrow-left text-white fs-4'></i></span>",
@@ -492,7 +493,10 @@
             },
             1440:{
                 items:3
-            }
+            },
+            1499:{
+                items:4
+            },
         },
       navText: [
   "<span aria-label='Previous'><i class='fa-solid fa-arrow-left text-white fs-4'></i></span>",
@@ -502,11 +506,23 @@
 });
     </script>
 <script>
-    $(document).ready(function() {
-            $('.show-advanced').click(function() {
-                $('.custm-col12').toggleClass('hidden');
-            });
-        });
+ $(document).ready(function() {
+    $('.show-advanced').click(function() {
+        var target = $(this).closest('.row').find('.custm-col12');
+        var formList = $(this).closest('.form-list');
+        
+        target.toggleClass('hidden');
+        formList.toggleClass('expanded');
+        
+        if (target.hasClass('hidden')) {
+            target.css('opacity', '0').slideUp();
+        } else {
+            target.css('opacity', '1').slideDown();
+        }
+    });
+});
+
+
 </script>
 </body>
 </html>

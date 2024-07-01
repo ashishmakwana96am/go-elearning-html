@@ -3140,10 +3140,34 @@ p{
 }
 
 .register-list{
+  position: relative;
   img{
     width: 100%;
     object-fit: cover;
     margin-bottom: 35px;
+    @media (max-width: #{$sm}) {
+      margin-bottom: 10px;
+    }
+  }
+  h1{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 68px;
+    color: $white-color;
+    letter-spacing: 3px;
+    @media (max-width: #{$med}) {
+      top: 22%;
+    left: 16%;
+    font-size: 37px;
+    }
+    @media (max-width: #{$sm}) {
+        top: 14%;
+        left: 16%;
+        font-size: 26px;
+    }
   }
 }
 .register-list-form{
@@ -3156,6 +3180,7 @@ p{
     margin: 0 100px 0 160px;
     padding: 14px 20px;
     border-radius: 10px;
+    transition: border-radius 0.5s ease;
     @media (max-width: #{$xlll}) {
       margin:0 19px 0 66px;
        }
@@ -3170,6 +3195,10 @@ p{
       input{
         padding-top: 11px;
         padding-bottom: 12px !important; 
+        @media (max-width: #{$sm}) {
+          padding-top: 9px;
+          padding-bottom: 9px !important;
+        }
         &:focus{
           outline: none;
           box-shadow: none;
@@ -3703,7 +3732,7 @@ $dot-bg-color: transparent;
  }
 }
 .mobile-show-btn{
-  margin-top: 19px;
+  margin-top: 9px;
 }
 .owl-theme .owl-dots .owl-dot span{
   height: 18px;
@@ -3711,7 +3740,22 @@ $dot-bg-color: transparent;
 .hidden {
   display: none;
 }
+.custm-col12{
+  position: absolute;
+  z-index: 99999;
+  top: 98%;
+  left: 0;
+  background: 
+  #F6774E;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 30px;
+}
 .form-data {
   margin-bottom: 20px;
+}
+.form-list.expanded {
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
 }
 // --register -list end--
