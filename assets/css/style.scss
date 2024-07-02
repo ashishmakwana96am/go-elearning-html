@@ -58,6 +58,19 @@ img {
     border: none;
   }
 }
+@mixin btn-grp{
+  padding: 17px 33px 16px 27px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    color: 
+    #444444;
+    &:focus{
+      outline: none;
+    }
+}
 @mixin btn-yel{
   background-color: #FBEE6C;
   padding: 14px 51px;
@@ -3892,6 +3905,9 @@ $dot-bg-color: transparent;
      @media (max-width: #{$xlll}) {
        margin:0 53px 0 81px;
         }
+     @media (max-width: #{$sm}) {
+       margin:0 ;
+        }
    }
 }
 .all-event {
@@ -4232,11 +4248,11 @@ letter-spacing: 3px    }
       &.active{
         color: 
         #F6774E;
-        span{
-          @media (max-width: #{$sm}) {
-            max-width: 130px;
-            }
-        }
+      }
+      .span-div{
+        @media (max-width: #{$sm}) {
+          max-width: 130px;
+          }
       }
       h4{
         padding-left: 4px;
@@ -4288,6 +4304,11 @@ letter-spacing: 3px    }
       display: flex;
       align-items: center;
       margin-bottom: 17px;
+      &.mb0{
+        @media (max-width: #{$sm}) {
+         margin-bottom: 0;
+           }
+      }
       @media (max-width: #{$sm}) {
        flex-direction: column;
        align-items: start;
@@ -4500,6 +4521,51 @@ color: #787878;
         }
       }
     }
+  }
+}
+.online-form-list{
+  margin-bottom: 67px;
+  li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    h3{
+      color: #F6774E;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 200px;
+    }
+    h4{
+      color: 
+      #555555;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+    }
+  }
+}
+.btn-grp{
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+  @media (max-width: #{$sm}) {
+    flex-direction: column;
+  }
+  .btn-grp1{
+    @include btn-grp();
+    border: 1px solid #000000 !important;
+  }
+  .btn-grp2{
+    @include btn-grp();
+    background-color: 
+    #FBEE6C !important;
+
   }
 }
 // ---event-detail-registration--end
