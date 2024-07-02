@@ -41,7 +41,6 @@
           </div>
         </div>
       </header>
-  
       <!-- --main-- -->
       <section class="main">
         <div class="container">
@@ -52,7 +51,7 @@
             <div class="main-tab-box d-none d-sm-flex">
                   <a href="event_register_list.html" class="main-left-data">
                     <img src="assets/images/main1.png" alt="" />
-                    <div class="main-border">
+                    <div class="main-border fix">
                       <h3>活動概覽</h3>
                     </div>
                   </a>
@@ -111,29 +110,34 @@
                 <h2 class="ps-4">家長講座：溫習策略</h2>
          </div>
          <div class="detail-back">
-            <a href="event_registration.html">
+            <a href="dashboard_event_detail.html">
               <i class="fa-solid fa-chevron-left"></i>
               <span>返回</span>
             </a>
       </div>
         </div>
       </section>
+
       <section class="">
         <div class="container">
           <div class="d-flex justify-content-center align-content-center">
             <div class="online-register-title">
                 <h3 class="text-center">網上報名</h3>
-             <ul>
-                <li><a href="#" class="active"><h4 class="active">1</h4><span class="span-div"> 填寫個人資料&訂閱及細則條款</span></a></li>
-                <li><a href="#" ><img src="assets/images/Vector (9).png" alt=""><h4 >2</h4> <span>遞交</span></a></li>
-             </ul>
+                <ul class="wizard-steps">
+                    <li><a href="#" class="step active" data-step="1"><h4 class="h4 active">1</h4><span class="span-div">填寫個人資料&訂閱及細則條款</span></a></li>
+                    <li><a href="#" class="step" data-step="2"><img src="assets/images/Vector (9).png" alt=""><h4 class="h4">2</h4> <span>遞交</span></a></li>
+                </ul>
+                
             </div>
           </div>
             <div class="d-flex justify-content-center align-content-center ">
-                <div class="online-register">
+                <form class="online-register" id="wizard-form">
                  <h2>報名內容 (全部必須填寫）</h2>
-                 <form class="reg-form">
-                    <div class="form-div">
+
+                 <!-- --setp -1-- -->
+                <div class="wizard-step step-1 active ">
+                 <div class="reg-form">
+                    <div class="form-div form-group">
                         <label>稱謂</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>稱謂</option>
@@ -142,27 +146,27 @@
                             <option value="稱謂">稱謂</option>
                           </select>
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group">
                         <label>中文姓氏</label>
                         <input type="text" class="form-control" placeholder="姓">
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group">
                         <label>中文姓名</label>
                         <input type="text" class="form-control" placeholder="名">
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group">
                         <label>英文姓氏</label>
                         <input type="text" class="form-control" placeholder="Last Name">
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group">
                         <label>英文姓名</label>
                         <input type="text" class="form-control" placeholder="First Name">
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group">
                         <label>電郵</label>
                         <input type="text" class="form-control" placeholder="請輸入電郵">
                     </div>
-                    <div class="form-div mb0">
+                    <div class="form-div mb0 form-group">
                         <label>電話</label>
                         <select class="form-select " aria-label="Default select example ">
                             <option selected>區碼</option>
@@ -171,85 +175,140 @@
                             <option value="區碼">區碼</option>
                           </select>
                     </div>
-                    <div class="form-div">
+                    <div class="form-div form-group" >
                         <label></label>
                         <input type="text" class="form-control" placeholder="請輸入電話">
                     </div>
-                 </form>
+                </div>
                  <div class="city-info">
                     <h2>訂閱教城資訊</h2>
                     <h3>請選擇您希望接收的電子報及活動資訊：</h3>
-                    <form class="subscrib-form">
+                    <div class="subscrib-form">
                        <div class="d-flex">
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                            <h3 >教城電子報</h3>
+                            <label >教城電子報</label>
                         </div>
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                            <h3 >教城電子報</h3>
+                            <label >教城電子報</label>
                         </div>
                        </div>
                        <div class="d-flex">
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                            <h3 >教城電子報</h3>
+                            <label >教城電子報</label>
                         </div>
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                            <h3 >教城電子報</h3>
+                            <label >教城電子報</label>
                         </div>
                        </div>
-                    </form>
+                    </div>
                     <div class="single-line">
                         <div class="sub-data">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                         <h3>本人願意接收電子報及有關教城及其合辦機構及支持機構的教育最新動向、優惠、活動、服務及產品的資訊。</h3>
+                         <label class="check-lab">本人願意接收電子報及有關教城及其合辦機構及支持機構的教育最新動向、優惠、活動、服務及產品的資訊。</label>
                         </div>
                         <h2>使用條款及條件</h2>
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                         <h3>我已閱讀並同意香港教育城的私隱政策和服務條款</h3>
+                         <label class="check-lab">我已閱讀並同意香港教育城的私隱政策和服務條款</label>
                         </div>
                         <h2>收集個人資料聲明</h2>
-                        <ul class="sub-list">
+                        <ul class="sub-list ">
                             <li>閣下的個人資料將用於是次活動/計劃報名、聯絡、意見調查、賽果公佈及安排活動/計劃一切事宜之用。</li>
                             <li>為上述目的，閣下的姓名及所屬學校/機構名稱或會在教城的網站及/或透過其他網站及/或媒體披露。教城亦可能提供或披露閣下的資料予教城的合辦機構、支持機構或傳媒。</li>
                             <li>閣下必須在註明(*)的欄目提供所需的個人資料。如閣下未能提供，教城未必可以接納閣下報名參與是次活動。而提供的個人資料純屬自願，該等資料有助教城統計及檢視服務質素。</li>
                             <li>教城已制定收集和使用個人資料的政策，閣下有權查閱及改正教城所持關於閣下的個人資料，詳情請瀏覽http://www.hkedcity.net/dataprivacy，或向本公司職員查詢。</li>
                         </ul>
-                        <div class="sub-data">
+                        <div class="sub-data form-div">
                             <label class="subscrib custom-checkbox">
                                 <input type="checkbox" class="select-all" name="select-all" />
                                 <span class="checkmark"></span>
                             </label>
-                         <h3>我已閱讀並同意以上的收集個人資料聲明</h3>
+                         <label class="check-lab">我已閱讀並同意以上的收集個人資料聲明</label>
                         </div>
                         <div class="d-flex justify-content-center align-content-center">
-                            <a href="#" class="btn sub-btn">繼續</a>
+                            <button type="button" class="btn sub-btn btn-next">繼續</button>
                         </div>
                     </div>
-
                  </div>
                 </div>
+
+                <!-- ---step-2 -->
+                <div class="wizard-step step-2">
+                        <h2>報名內容 (全部必須填寫）</h2>
+                      <ul class="online-form-list">
+                       <li><h3>中文姓名</h3><h4>朱俊杰先生</h4></li>
+                       <li><h3>英文姓名</h3><h4>Mr Chu Chun Kit</h4></li>
+                       <li><h3>電郵</h3><h4>kit24@gmail.com</h4></li>
+                       <li><h3>電話</h3><h4>852 - 90016641</h4></li>
+                      </ul>
+                      <div class="btn-grp">
+                          <button type="button" class="btn-grp1 btn btn-prev">返回修改</button>
+                          <button type="submit" class="btn-grp2 btn  btn-next">確認遞交</button>
+                      </div>
+                </div>
+                <!-- --step -3 -->
+                <div class="wizard-step step-3">
+                    <div  class="record-detail">
+                      <div class="qr-img">
+                     <img src="assets/images/qr.png" alt="">
+                   </div>
+                   <div class="record-list mb-36">
+                     <h3 class="record-title">報名人資料</h3>
+                     <ul>
+                       <li><h3>中文姓名</h3><h4>朱俊杰先生</h4>  </li>
+                       <li><h3>英文姓名</h3><h4 class="no-space">Mr Chu Chun Kit</h4>  </li>
+                       <li><h3>電郵</h3><h4 class="no-space">kit24@gmail.com</h4>  </li>
+                       <li><h3>電話</h3><h4 class="no-space">852 - 90016641</h4>  </li>
+                     </ul>
+                   </div>
+                   <div class="record-list mb-34">
+                     <h3 class="record-title">活動資料</h3>
+                     <ul>
+                       <li><h3 class="excep-h3">名稱</h3><h4 class="no-space">家長講座：溫習策略</h4>  </li>
+                       <li><h3 class="excep-h3">日期</h3><h4 class="no-space">2024年4月27日（星期六）</h4>  </li>
+                       <li><h3 class="excep-h3">時間</h3><h4 class="no-space">10:00 - 13:00</h4>  </li>
+                       <li><h3 class="excep-h3">地址</h3><h4 class="no-space">沙田沙角邨香港教育城2樓201-202室</h4>  </li>
+                       <li><h3 class="excep-h3">費用</h3><h4 class="no-space">免費</h4>  </li>
+                     </ul>
+                   </div>
+                   <div class="record-list mb-71">
+                     <h3 class="record-title">聯絡資料</h3>
+                     <ul>
+                       <li><h3>聯絡人</h3><h4>Manson Li</h4>  </li>
+                       <li><h3>聯絡人電話</h3><h4 class="no-space">26241073</h4>  </li>
+                       <li><h3>聯絡人電郵</h3><h4 class="no-space">mansonli@hkecl.net</h4>  </li>
+                     </ul>
+                   </div>
+                 </div>
+                 <div class="record-btn">
+              <button class="btn orange-btn">下載QRCode</button>
+              <button class="btn blue-btn">新增至日曆</button>
+              <button class="btn green-btn">查看紀錄</button>
+                 </div>
+            </div>
+                </form>
             </div>
         </div>
       </section>
@@ -271,5 +330,34 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+   $(document).ready(function() {
+    var currentStep = 1;
+
+    function showStep(step) {
+        $('.wizard-steps .step').removeClass('active');
+        $('.wizard-steps .h4').removeClass('active');
+        
+        $('.wizard-steps .step[data-step="' + step + '"]').addClass('active');
+        $('.wizard-steps .step[data-step="' + step + '"] .h4').addClass('active');
+        
+        $('.wizard-step').removeClass('active');
+        $('.step-' + step).addClass('active');
+    }
+
+    $('.btn-next').on('click', function() {
+        currentStep++;
+        showStep(currentStep);
+    });
+
+    $('.btn-prev').on('click', function() {
+        currentStep--;
+        showStep(currentStep);
+    });
+
+    showStep(currentStep); 
+});
+
+</script>
 </body>
 </html>

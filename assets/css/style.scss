@@ -64,7 +64,7 @@ img {
     font-weight: 700;
     line-height: 27px;
     letter-spacing: 3px;
-    border-radius: 10px;
+    border-radius: 16px;
     color: 
     #444444;
     &:focus{
@@ -2504,6 +2504,10 @@ footer {
     color: #008BD5;
     border: 1px solid #008BD5;
     }
+    &.green-btn{
+    color:     #31B762;
+    border: 1px solid #31B762;
+    }
     @media (max-width: #{$med}) {
      padding: 8px 28px;
      }
@@ -4013,7 +4017,7 @@ padding-right: 43px;
     .basic-info{
       border-radius: 20px;
       box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.25);
-      padding: 0 16px 25px 29px;
+      padding: 0 29px 25px 29px;
       text-align: center;
       margin-bottom: 19px;
       @media (max-width: #{$sm}) {
@@ -4217,6 +4221,11 @@ letter-spacing: 3px    }
 // ---dashboard event detail--end
 
 // ---event-detail-registration--start
+.wizard-steps .step .h4.active {
+  background-color: #F6774E; 
+  color: #ffffff; 
+}
+
 .parent-talk{
   margin-bottom: 57px;
 }
@@ -4283,11 +4292,14 @@ letter-spacing: 3px    }
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
   border-radius: 29px;
   padding: 54px 125px 58px 100px;
-  margin-bottom: 199px;
+  margin-bottom: 199px !important;
   @media (max-width: #{$sm}) {
    width: 100%;
    padding: 41px 11px 46px 11px;
-   margin-bottom: 92px;
+   margin-bottom: 92px !important;
+   &.mobile-register{
+    padding: 38px 18px 40px 18px;
+   }
     }
   h2{
     font-size: 18px;
@@ -4383,7 +4395,7 @@ margin-bottom: 6px;
 }
  }
   }
-  h3{
+  &:last-child , h3{
     font-size: 16px;
     line-height: 21px;
     font-weight: 500;
@@ -4393,6 +4405,11 @@ margin-bottom: 6px;
     margin-bottom: 21px;
     @media (max-width: #{$sm}) {
       margin-bottom: 28px;
+    }
+  }
+  h3{
+    @media (max-width: #{$sm}) {
+      margin-bottom: 5px;
     }
   }
   .subscrib-form{
@@ -4411,7 +4428,7 @@ margin-bottom: 6px;
       @media (max-width: #{$sm}) {
         margin-bottom: 35px;
       }
-      h3{
+      &:last-child{
         margin-bottom: 0;
       }
       
@@ -4427,13 +4444,16 @@ margin-bottom: 6px;
         gap: 14px;
       }
     }
-    h3{
+    .check-lab{
       color: 
       #F6774E;
       font-size: 16px;
       line-height: 21px;
       font-weight: 500;
       width: 100%;
+      @media (max-width: #{$sm}) {
+        margin-bottom: 33px;
+      }
     }
     .sub-list{
       list-style: decimal;
@@ -4525,10 +4545,18 @@ color: #787878;
 }
 .online-form-list{
   margin-bottom: 67px;
+  @media (max-width: #{$sm}) {
+ margin-bottom: 59px;
+  }
   li{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    @media (max-width: #{$sm}) {
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 27px;
+    }
     h3{
       color: #F6774E;
       font-size: 16px;
@@ -4554,8 +4582,10 @@ color: #787878;
   display: flex;
   justify-content: center;
   gap: 29px;
+  margin: 0 auto;
   @media (max-width: #{$sm}) {
     flex-direction: column;
+    width: max-content;
   }
   .btn-grp1{
     @include btn-grp();
@@ -4569,3 +4599,15 @@ color: #787878;
   }
 }
 // ---event-detail-registration--end
+
+
+.wizard-step {
+    display: none;
+}
+
+.wizard-step.active {
+    display: block;
+}
+.btn-prev{
+  margin: 0;
+}
