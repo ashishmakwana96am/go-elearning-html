@@ -3569,6 +3569,11 @@ button:focus:not(:focus-visible) {
 .register-list-form {
   margin-bottom: 87px;
 }
+@media (max-width: 575px) {
+  .register-list-form .container {
+    padding: 0 20px !important;
+  }
+}
 @media (max-width: 768px) {
   .register-list-form {
     margin-bottom: 40px;
@@ -3855,6 +3860,11 @@ button:focus:not(:focus-visible) {
   padding-left: 85px;
 }
 @media (max-width: 575px) {
+  .list-slider .container-fluid {
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 575px) {
   .list-slider {
     padding-left: 0;
   }
@@ -4034,6 +4044,8 @@ button:focus:not(:focus-visible) {
     margin-top: 35px;
     padding: 0;
     padding-top: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
   }
 }
 .btm-slider .left-btm-data {
@@ -4267,6 +4279,11 @@ button:focus:not(:focus-visible) {
   }
 }
 
+@media (max-width: 575px) {
+  .all-event .container {
+    padding: 0 20px;
+  }
+}
 .all-event .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -4317,6 +4334,11 @@ button:focus:not(:focus-visible) {
   }
 }
 
+@media (max-width: 575px) {
+  .event-detail .container {
+    padding: 0 20px;
+  }
+}
 .event-detail .detail-title h2 {
   margin-bottom: 9px;
 }
@@ -4556,6 +4578,11 @@ button:focus:not(:focus-visible) {
   padding-top: 41px;
   padding-bottom: 32px;
 }
+@media (max-width: 575px) {
+  .similar-event .container {
+    padding: 0 20px;
+  }
+}
 .similar-event .similar-event-data {
   padding: 27px 48px 32px 27px;
   background-color: #FAFAFA;
@@ -4637,7 +4664,7 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 575px) {
   .key-word .key-word-list {
-    padding-left: 20px;
+    padding-left: 36px;
   }
 }
 .key-word .key-word-list h3 {
@@ -4667,6 +4694,17 @@ button:focus:not(:focus-visible) {
 
 .parent-talk {
   margin-bottom: 57px;
+}
+@media (max-width: 575px) {
+  .parent-talk .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .event-detail-mobile {
+    padding: 0 8px;
+  }
 }
 
 .online-register-title h3 {
@@ -5026,7 +5064,7 @@ button:focus:not(:focus-visible) {
     gap: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .online-register-page .record-btn {
     padding: 84px 74px 61px 62px;
     gap: 33px;
@@ -5045,7 +5083,7 @@ button:focus:not(:focus-visible) {
 @media (max-width: 575px) {
   .online-register-page .record-btn .btn {
     width: 207px;
-    padding: 8px 10px;
+    padding: 17px 32px 16px 33px;
   }
 }
 
@@ -5200,6 +5238,120 @@ button:focus:not(:focus-visible) {
 
 .btn-prev {
   margin: 0;
+}
+
+.edmall .owl-carousel .item.active svg path {
+  fill: #F6774E;
+}
+.edmall .owl-carousel .item.active .book-data h3 {
+  color: #ffffff;
+}
+
+.edmall-slider {
+  padding-bottom: 63px;
+  padding-top: 33px;
+}
+
+.book-svg {
+  position: relative;
+  padding-right: 24px;
+}
+.book-svg .book-data {
+  position: absolute;
+  top: 45px;
+  left: 42px;
+}
+.book-svg .book-data h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #585858;
+  width: 100%;
+  max-width: 100px;
+}
+
+.edmall-dropdown {
+  background-color: #F6774E;
+  border-radius: 10px;
+  padding: 14px 32px 14px 20px;
+  margin: 0 100px 0 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edmall-dropdown .edmall-checkmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.edmall-dropdown .edmall-checkmark label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+.edmall-dropdown .custom-checkbox {
+  position: relative;
+  display: inline-block;
+  height: 29px;
+  width: 26px;
+}
+@media (max-width: 575px) {
+  .edmall-dropdown .custom-checkbox {
+    width: 50px;
+    height: 50px;
+  }
+}
+.edmall-dropdown .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.edmall-dropdown .custom-checkbox input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.edmall-dropdown .custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.edmall-dropdown .custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 26px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.edmall-dropdown .custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 2px;
+  width: 9px;
+  height: 20px;
+  border: solid #31B762;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.edmall-dropdown .open-btn {
+  border: 3px solid #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+  font-kerning: 700;
+  letter-spacing: 4px;
+}
+
+.edmall-dropdown-data {
+  background-color: #FFFEEF;
 }
 
 /*# sourceMappingURL=style.css.map */
