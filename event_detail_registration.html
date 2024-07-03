@@ -131,7 +131,7 @@
             </div>
           </div>
             <div class="d-flex justify-content-center align-content-center ">
-                <form class="online-register" id="wizard-form">
+                <form class="online-register" id="wizard-form" onsubmit="myFunc(event)">
 
                  <!-- --setp -1-- -->
                 <div class="wizard-step step-1 active ">
@@ -263,8 +263,8 @@
                       </ul>
                       <div class="btn-grp">
                           <button type="button" class="btn-grp1 btn btn-prev">返回修改</button>
-                          <button type="submit" class="btn-grp2 btn  btn-next">確認遞交</button>
-                      </div>
+                          <button type="submit" class="btn-grp2 btn btn-next" >確認遞交</button>
+                        </div>
                 </div>
                 </form>
             </div>
@@ -288,6 +288,12 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+     function myFunc(event) {
+            event.preventDefault();
+            window.location.href = "registration_online.html"; 
+        }
+    </script>
 <script>
    $(document).ready(function() {
     var currentStep = 1;
