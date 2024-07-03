@@ -4844,11 +4844,20 @@ color: #787878;
   
 }
 svg{
+  @media (max-width: #{$xlll}) {
+    width: 176px;
+        }
+  @media (max-width: #{$xl}) {
+    width: 200px;
+        }
   @media (max-width: #{$sm}) {
-    width: 150px;
+    width: 194px;
         }
   @media (max-width: #{$xs}) {
-    width: 140px;
+    width: 174px;
+        }
+  @media (max-width: #{$xss}) {
+    width: 155px;
         }
 
 }
@@ -4924,19 +4933,19 @@ svg{
     }
       .book-data{
         position: absolute;
-        top: 40px;
-        left: 36px;
+        top: 65px;
+    left: 76px;
         @media (max-width: #{$xlll}) {
-          top: 45px;
-          left: 35px;
+          top: 69px;
+          left: 22px;
              }
         @media (max-width: #{$xs}) {
-          top: 39px;
-          left: 27px;
+          top: 68px;
+          left: 23px;
              }
         @media (max-width: #{$xss}) {
-          top: 40px;
-          left: 18px;
+          top: 68px;
+          left: 15px;
              }
         
         h3{

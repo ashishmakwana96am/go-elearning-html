@@ -5294,14 +5294,29 @@ button:focus:not(:focus-visible) {
   fill: #F6774E;
 }
 
+@media (max-width: 1440px) {
+  svg {
+    width: 176px;
+  }
+}
+@media (max-width: 1024px) {
+  svg {
+    width: 200px;
+  }
+}
 @media (max-width: 575px) {
   svg {
-    width: 150px;
+    width: 194px;
   }
 }
 @media (max-width: 375px) {
   svg {
-    width: 140px;
+    width: 174px;
+  }
+}
+@media (max-width: 320px) {
+  svg {
+    width: 155px;
   }
 }
 
@@ -5381,25 +5396,25 @@ button:focus:not(:focus-visible) {
 }
 .nav-item.item .nav-link .book-svg .book-data {
   position: absolute;
-  top: 40px;
-  left: 36px;
+  top: 65px;
+  left: 76px;
 }
 @media (max-width: 1440px) {
   .nav-item.item .nav-link .book-svg .book-data {
-    top: 45px;
-    left: 35px;
+    top: 69px;
+    left: 22px;
   }
 }
 @media (max-width: 375px) {
   .nav-item.item .nav-link .book-svg .book-data {
-    top: 39px;
-    left: 27px;
+    top: 68px;
+    left: 23px;
   }
 }
 @media (max-width: 320px) {
   .nav-item.item .nav-link .book-svg .book-data {
-    top: 40px;
-    left: 18px;
+    top: 68px;
+    left: 15px;
   }
 }
 .nav-item.item .nav-link .book-svg .book-data h3 {
