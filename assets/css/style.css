@@ -4898,6 +4898,32 @@ button:focus:not(:focus-visible) {
   letter-spacing: 6px;
 }
 
+.online-register-page {
+  width: 776px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
+  margin-bottom: 199px !important;
+}
+@media (max-width: 575px) {
+  .online-register-page {
+    width: 100%;
+    padding: 41px 11px 46px 11px;
+    margin-bottom: 92px !important;
+  }
+  .online-register-page.mobile-register {
+    padding: 38px 18px 40px 18px;
+  }
+}
+.online-register-page .record-detail {
+  padding: 21px 100px 0px 170px;
+}
+.online-register-page .record-btn {
+  padding: 60px 73px 61px 71px;
+}
+.online-register-page .record-btn .btn {
+  width: 184px;
+}
+
 .subscrib.custom-checkbox {
   position: relative;
   display: inline-block;

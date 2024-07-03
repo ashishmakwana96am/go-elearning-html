@@ -2414,6 +2414,7 @@ footer {
   }
 }
 .record-list{
+  
   &.mb-36{
     margin-bottom: 36px;
     @media (max-width: #{$sm}) {
@@ -2522,7 +2523,6 @@ footer {
 letter-spacing: 0 !important;
 }
 // --registration record end
-
 
 
 // ---quotation-progress----start
@@ -4480,6 +4480,30 @@ color: #787878;
 }
   }
 }
+.online-register-page{
+  width: 776px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
+  margin-bottom: 199px !important;
+  @media (max-width: #{$sm}) {
+   width: 100%;
+   padding: 41px 11px 46px 11px;
+   margin-bottom: 92px !important;
+   &.mobile-register{
+    padding: 38px 18px 40px 18px;
+   }
+  }
+  .record-detail{
+    padding: 21px 100px 0px 170px;
+  }
+ .record-btn{
+  padding: 60px 73px 61px 71px;
+  .btn{
+    width: 184px;
+    
+  }
+ }
+}
 .subscrib{
   &.custom-checkbox {
     position: relative;
@@ -4582,7 +4606,7 @@ color: #787878;
   display: flex;
   justify-content: center;
   gap: 29px;
-  margin: 0 auto;
+  margin: 0 auto;  
   @media (max-width: #{$sm}) {
     flex-direction: column;
     width: max-content;
