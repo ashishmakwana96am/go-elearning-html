@@ -189,6 +189,10 @@ header .header-data .header-right h4::before {
   margin-bottom: 0;
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
 }
+.main .main-data .main-tab-box .main-left-data .main-border h3.active {
+  color: #F6774E;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+}
 @media (max-width: 1024px) {
   .main .main-data .main-tab-box .main-left-data .main-border h3 {
     font-size: 18px;
@@ -5283,7 +5287,7 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 575px) {
   .edmall-slider {
-    padding-bottom: 25px;
+    padding-bottom: 0;
   }
 }
 
