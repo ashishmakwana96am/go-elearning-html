@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-data">
+        <h3>教城主頁</h3>
+        <div class="header-right d-none d-sm-flex">
+          <img src="assets/images/Layer 2 1.png" alt="" />
+          <h3>Jay Chu</h3>
+          <h4>English</h4>
+          <img src="assets/images/HouseDoorFill.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --main-- -->
+  <section class="main">
+    <div class="container">
+      <div class="main-data">
+        <div>
+          <img src="assets/images/image 1.png" class="logo-img" alt="" />
+        </div>
+        <div class="main-tab-box d-none d-sm-flex">
+              <a href="event_register_list.html" class="main-left-data">
+                <img src="assets/images/main1.png" alt="" />
+                <div class="main-border">
+                  <h3>活動概覽</h3>
+                </div>
+              </a>
+              <a href="edmall.html" class="main-left-data">
+                <img src="assets/images/main2.png" alt="" />
+                <div class="main-border">
+                  <h3>EdMall</h3>
+                </div>
+              </a>
+              <a href="broadcast_message.html" class="main-left-data">
+                <img src="assets/images/main3.png" alt="" />
+                <div class="main-border fix">
+                  <h3 class="active" >個人中心</h3>
+                </div>
+              </a>
+        </div>
+          <div class="menubar d-sm-none ">
+              <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class=" modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                      <div class="header-data">
+                        <h3>教城主頁</h3>
+                    </div>
+                  <div class="mobile-logo">
+                    <img src="assets/images/image 2.png" alt="">
+                    <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="language">
+                    <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                    <h2>會員登入</h2>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <ul class="modal-list">
+                   <li><h3>活動概覽</h3>
+                     <a href="event_register_list.html"><i class="fa-solid fa-chevron-right"></i></a></li>
+                   <li class="no-space"><h3>Ed Mall</h3>
+                   <a href="edmall.html">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                   <li><h3>個人中心</h3>
+                    <a href="broadcast_message.html"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                  </ul>
+               </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+      <section class="main_data">
+        <div class="container-fluid p-0">
+          <div class="main-data_flex">
+            <div class="left-sidebar">
+                <ul class="left-sidelist">
+                    <li><a href="#"  class="active">活動概覽</a></li>
+                    <li><a href="#">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="right-sidebar quotation-main">
+                <div class="rightside-title quotation-title partner-title">
+                  <h2 class="title_space ">活動概覽</h2> 
+                <a href="#" class="btn partner-btn"><img src="assets/images/PlusSquare.png" alt=""> 新增活動 </a>
+                </div>
+                <div class="quontation-table partner-table-head">
+                    <div class="que-head d-none d-sm-flex green-bg ">
+                      <div><h4></h4></div>
+                      <div class="res-view"><h4>活動名稱</h4></div>
+                      <div ><h4>活動日期範圍</h4></div>
+                      <div class="small-flex"><h4>狀態</h4></div>
+                      <div  class="med-flex"><h4>最後修改日期</h4></div>
+                      <div><h4></h4></div>
+                    </div>
+                    <div class="que-body partner-body">
+                      <div class="que-tr que-light1">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s1.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 1</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00107</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 00:00 - 2022/03/31 23:59</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Draft</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/28 hke-keny</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light2">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s2.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 2</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00111</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 11:00 -2022/03/31 12:00</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>To Be Published</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/28</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light1">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s3.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 3</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00113</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 22:00 -2022/03/31 12:00</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Published</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/31hke-kywong7</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light2">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s4.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 4</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00106</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/28 00:00 -2022/03/31 23:59</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Withdraw</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/06/27hke-daeman</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light1">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s5.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 1</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00107</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 00:00 -2022/03/31 23:59</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Draft</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/28hke-keny</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light2">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s6.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 2</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00107</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 11:00 -2022/03/31 12:00</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>To Be Published</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/28</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                                <a href="#"><img src="assets/images/edit.png" alt=""></a>
+                                <a href="#"><img src="assets/images/dlt.png" alt=""></a>
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><a href="#"><img src="assets/images/edit.png" alt=""></a> </div>
+                          <div class="action-btn"><a href="#"><img src="assets/images/dlt.png" alt=""></a> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light1">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s7.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 3</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00113</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/01 22:00 -2022/03/31 12:00</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Published</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/03/31hke-kywong7</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                            <img src="assets/images/edit.png" alt="">
+                            <img src="assets/images/dlt.png" alt="">
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><img src="assets/images/edit.png" alt=""> </div>
+                          <div class="action-btn"><img src="assets/images/dlt.png" alt=""> </div>
+                        </div>
+                          
+                        </div>
+                      <div class="que-tr que-light2">
+                          <div class="que-gray-flex"><h3></h3><h4><div><img src="assets/images/s8.png" alt=""></div></h4></div>
+                          <div class="que-gray-flex res-view"><h3>活動名稱</h3>
+                           <div class="d-flex flex-column"> <h6 >Event Name 4</h6><h6 ><span class="red-text">Event Ref :</span> <span class="gray-text"> 00106</span></h6></div>
+                        </div>
+                          <div class="que-gray-flex"><h3>活動日期範圍</h3><h4>2022/03/28 00:00 -2022/03/31 23:59</h4></div>
+                          <div class="que-gray-flex small-flex"><h3>狀態</h3><h4>Withdraw</h4></div>
+                          <div class="que-gray-flex med-flex"><h3>最後修改日期</h3><h4>2022/06/27hke-daeman</h4></div>
+                          <div class="d-none d-sm-block que-gray-flex"> 
+                            <div class="action-td">
+                            <img src="assets/images/edit.png" alt="">
+                            <img src="assets/images/dlt.png" alt="">
+                            </div>
+                      </div>
+                        <div  class="que-gray-flex d-sm-none action-mobile  justify-content-center">
+                          <div class="action-btn"><img src="assets/images/edit.png" alt=""> </div>
+                          <div class="action-btn"><img src="assets/images/dlt.png" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-pagination mt-5 mt-sm-0">
+                    <ul>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                   </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+            <div class="footer-data">
+                <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+                <ul class="footer-right">
+                    <li>私隱政策聲明</li>
+                    <li>版權及知識產權政策</li>
+                    <li>免責聲明</li>
+                    <li>促進種族平等政策</li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</body>
+</html>

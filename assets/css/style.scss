@@ -547,8 +547,8 @@ header {
         border-bottom: 0;
         text-align: center;
       }
-      @media (max-width: #{$sm}) {
-       width: 87px;
+      @media (max-width: 767px) {
+      //  width: 87px;
        &:nth-child(even){
         background-color: #287AA5;
       }
@@ -1570,7 +1570,9 @@ footer {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 33px;
-
+       &.partner-title{
+        margin-bottom: 20px;
+       }
       form {
         position: relative;
         input {
@@ -1763,6 +1765,14 @@ footer {
 // }
 
 .quontation-table {
+  &.partner-table-head {
+    .que-head{
+      padding: 10px 20px !important; 
+      @media (max-width: #{$xlll}) {
+        padding: 10px !important;
+       }
+    }
+  }
   .que-tr.mobile-tr{
     padding: 35px 41px !important;
     @media (max-width: #{$lg}) {
@@ -1781,6 +1791,7 @@ footer {
       padding: 10px !important;
      }
   }
+  
   .que-head {
     
     display: flex;
@@ -1866,6 +1877,12 @@ footer {
       }
       &.que-light {
         background-color: #efede4;
+      }
+      &.que-light1{
+        background-color: #F8F7F3;
+      }
+      &.que-light2{
+        background-color: #EBEBEB;
       }
       h4 ,div {
         font-weight: 500;
@@ -5398,3 +5415,147 @@ gap: 28px;
 }
 // ----edmall--end
 
+.partner-btn{
+  padding: 9px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 5px;
+  color: $white-color !important;
+  background-color: 
+  #FE8862 !important;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+}
+.partner-table-head {
+  .que-head{
+    div{
+      width: 190px;
+      &:first-child{
+        width: 100px;
+      }
+      &.small-flex{
+        width: 110px;
+      }
+      &.med-flex{
+        width: 115px;
+      }
+      h4{
+        letter-spacing: 3px;
+      }
+    }
+    .res-view{
+      width: 370px;
+      @media (max-width: #{$xl}) {
+        width: 190px;
+        
+           }
+    }
+  }
+  .partner-body{
+    .que-tr{
+      .que-gray-flex{
+        width: 190px;
+       
+        @media (max-width: #{$sm}) {
+          display: flex;
+          width: 100%;
+          gap: 10px;
+          }
+        @media (max-width: #{$xs}) {
+          gap: 10px;
+          }
+        &:first-child{
+          width: 100px;
+          @media (max-width: #{$sm}) {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            }
+        }
+        &.med-flex{
+          width: 115px;
+          @media (max-width: #{$sm}) {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            }
+        }
+        &.small-flex{
+          width: 110px;
+          @media (max-width: #{$sm}) {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            }
+        }
+        h6{
+          color: 
+          #3A3A3A;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 700;
+          margin-bottom: 3px;
+          @media (max-width: #{$xl}) {
+            font-size: 16px;
+            line-height: 18px;
+               }
+               @media (max-width: #{$med}) {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 400;
+                   }
+          .gray-text{
+            color: 
+            #989898;
+          }
+          .red-text{
+            color: #A47070;
+          }
+        }
+        .action-td{
+          align-items: center;
+          gap: 20px;
+          img{
+            width: 100%;
+            max-width: 38px;
+            height: 38px;
+            @media (max-width: #{$xl}) {
+              max-width: 28px;
+              height: 28px;
+                 }
+          }
+        }
+        h3{
+          @media (max-width: #{$xs}) {
+            width: 212px;
+            }
+        }
+      }
+      .res-view{
+        width: 370px;
+           @media (max-width: #{$xl}) {
+        width: 190px;
+        
+           }
+           @media (max-width: #{$sm}) {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            }
+        h4{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .action-btn{
+        padding: 11px 22px !important;
+        @media (max-width: #{$sm}) {
+         padding: 10px 12px !important;
+          
+             }
+      }
+    }
+  }
+}
