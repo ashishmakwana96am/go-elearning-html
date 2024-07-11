@@ -43,5 +43,3 @@ document.querySelectorAll('.closePopup').forEach(button => {
 document.getElementById('popupOverlay').addEventListener('click', closePopup);
 
 
-
-// --checkbox--

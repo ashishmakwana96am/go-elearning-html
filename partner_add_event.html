@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- --fonts-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---selector -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">
+
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- --style css--- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-data">
+        <h3>教城主頁</h3>
+        <div class="header-right d-none d-sm-flex">
+          <img src="assets/images/Layer 2 1.png" alt="" />
+          <h3>Jay Chu</h3>
+          <h4>English</h4>
+          <img src="assets/images/HouseDoorFill.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --main-- -->
+  <section class="main">
+    <div class="container">
+      <div class="main-data">
+        <div>
+          <img src="assets/images/image 1.png" class="logo-img" alt="" />
+        </div>
+        <div class="main-tab-box d-none d-sm-flex">
+              <a href="event_register_list.html" class="main-left-data">
+                <img src="assets/images/main1.png" alt="" />
+                <div class="main-border">
+                  <h3>活動概覽</h3>
+                </div>
+              </a>
+              <a href="edmall.html" class="main-left-data">
+                <img src="assets/images/main2.png" alt="" />
+                <div class="main-border">
+                  <h3>EdMall</h3>
+                </div>
+              </a>
+              <a href="broadcast_message.html" class="main-left-data">
+                <img src="assets/images/main3.png" alt="" />
+                <div class="main-border fix">
+                  <h3 class="active" >個人中心</h3>
+                </div>
+              </a>
+        </div>
+          <div class="menubar d-sm-none ">
+              <img src="assets/images/bar.png" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class=" modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                      <div class="header-data">
+                        <h3>教城主頁</h3>
+                    </div>
+                  <div class="mobile-logo">
+                    <img src="assets/images/image 2.png" alt="">
+                    <img src="assets/images/Vector (5).png" alt="" data-bs-dismiss="modal" aria-label="Close">
+                  </div>
+                  <div class="language">
+                    <div class="language-div"><span>繁</span><h3>  English</h3></div>
+                    <h2>會員登入</h2>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <ul class="modal-list">
+                   <li><h3>活動概覽</h3>
+                     <a href="event_register_list.html"><i class="fa-solid fa-chevron-right"></i></a></li>
+                   <li class="no-space"><h3>Ed Mall</h3>
+                   <a href="edmall.html">  <i class="fa-solid fa-chevron-right"></i></a></li>
+                   <li><h3>個人中心</h3>
+                    <a href="broadcast_message.html"> <i class="fa-solid fa-chevron-right"></i></a></li>
+                  </ul>
+               </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+      <section class="main_data">
+        <div class="container-fluid p-0">
+          <div class="main-data_flex">
+            <div class="left-sidebar partner">
+                <ul class="left-sidelist ">
+                    <li><a href="#"  class="active">活動概覽</a></li>
+                    <li><a href="#">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="right-sidebar">
+                <div class="rightside-title">
+                  <h2 class="title_space ">新增活動</h2> 
+                </div>
+                <div class="detail-back">
+                    <a href="partner.html">
+                      <i class="fa-solid fa-chevron-left"></i>
+                      <span>返回</span>
+                    </a>
+                  </div>
+                  <div class="prtner-tab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">活動基本資料</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">活動中文內容</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">活動英文內容</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="tab-one-data">
+                                <h3 class="required">*Required Fields</h3>
+                                <div class="data-list">
+                                    <form >
+                                        <div class="list-div">
+                                            <label class="form-label">Event Ref.</label>
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Title(Chinese) <span>*</span></label>
+                                            <input type="text" class="form-control"  placeholder="Input Ttile (Chinese)">
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Title(English) <span>*</span></label>
+                                            <input type="text" class="form-control"  placeholder="Input Ttile (English)">
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Status </label>
+                                           <h3>Draft</h3>
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Target <span>*</span></label>
+                                            <select class="multipleChosen form-select" multiple="true">
+                                                <option value="1">Teacher</option>
+                                                <option value="2">Primary Student</option>
+                                                <option value="3">Secondary Student</option>
+                                                <option value="4">Parent</option>
+                                                <option value="5">Partner</option>
+                                            </select>   
+                                           
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Level <span>*</span></label>
+                                            <select class="multipleChosen form-select" multiple="true">
+                                                <option value="Primary School">Primary School</option>
+                                                <option value="Secondary School">Secondary School</option>
+                                                <option value="Special School">Special School</option>
+                                            </select>    
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Event Format <span>*</span></label>
+                                            <select class="multipleChosen" multiple="true">
+                                                <option value="Seminar/Workshop">Seminar/Workshop</option>
+                                                <option value="Course">Course</option>
+                                                <option value="Competition/ Scheme">Competition/ Scheme</option>
+                                                <option value="Exhibition">Exhibition</option>
+                                                <option value="Performance">Performance</option>
+                                                <option value="Activity/ Carnival">Activity/ Carnival</option>
+                                            </select>    
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Event Nature <span>*</span></label>
+                                            <select class="multipleChosen form-select" multiple="true">
+                                                <option value="Key Learning Area">Key Learning Area</option>
+                                                <option value="Chinese Language Education">Chinese Language Education</option>
+                                                <option value="English Language Education">English Language Education</option>
+                                                <option value="Mathematics Education">Mathematics Education</option>
+                                                <option value="Science Education">Science Education</option>
+                                                <option value="Technology Education">Technology Education</option>
+                                                <option value="Technology Education">Technology Education</option>
+                                                <option value="Arts Education">Arts Education</option>
+                                                <option value="Physical Education">Physical Education</option>
+                                                <option value="Liberal Studies for Senior Secondary Levels">Liberal Studies for Senior Secondary Levels</option>
+                                                <option value="General Studies for Primary Schools">General Studies for Primary Schools</option>
+                                                <option value="SEN">SEN</option>
+                                                <option value="STEM">STEM</option>
+                                                <option value="eLearning">eLearning</option>
+                                                <option value="Teacher Professional Development">Teacher Professional Development</option>
+                                                <option value="Family">Family</option>
+                                                <option value="Recreation and Sports">Recreation and Sports</option>
+                                                <option value="Culture and Arts">Culture and Arts</option>
+                                            </select>    
+                                        </div>
+                                        <div class="list-div list-radio">
+                                            <label class="form-label">Fee <span>*</span></label>
+                                           <div class="wdth-checkbox"> 
+                                            <div class=" check-box">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Free
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Charged
+                                                </label>
+                                              </div>
+                                          </div>
+                                        <div class="price">
+                                            <label class="form-label">Price</label>
+                                            <input type="text" class="form-control"  placeholder="Input Amount">   
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="list-div list-radio">
+                                            <label class="form-label">CPD Hours</label>
+                                           <div class="wdth-checkbox"> 
+                                            <div class="w-100 check-box">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault9">
+                                                <label class="form-check-label" for="flexRadioDefault9">
+                                                    No
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault29" checked>
+                                                <label class="form-check-label" for="flexRadioDefault29">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                        </div>
+                                        <div class="price">
+                                            <label class="form-label">Hours</label>
+                                            <input type="text" class="form-control"  placeholder="Input hour">   
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Published Start <span>*</span></label>
+                                            <input type="text" class="form-control"  placeholder="">
+                                        </div>
+                                        <div class="list-div list-radio">
+                                            <label class="form-label">Registration Method <span>*</span></label>
+                                            <div class="w-100 check-box">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4-1">
+                                                    <label class="form-check-label" for="flexRadioDefault4-1">
+                                                        EdCity Online Registration System
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4-2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault4-2">
+                                                        Other Method
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4-3">
+                                                    <label class="form-check-label" for="flexRadioDefault4-3">
+                                                        No Registration Requied
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Recommend </label>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Yes</label>
+                                              </div>
+                                        </div>
+                                        <div class="list-div">
+                                            <label class="form-label">Extra Filter </label>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">EdCity Home</label>
+                                              </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="btm-data">
+                                    <h3 class="btn-title">Timeslot <span>*</span></h3>
+                                    <div class="btm-content">
+                                        <form >
+                                            <div class="list-div">
+                                                <label class="form-label">Start Time <span>*</span></label>
+                                                <div class="date-div"> 
+                                                    <input type="date" class="form-control" placeholder="Select Start Date" >
+                                                    <input type="date" class="form-control" placeholder="Input Start Time">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Whole Day</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-div">
+                                                <label class="form-label">End Time <span>*</span></label>
+                                                <div class="date-div"> 
+                                                    <input type="date" class="form-control" placeholder="Select Start Date" >
+                                                    <input type="date" class="form-control" placeholder="Input Start Time">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="list-div">
+                                                <label class="form-label">Location</label>
+                                                <div class="date-input"> 
+                                                    <input type="text" class="form-control"  placeholder="輸入地點（中文）">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="list-div">
+                                                <label class="form-label"></label>
+                                                <div class="date-input"> 
+                                                 <input type="text" class="form-control"  placeholder="Input Location (English)">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="list-div bottom-text">
+                                                <label class="form-label"></label>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Use Map</label>
+                                                  </div>
+                                            </div>
+<div class="form-btn">
+    <button class="btn">New Timeslot</button>
+    <button class="btn">Repeat Timeslot</button>
+</div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+            <div class="footer-data">
+                <h3 class="copy-right">版權所有© 2024 香港教育城有限公司</h3>
+                <ul class="footer-right">
+                    <li>私隱政策聲明</li>
+                    <li>版權及知識產權政策</li>
+                    <li>免責聲明</li>
+                    <li>促進種族平等政策</li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Chosen
+            $(".multipleChosen").chosen({
+                placeholder_text_multiple: "" // placeholder
+            });
+
+            // Select2
+            $(".multipleSelect2").select2({
+                placeholder: "title" // placeholder
+            });
+        });
+    </script>
+</body>
+</html>
