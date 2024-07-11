@@ -369,11 +369,11 @@
       </div>
     
         <!-- -- -->
+        
         <div class="popup-overlay" id="popupOverlay"></div>
-  
         <!-- ---quotation-title--- btn popup-- -->
-       <!-- --popup--1 -->
-       <div class="title-popup-1st popup edmall-pop" id="popup1" >
+        <!-- --popup--1 -->
+        <div class="title-popup-1st popup edmall-pop" id="popup1" >
          <div class="popup-data">
                   <div class="close closePopup"><i class="fa-solid fa-circle-xmark"></i></div>
                   <div class="img-center"> <img src="assets/images/readmore.png"  alt=""></div>
@@ -394,19 +394,19 @@
                   <form>
                     <div class="mb">
                       <label class="form-label">聯絡人</label>
-                      <input type="text" class="form-control" placeholder="朱俊杰先生">
+                      <input type="text" class="form-control" placeholder="聯絡人">
                     </div>
                     <div class="mb">
                       <label class="form-label">職位</label>
-                      <input type="text" class="form-control" placeholder="老師">
+                      <input type="text" class="form-control" placeholder="職位">
                     </div>
                     <div class="mb">
                       <label class="form-label">電話</label>
-                      <input type="text" class="form-control" placeholder="90016641">
+                      <input type="text" class="form-control" placeholder="電話">
                     </div>
                     <div class="mb">
                       <label class="form-label">電郵</label>
-                      <input type="text" class="form-control" placeholder="kit24@gmail.com">
+                      <input type="text" class="form-control" placeholder="電郵">
                     </div>
                     <div class="mb">
                         <textarea class="form-control" placeholder="備註"></textarea>
@@ -531,20 +531,50 @@
   })
       </script>
 <script>
-   $(document).ready(function() {
-       $('.show-advanced').click(function() {
-           var target = $(this).closest('.edmall-dropdown').find('.edmall-dropdown-data');
-           var dropdown = $(this).closest('.edmall-dropdown');
-           
-           target.toggleClass('hidden');
-           dropdown.toggleClass('rounded-bottom');
-           
-           if (target.hasClass('hidden')) {
-               target.css('opacity', '0').slideUp();
-           } else {
-               target.css('opacity', '1').slideDown();
-           }
-       });
+  $(document).ready(function() {
+      $('.show-advanced').click(function() {
+        $('.open-btn').hide();
+        $('.yellow-btn').show();
+      });
+
+      $('.btm-errow').click(function() {
+        $('.open-btn').show();
+        $('.yellow-btn').hide();
+      });
+
+      // Toggle the dropdown
+      $('.show-advanced').click(function(event) {
+        var target = $(this).closest('.edmall-dropdown').find('.edmall-dropdown-data');
+        var dropdown = $(this).closest('.edmall-dropdown');
+        
+        target.toggleClass('hidden');
+        dropdown.toggleClass('rounded-bottom');
+        
+        if (target.hasClass('hidden')) {
+          target.css('opacity', '0').slideUp();
+        } else {
+          target.css('opacity', '1').slideDown();
+        }
+
+        // Prevent the click event from propagating to the document
+        event.stopPropagation();
+      });
+
+      // Close the dropdown when clicking outside of it
+      $(document).click(function(event) {
+        if (!$(event.target).closest('.edmall-dropdown').length) {
+          $('.edmall-dropdown-data').addClass('hidden').css('opacity', '0').slideUp();
+          $('.edmall-dropdown').removeClass('rounded-bottom');
+          $('.open-btn').show();
+          $('.yellow-btn').hide();
+        }
+      });
+
+      // Prevent clicks inside the dropdown from closing it
+      $('.edmall-dropdown-data').click(function(event) {
+        event.stopPropagation();
+      });
+  
    });
 </script>
 

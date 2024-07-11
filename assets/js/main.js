@@ -1,3 +1,17 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const selectAllCheckbox = document.querySelector('.select-all');
+    const itemCheckboxes = document.querySelectorAll('.select-item');
+
+    selectAllCheckbox.addEventListener('change', function () {
+      const isChecked = this.checked;
+      itemCheckboxes.forEach(checkbox => {
+        checkbox.checked = isChecked;
+      });
+    });
+  });
+  
 // Open popup function
 function openPopup(popupId) {
     document.getElementById('popupOverlay').style.display = 'block';
@@ -30,5 +44,4 @@ document.getElementById('popupOverlay').addEventListener('click', closePopup);
 
 
 
-// ---slider--
-
+// --checkbox--

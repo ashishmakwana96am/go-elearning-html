@@ -121,7 +121,7 @@
                 <form>
                     <div class="row form-list-data ">
                         <div class="col-12 col-sm-6 col-lg-8 col-xl-8"><div> <input type="text" class="form-control" placeholder="輸入活動關鏈字"></div></div>
-                         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block"> <div class="d-flex"><div class="btn btn1 show-advanced">進階搜尋</div><button class="btn btn2">搜尋</button></div></div>
+                         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block"> <div class="d-flex"><div class="btn btn1 show-advanced click-btn">進階搜尋</div><button class="btn btn2">搜尋</button></div></div>
                          <div class="col-12 custm-col12 hidden">
                             <div class="form-list-content">
                                 <div class="form-data">
@@ -737,8 +737,8 @@
 });
     </script>
 <script>
- $(document).ready(function() {
-    $('.show-advanced').click(function() {
+   $(document).ready(function() {
+      $('.show-advanced').click(function(event) {
         var target = $(this).closest('.row').find('.custm-col12');
         var formList = $(this).closest('.form-list');
         
@@ -750,8 +750,24 @@
         } else {
             target.css('opacity', '1').slideDown();
         }
+
+        // Prevent the click event from propagating to the document
+        event.stopPropagation();
+      });
+
+      // Close the dropdown when clicking outside of it
+      $(document).click(function(event) {
+        if (!$(event.target).closest('.form-list').length) {
+          $('.custm-col12').addClass('hidden').css('opacity', '0').slideUp();
+          $('.form-list').removeClass('expanded');
+        }
+      });
+
+      // Prevent clicks inside the dropdown from closing it
+      $('.custm-col12').click(function(event) {
+        event.stopPropagation();
+      });
     });
-});
 
 
 </script>
