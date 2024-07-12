@@ -5565,10 +5565,15 @@ gap: 28px;
 // --------------------partner event\
 .prtner-tab{
   margin-bottom: 200px;
+  @media (max-width: #{$lg}) {
+    margin-bottom: 50px;
+      
+         }
   .nav{
   display: flex;
   justify-content: center;
   margin-bottom: 0 !important;
+
   }
   .nav-item{
     .nav-link{
@@ -5586,14 +5591,17 @@ gap: 28px;
       @media (max-width: #{$sm}) {
         padding: 10px 14px;
         font-size: 14px;
+        line-height: 18px;
             }
       @media (max-width: #{$xs}) {
         padding: 10px 12px;
         font-size: 12px;
+        line-height: 16px;
             }
       @media (max-width: #{$xss}) {
-        padding: 8px 8px;
-        font-size: 10px;
+        padding: 8px 16px;
+        font-size:8px;
+        line-height: 12px;
             }
     }
   }
@@ -5604,6 +5612,9 @@ gap: 28px;
     padding: 30px 46px 30px 37px;
     @media (max-width: #{$sm}) {
       padding: 30px 30px 30px 30px;
+      }
+    @media (max-width: #{$xss}) {
+      padding: 15px ;
       }
     .tab-one-data{
       .required{
@@ -5739,6 +5750,7 @@ gap: 28px;
     @media (max-width: #{$sm}) {
       padding: 37px 30px 36px 30px;
       }
+  
     form{
       .list-div{
         display: flex;
@@ -5865,7 +5877,6 @@ gap: 28px;
   border-radius: 10px;
   padding: 10px 18px ;
   height: 39px;
-
 }
 .chosen-container-multi .chosen-choices{
   width: 100%;
@@ -5910,4 +5921,280 @@ gap: 28px;
     width: 1px;
     height: 22px;
   }
+}
+
+// ---tab-two-data
+
+.tab-two-data{
+  .tab-two-title{
+    color: #CB4444;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 21px;
+    @media (max-width: #{$sm}) {
+      font-size: 14px;
+      line-height: 18px;
+      }
+  }
+  .form-data{
+    form{
+      .form-div{
+        display: flex;
+        align-items: start;
+        @media (max-width: #{$sm}) {
+         flex-direction: column;
+          }
+        .form-label{
+          color: #F6774E;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          width: 200px;
+          span{
+            color: #CB4444;
+          }
+        }
+        .width-cstm{
+          width: 100%;
+          max-width: 173px;
+          @media (max-width: #{$xl}) {
+            max-width: 150px;
+             }
+          @media (max-width: #{$med}) {
+            max-width: 148px;
+             }
+        }
+      
+        .form-control{
+          border: 1px solid #555555;
+          border-radius: 10px;
+          margin-bottom: 7px;
+          &::placeholder{
+            color: 
+            #BFBFBF;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: start;
+            transform: translateY(-30px);
+          }
+          
+          &.first-input{
+            height: 99px;
+            
+          }
+        }
+        .para{
+          color: #6A6A6A;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 500;
+          margin-bottom: 16px;
+          @media (max-width: #{$sm}) {
+          font-size: 14px;
+          line-height: 18px;
+            }
+          &.sec-para{
+            margin-bottom: 28px;
+          }
+        }
+        .grp-btn{
+          margin-bottom: 40px;
+          display: flex;
+          gap: 28px;
+          @media (max-width: #{$sm}) {
+       flex-direction: column;
+       gap: 10px;
+       margin-bottom: 17px;
+            }
+        }
+        .green-btn{
+          color:$white-color;
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          padding: 9px 37px 9px 20px;
+          background-color: 
+          #31B762;
+          border-radius: 10px;
+          margin-bottom: 7px;
+          letter-spacing: 5px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+          &.plus-btn{
+            padding: 9px 31px 9px 18px;
+          }
+          @media (max-width: #{$med}) {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 9px 29px 9px 20px;
+            }
+          @media (max-width: #{$xs}) {
+            font-size: 14px;
+            line-height: 16px;
+            }
+        }
+        .orange-btn{
+          color:$white-color;
+          display: flex;
+          gap: 11px;
+          padding: 9px 37px;
+          background-color: 
+          
+#D56541;
+          border-radius: 10px;
+          font-size: 20px;
+          line-height: 27px;
+          margin-bottom: 7px;
+          letter-spacing: 5px;
+          @media (max-width: #{$med}) {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 13.5px 37px
+            }
+          @media (max-width: #{$xs}) {
+            font-size: 14px;
+            line-height: 16px;
+            }
+        }
+        .span-width{
+          color: 
+          #6A6A6A;
+          font-size: 14px;
+          line-height: 20px;
+font-weight: 500;    
+width: 200px;
+margin-bottom: 24px;
+    }
+      }
+    }
+  }
+  .btm-list{
+    .btm-title{
+      color: 
+      #008BD5;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .list-content{
+      background-color: #FBF8F4;
+      padding: 36px 74px 20px 45px;
+      border-radius: 10px;
+      @media (max-width: #{$sm}) {
+        padding: 36px 34px 20px 36px;
+        }
+        @media (max-width: #{$xss}) {
+          padding: 15px;
+          }
+      form{
+        .btm-div{
+          display: flex;
+          align-items: center;
+          margin-bottom: 17px;
+          @media (max-width: #{$sm}) {
+            flex-direction: column;
+            align-items: start;
+            }
+          .form-label{
+            width: 100%;
+            max-width: 160px;
+            color: 
+            #008BD5;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+            
+          }
+          .form-control{
+            max-width: 356px;
+            width: 100%;
+            border: 1px solid 
+            #555555;
+            border-radius: 10px;
+            &::placeholder{
+              color: 
+              #BFBFBF;
+            }
+          }
+          .grp-select{
+            display: flex;
+            gap: 18px;
+            @media (max-width: #{$sm}) {
+              flex-direction: column;
+              width: 100%;
+              }
+            .form-control{
+              width: 100%;
+              max-width: 223px;
+              @media (max-width: #{$sm}) {
+                max-width: 100%;
+                }
+            }
+          }
+          .form-select{
+            max-width: 130px;
+            width: 100%;
+            border: 1px solid 
+            #555555;
+            color: 
+              #BFBFBF;
+            border-radius: 10px;
+            &:focus{
+              box-shadow: none;
+              outline: none;
+            }
+            option{
+              color: 
+              #BFBFBF;
+              padding: 9px 18px;
+            }
+            @media (max-width: #{$sm}) {
+              max-width: 100%;
+              }
+          }
+        }
+      }
+    }
+  }
+  .btm-btn{
+    margin: 65px 0 33px;
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: #{$sm}) {
+      margin: 35px 0 16px;
+      flex-wrap: wrap;
+      gap: 9px;
+      }
+    .btn{
+      background-color: 
+      #008BD5;
+      border-radius: 10px;
+      color: #FFFFFF;
+      padding: 9px 21px;
+      line-height: 22px;
+      letter-spacing: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: #{$sm}) {
+        font-size: 16px;
+      line-height: 20px;
+      padding: 5px 16px
+        }
+    
+    }
+  }
+}
+
+.input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
 }

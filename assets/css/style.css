@@ -6053,6 +6053,11 @@ button:focus:not(:focus-visible) {
 .prtner-tab {
   margin-bottom: 200px;
 }
+@media (max-width: 992px) {
+  .prtner-tab {
+    margin-bottom: 50px;
+  }
+}
 .prtner-tab .nav {
   display: flex;
   justify-content: center;
@@ -6076,18 +6081,21 @@ button:focus:not(:focus-visible) {
   .prtner-tab .nav-item .nav-link {
     padding: 10px 14px;
     font-size: 14px;
+    line-height: 18px;
   }
 }
 @media (max-width: 375px) {
   .prtner-tab .nav-item .nav-link {
     padding: 10px 12px;
     font-size: 12px;
+    line-height: 16px;
   }
 }
 @media (max-width: 320px) {
   .prtner-tab .nav-item .nav-link {
-    padding: 8px 8px;
-    font-size: 10px;
+    padding: 8px 16px;
+    font-size: 8px;
+    line-height: 12px;
   }
 }
 .prtner-tab .tab-content {
@@ -6098,6 +6106,11 @@ button:focus:not(:focus-visible) {
 @media (max-width: 575px) {
   .prtner-tab .tab-content {
     padding: 30px 30px 30px 30px;
+  }
+}
+@media (max-width: 320px) {
+  .prtner-tab .tab-content {
+    padding: 15px;
   }
 }
 .prtner-tab .tab-content .tab-one-data .required {
@@ -6399,6 +6412,288 @@ button:focus:not(:focus-visible) {
   background-color: #969696;
   width: 1px;
   height: 22px;
+}
+
+.tab-two-data .tab-two-title {
+  color: #CB4444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 21px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .tab-two-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.tab-two-data .form-data form .form-div {
+  display: flex;
+  align-items: start;
+}
+@media (max-width: 575px) {
+  .tab-two-data .form-data form .form-div {
+    flex-direction: column;
+  }
+}
+.tab-two-data .form-data form .form-div .form-label {
+  color: #F6774E;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 200px;
+}
+.tab-two-data .form-data form .form-div .form-label span {
+  color: #CB4444;
+}
+.tab-two-data .form-data form .form-div .width-cstm {
+  width: 100%;
+  max-width: 173px;
+}
+@media (max-width: 1024px) {
+  .tab-two-data .form-data form .form-div .width-cstm {
+    max-width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .tab-two-data .form-data form .form-div .width-cstm {
+    max-width: 148px;
+  }
+}
+.tab-two-data .form-data form .form-div .form-control {
+  border: 1px solid #555555;
+  border-radius: 10px;
+  margin-bottom: 7px;
+}
+.tab-two-data .form-data form .form-div .form-control::placeholder {
+  color: #BFBFBF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: start;
+  transform: translateY(-30px);
+}
+.tab-two-data .form-data form .form-div .form-control.first-input {
+  height: 99px;
+}
+.tab-two-data .form-data form .form-div .para {
+  color: #6A6A6A;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .form-data form .form-div .para {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.tab-two-data .form-data form .form-div .para.sec-para {
+  margin-bottom: 28px;
+}
+.tab-two-data .form-data form .form-div .grp-btn {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 28px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .form-data form .form-div .grp-btn {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 17px;
+  }
+}
+.tab-two-data .form-data form .form-div .green-btn {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 9px 37px 9px 20px;
+  background-color: #31B762;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+.tab-two-data .form-data form .form-div .green-btn.plus-btn {
+  padding: 9px 31px 9px 18px;
+}
+@media (max-width: 768px) {
+  .tab-two-data .form-data form .form-div .green-btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 9px 29px 9px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .tab-two-data .form-data form .form-div .green-btn {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.tab-two-data .form-data form .form-div .orange-btn {
+  color: #ffffff;
+  display: flex;
+  gap: 11px;
+  padding: 9px 37px;
+  background-color: #D56541;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 7px;
+  letter-spacing: 5px;
+}
+@media (max-width: 768px) {
+  .tab-two-data .form-data form .form-div .orange-btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 13.5px 37px;
+  }
+}
+@media (max-width: 375px) {
+  .tab-two-data .form-data form .form-div .orange-btn {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.tab-two-data .form-data form .form-div .span-width {
+  color: #6A6A6A;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  width: 200px;
+  margin-bottom: 24px;
+}
+.tab-two-data .btm-list .btm-title {
+  color: #008BD5;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tab-two-data .btm-list .list-content {
+  background-color: #FBF8F4;
+  padding: 36px 74px 20px 45px;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-list .list-content {
+    padding: 36px 34px 20px 36px;
+  }
+}
+@media (max-width: 320px) {
+  .tab-two-data .btm-list .list-content {
+    padding: 15px;
+  }
+}
+.tab-two-data .btm-list .list-content form .btm-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-list .list-content form .btm-div {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-label {
+  width: 100%;
+  max-width: 160px;
+  color: #008BD5;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-control {
+  max-width: 356px;
+  width: 100%;
+  border: 1px solid #555555;
+  border-radius: 10px;
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-control::placeholder {
+  color: #BFBFBF;
+}
+.tab-two-data .btm-list .list-content form .btm-div .grp-select {
+  display: flex;
+  gap: 18px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-list .list-content form .btm-div .grp-select {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.tab-two-data .btm-list .list-content form .btm-div .grp-select .form-control {
+  width: 100%;
+  max-width: 223px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-list .list-content form .btm-div .grp-select .form-control {
+    max-width: 100%;
+  }
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-select {
+  max-width: 130px;
+  width: 100%;
+  border: 1px solid #555555;
+  color: #BFBFBF;
+  border-radius: 10px;
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-select:focus {
+  box-shadow: none;
+  outline: none;
+}
+.tab-two-data .btm-list .list-content form .btm-div .form-select option {
+  color: #BFBFBF;
+  padding: 9px 18px;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-list .list-content form .btm-div .form-select {
+    max-width: 100%;
+  }
+}
+.tab-two-data .btm-btn {
+  margin: 65px 0 33px;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-btn {
+    margin: 35px 0 16px;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+}
+.tab-two-data .btm-btn .btn {
+  background-color: #008BD5;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 9px 21px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 575px) {
+  .tab-two-data .btm-btn .btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 16px;
+  }
+}
+
+.input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
 }
 
 /*# sourceMappingURL=style.css.map */
