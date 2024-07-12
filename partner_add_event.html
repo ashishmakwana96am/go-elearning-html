@@ -162,7 +162,7 @@
                                         </div>
                                         <div class="list-div">
                                             <label class="form-label">Target <span>*</span></label>
-                                            <select class="multipleChosen form-select" multiple="true">
+                                            <select class="multipleSelect2 form-select" multiple="true">
                                                 <option value="1">Teacher</option>
                                                 <option value="2">Primary Student</option>
                                                 <option value="3">Secondary Student</option>
@@ -173,7 +173,7 @@
                                         </div>
                                         <div class="list-div">
                                             <label class="form-label">Level <span>*</span></label>
-                                            <select class="multipleChosen form-select" multiple="true">
+                                            <select class="multipleSelect2 form-select" multiple="true">
                                                 <option value="Primary School">Primary School</option>
                                                 <option value="Secondary School">Secondary School</option>
                                                 <option value="Special School">Special School</option>
@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="list-div">
                                             <label class="form-label">Event Format <span>*</span></label>
-                                            <select class="multipleChosen" multiple="true">
+                                            <select class="multipleSelect2 form-select" multiple="true">
                                                 <option value="Seminar/Workshop">Seminar/Workshop</option>
                                                 <option value="Course">Course</option>
                                                 <option value="Competition/ Scheme">Competition/ Scheme</option>
@@ -192,7 +192,7 @@
                                         </div>
                                         <div class="list-div">
                                             <label class="form-label">Event Nature <span>*</span></label>
-                                            <select class="multipleChosen form-select" multiple="true">
+                                            <select class="multipleSelect2 form-select" multiple="true">
                                                 <option value="Key Learning Area">Key Learning Area</option>
                                                 <option value="Chinese Language Education">Chinese Language Education</option>
                                                 <option value="English Language Education">English Language Education</option>
@@ -488,9 +488,9 @@
     <script>
         $(document).ready(function(){
             // Chosen
-            $(".multipleChosen").chosen({
-                placeholder_text_multiple: "" // placeholder
-            });
+            $(".multipleSelect2").select2({
+		placeholder: "" //placeholder
+	});
         });
     </script>
 </body>
