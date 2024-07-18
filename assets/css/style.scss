@@ -4972,6 +4972,10 @@ color: #787878;
   
 }
 svg{
+  //  width: 176px;
+  @media (max-width: 1699px) {
+    width: 176px;
+        }
   @media (max-width: #{$xlll}) {
     width: 176px;
         }
@@ -5063,6 +5067,10 @@ svg{
         position: absolute;
         top: 65px;
     left: 76px;
+        @media (max-width: 1699px) {
+          top: 69px;
+          left: 22px;
+             }
         @media (max-width: #{$xlll}) {
           top: 69px;
           left: 22px;

@@ -5435,6 +5435,11 @@ button:focus:not(:focus-visible) {
   fill: #F6774E;
 }
 
+@media (max-width: 1699px) {
+  svg {
+    width: 176px;
+  }
+}
 @media (max-width: 1440px) {
   svg {
     width: 176px;
@@ -5539,6 +5544,12 @@ button:focus:not(:focus-visible) {
   position: absolute;
   top: 65px;
   left: 76px;
+}
+@media (max-width: 1699px) {
+  .nav-item.item .nav-link .book-svg .book-data {
+    top: 69px;
+    left: 22px;
+  }
 }
 @media (max-width: 1440px) {
   .nav-item.item .nav-link .book-svg .book-data {
