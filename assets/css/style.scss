@@ -3533,7 +3533,7 @@ p{
         #444444;
         @media (max-width: #{$sm}) {
          font-size: 16px;
-         line-height: 22px;
+         line-height: 16px;
       }
       }
         .btn1{
@@ -3576,6 +3576,7 @@ p{
         border-radius: 5px;
         @media (max-width: #{$med}) {
           padding: 26px 24px 26px 24px;
+          margin-top: 29px;
         }
         @media (max-width: #{$sm}) {
           padding: 8px 13px 20px 13px;
@@ -4068,15 +4069,23 @@ $dot-bg-color: transparent;
  }
 }
 
-
 .mobile-show-btn{
-  margin-top: 9px;
+  margin-top: 14px;
 }
 .owl-theme .owl-dots .owl-dot span{
   height: 18px;
 }
 .hidden {
   display: none;
+}
+
+.click-btn-data {
+  visibility: hidden;
+}
+@media (max-width: 575px) {
+  .click-btn-data-data {
+    display: none;
+  }
 }
 .custm-col12{
   position: absolute;

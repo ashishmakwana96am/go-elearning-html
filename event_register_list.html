@@ -120,11 +120,11 @@
             <div class="form-list position-relative">
                 <form>
                     <div class="row form-list-data ">
-                        <div class="col-12 col-sm-6 col-lg-8 col-xl-8">
+                        <div class="col-12 col-sm-6 col-lg-8 col-xl-8 ">
                           <input type="text" class="form-control" placeholder="輸入活動關鏈字">
                       </div>
-                         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 d-none d-sm-block">
-                           <div class="d-flex">
+                         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 mt-4 mt-sm-0 click-btn-btn">
+                           <div class="d-flex justify-content-center justify-content-sm-end">
                             <div class="btn btn1 show-advanced click-btn">進階搜尋</div>
                             <button class="btn btn2">搜尋</button>
                           </div>
@@ -293,20 +293,21 @@
                                   </ul>
                               </div>
                             </div>
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-sm-none mobile-show-btn">
+                              <div class="d-flex justify-content-center">
+                               <div class="d-flex">
+                                 <div class="btn btn1 show-advanced">
+                                   進階搜尋
+                                 </div>
+                                 <button class="btn btn2">搜尋</button>
+                           </div>
+                           </div>
+                           </div> 
                             <div class="btm-errow show-advanced">
                               <img src="assets/images/ChevronDoubleUp.png" alt="">
                           </div>
+                       
                          </div>
-                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-sm-none mobile-show-btn">
-                           <div class="d-flex justify-content-center">
-                            <div class="d-flex">
-                              <div class="btn btn1 show-advanced">
-                                進階搜尋
-                              </div>
-                              <button class="btn btn2">搜尋</button>
-                        </div>
-                        </div>
-                        </div>
                     </div>
                 </form>
             </div>
@@ -758,38 +759,40 @@
 });
     </script>
 <script>
-   $(document).ready(function() {
-      $('.show-advanced').click(function(event) {
-        var target = $(this).closest('.row').find('.custm-col12');
-        var formList = $(this).closest('.form-list');
-        
-        target.toggleClass('hidden');
-        formList.toggleClass('expanded');
-        
-        if (target.hasClass('hidden')) {
-            target.css('opacity', '0').slideUp();
-        } else {
-            target.css('opacity', '1').slideDown();
-        }
+  $(document).ready(function() {
+  $('.show-advanced').click(function(event) {
+    var target = $(this).closest('.row').find('.custm-col12');
+    var formList = $(this).closest('.form-list');
+    
+    target.toggleClass('hidden');
+    formList.toggleClass('expanded');
+    
+    if (target.hasClass('hidden')) {
+      target.css('opacity', '0').slideUp();
+      $('.click-btn').removeClass('click-btn-data'); 
+      $('.click-btn-btn').removeClass('click-btn-data-data'); 
+    } else {
+      target.css('opacity', '1').slideDown();
+      $(this).closest('.click-btn').addClass('click-btn-data'); 
+      $(this).closest('.click-btn-btn').addClass('click-btn-data-data'); 
+    }
 
-        // Prevent the click event from propagating to the document
-        event.stopPropagation();
-      });
+    event.stopPropagation();
+  });
 
-      // Close the dropdown when clicking outside of it
-      $(document).click(function(event) {
-        if (!$(event.target).closest('.form-list').length) {
-          $('.custm-col12').addClass('hidden').css('opacity', '0').slideUp();
-          $('.form-list').removeClass('expanded');
-        }
-      });
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.form-list').length) {
+      $('.custm-col12').addClass('hidden').css('opacity', '0').slideUp();
+      $('.form-list').removeClass('expanded');
+      $('.click-btn').removeClass('click-btn-data'); 
+      $('.click-btn-btn').removeClass('click-btn-data-data'); 
+    }
+  });
 
-      // Prevent clicks inside the dropdown from closing it
-      $('.custm-col12').click(function(event) {
-        event.stopPropagation();
-      });
-    });
-
+  $('.custm-col12').click(function(event) {
+    event.stopPropagation();
+  });
+});
 
 </script>
 </body>
