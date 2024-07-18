@@ -5983,7 +5983,6 @@ button:focus:not(:focus-visible) {
   width: 100%;
 }
 .edmall-pop .popup-data .pop-form form textarea {
-  height: 108px;
   border: 1px solid #787878;
   border-radius: 10px;
   padding: 8px 22px;
@@ -6828,6 +6827,13 @@ button:focus:not(:focus-visible) {
   font-weight: 700;
   margin-bottom: 29px;
   color: #F6774E;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 720px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
