@@ -1495,6 +1495,11 @@ footer .footer-data .footer-right li:last-child::after {
   align-items: center;
   margin-bottom: 33px;
 }
+@media (max-width: 768px) {
+  .right-sidebar.quotation-main .rightside-title {
+    align-items: start;
+  }
+}
 .right-sidebar.quotation-main .rightside-title.partner-title {
   margin-bottom: 20px;
 }
@@ -1520,7 +1525,12 @@ footer .footer-data .footer-right li:last-child::after {
 }
 @media (max-width: 375px) {
   .right-sidebar.quotation-main .rightside-title form input {
-    width: 300px;
+    width: 329px;
+  }
+}
+@media (max-width: 320px) {
+  .right-sidebar.quotation-main .rightside-title form input {
+    width: 276px;
   }
 }
 .right-sidebar.quotation-main .rightside-title form input::placeholder {

@@ -604,6 +604,7 @@ header {
   @media (max-width: #{$med}) {
     &.quotation-title {
       flex-direction: column;
+      // align-items: start;
     }
   }
   @media (max-width: #{$sm}) {
@@ -660,6 +661,7 @@ header {
     @media (max-width: #{$med}) {
       &.quotation-title {
         flex-direction: column;
+        // align-items: start;
       }
     }
     @media (max-width: #{$sm}) {
@@ -1591,6 +1593,9 @@ footer {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 33px;
+      @media (max-width: #{$med}) {
+       align-items: start;
+      }
        &.partner-title{
         margin-bottom: 20px;
        }
@@ -1612,7 +1617,10 @@ footer {
             height: 44px;
           }
           @media (max-width: #{$xs}) {
-            width: 300px;
+            width: 329px;
+          }
+          @media (max-width: #{$xss}) {
+            width: 276px;
           }
 
           &::placeholder {
@@ -5325,7 +5333,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 @media (max-width: #{$sm}) {
- flex-direction: column;padding: 6px 39px 15px 39px;
+ flex-direction: column;
+ padding: 6px 39px 15px 39px;
  margin-bottom: 19px;
    }
 .list-left{
