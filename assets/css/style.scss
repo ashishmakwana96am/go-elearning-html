@@ -2875,9 +2875,12 @@ body {
     text-align: center;
     z-index: 99999;
     &.edmall-pop{
-      top: 60%;
+      top: 78%;
+      @media (max-width: 1899px) {
+       top: 85%;
+           }
       @media (max-width: #{$xlll}) {
-       top: 77%;
+       top: 88%;
            }
     }
 }

@@ -2975,11 +2975,16 @@ body {
   z-index: 99999;
 }
 .popup.edmall-pop {
-  top: 60%;
+  top: 78%;
+}
+@media (max-width: 1899px) {
+  .popup.edmall-pop {
+    top: 85%;
+  }
 }
 @media (max-width: 1440px) {
   .popup.edmall-pop {
-    top: 77%;
+    top: 88%;
   }
 }
 
