@@ -6309,11 +6309,8 @@ margin-bottom: 24px;
     }
   }
 }
-
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 720px !important;
+@media (min-width: 576px) and (max-width:767px) {
+  .container{
+    max-width: 720px;
   }
-  }
-
+}
