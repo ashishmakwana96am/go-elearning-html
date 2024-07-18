@@ -1770,7 +1770,6 @@ footer .footer-data .footer-right li:last-child::after {
 }
 .quontation-table .que-head div h4 {
   color: #ffffff;
-  letter-spacing: 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -6790,6 +6789,14 @@ button:focus:not(:focus-visible) {
   background-repeat: no-repeat;
   background-position: right 0.7rem top 50%;
   background-size: 0.65rem auto;
+}
+
+.nav-link:focus-visible {
+  box-shadow: none;
+}
+
+:focus-visible {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1855,7 +1855,7 @@ footer {
       }
       h4 {
         color: $white-color;
-        @include latter-space();
+        // @include latter-space();
         font-size: 16px;
         line-height: 22px;
         font-weight: 700;
@@ -6265,4 +6265,10 @@ margin-bottom: 24px;
   background-repeat: no-repeat;
   background-position: right 0.7rem top 50%;
   background-size: 0.65rem auto;
+}
+.nav-link:focus-visible{
+  box-shadow: none;
+}
+:focus-visible {
+  outline: none;
 }
