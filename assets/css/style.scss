@@ -3391,6 +3391,9 @@ p{
   @media (max-width: #{$med}) {
     margin-bottom: 40px;
   }
+  @media (max-width: #{$sm}) {
+    margin-bottom: 19px;
+  }
   .form-list{
     background-color: #F6774E;
     margin: 0 100px 0 160px;
@@ -3643,6 +3646,9 @@ p{
 }
 .list-slider{
   padding-left: 85px;
+  @media (max-width: 767px) {
+    padding-left: 0;
+     }
   .container-fluid{
     @media (max-width: #{$sm}) {
    padding: 0 20px !important;
@@ -3671,7 +3677,7 @@ p{
        width: 75%;
       }
       @media (max-width: #{$sm}) {
-     width: 66%;
+     width: 58%;
           }
     }
     h2 {
@@ -3684,8 +3690,9 @@ p{
       font-weight: 100;
       color: transparent; 
       -webkit-text-stroke: 1px #FB4B13;
-      text-stroke: 1px 1px  #FB4B13; 
-      width: 100%;max-width: 200px;
+      text-stroke: 1px  #FB4B13; 
+      width: 100%;
+      max-width: 200px;
 
 
       @media (max-width: #{$xlll}) {
@@ -3698,8 +3705,15 @@ p{
        @media (max-width: #{$sm}) {
         font-size: 50px;
         max-width: 116px;
-        top: 25px;
+        top:3px;
         right: 8px;
+        line-height: 68px;
+          }
+       @media (max-width: 425px) {
+        top:26px;
+          }
+       @media (max-width: 425px) {
+        top:13px;
           }
        @media (max-width: #{$xs}) {
         right: 0;
@@ -3805,6 +3819,9 @@ p{
   #F0F9F3;
   padding: 28px 75px 48px 40px;
   margin-top: 74px;
+  @media (max-width: 767px) {
+    padding-right: 0;
+  }
      @media (max-width: #{$sm}) {
         margin-top: 35px;
         padding:0;
@@ -3935,6 +3952,9 @@ $dot-bg-color: transparent;
       top: 35%;
       left: -48px;
       display: block;
+      @media (max-width: 767px) {
+        display: none;
+      }
       .owl-prev{
         top: 40%;
         right: -20px;
@@ -3956,6 +3976,9 @@ $dot-bg-color: transparent;
       top: 35%;
       right: -48px;
       display: block;
+      @media (max-width: 767px) {
+        display: none;
+      }
       .owl-next{
         top: 40%;
         right: -20px;

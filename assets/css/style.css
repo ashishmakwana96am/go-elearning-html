@@ -3661,6 +3661,11 @@ button:focus:not(:focus-visible) {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 575px) {
+  .register-list-form {
+    margin-bottom: 19px;
+  }
+}
 .register-list-form .form-list {
   background-color: #F6774E;
   margin: 0 100px 0 160px;
@@ -3943,6 +3948,11 @@ button:focus:not(:focus-visible) {
 .list-slider {
   padding-left: 85px;
 }
+@media (max-width: 767px) {
+  .list-slider {
+    padding-left: 0;
+  }
+}
 @media (max-width: 575px) {
   .list-slider .container-fluid {
     padding: 0 20px !important;
@@ -3984,7 +3994,7 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 575px) {
   .list-slider .list-slider-left .left-img {
-    width: 66%;
+    width: 58%;
   }
 }
 .list-slider .list-slider-left h2 {
@@ -3997,7 +4007,7 @@ button:focus:not(:focus-visible) {
   font-weight: 100;
   color: transparent;
   -webkit-text-stroke: 1px #FB4B13;
-  text-stroke: 1px 1px #FB4B13;
+  text-stroke: 1px #FB4B13;
   width: 100%;
   max-width: 200px;
 }
@@ -4015,8 +4025,19 @@ button:focus:not(:focus-visible) {
   .list-slider .list-slider-left h2 {
     font-size: 50px;
     max-width: 116px;
-    top: 25px;
+    top: 3px;
     right: 8px;
+    line-height: 68px;
+  }
+}
+@media (max-width: 425px) {
+  .list-slider .list-slider-left h2 {
+    top: 26px;
+  }
+}
+@media (max-width: 425px) {
+  .list-slider .list-slider-left h2 {
+    top: 13px;
   }
 }
 @media (max-width: 375px) {
@@ -4134,6 +4155,11 @@ button:focus:not(:focus-visible) {
   background-color: #F0F9F3;
   padding: 28px 75px 48px 40px;
   margin-top: 74px;
+}
+@media (max-width: 767px) {
+  .btm-slider {
+    padding-right: 0;
+  }
 }
 @media (max-width: 575px) {
   .btm-slider {
@@ -4272,6 +4298,11 @@ button:focus:not(:focus-visible) {
   left: -48px;
   display: block;
 }
+@media (max-width: 767px) {
+  .owl-carousel1 .owl-nav {
+    display: none;
+  }
+}
 .owl-carousel1 .owl-nav .owl-prev {
   top: 40%;
   right: -20px;
@@ -4291,6 +4322,11 @@ button:focus:not(:focus-visible) {
   top: 35%;
   right: -48px;
   display: block;
+}
+@media (max-width: 767px) {
+  .owl-carousel2 .owl-nav {
+    display: none;
+  }
 }
 .owl-carousel2 .owl-nav .owl-next {
   top: 40%;
