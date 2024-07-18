@@ -167,7 +167,7 @@ header .header-data .header-right h4::before {
 }
 @media (max-width: 1199px) {
   .main .main-data .main-tab-box .main-left-data .main-border {
-    padding: 12px 34px;
+    padding: 10px 32px;
   }
 }
 @media (max-width: 1024px) {
@@ -178,6 +178,21 @@ header .header-data .header-right h4::before {
 @media (max-width: 991px) {
   .main .main-data .main-tab-box .main-left-data .main-border {
     padding: 7px 24px;
+  }
+}
+@media (max-width: 767px) {
+  .main .main-data .main-tab-box .main-left-data .main-border {
+    padding: 7px 26px;
+  }
+}
+@media (max-width: 670px) {
+  .main .main-data .main-tab-box .main-left-data .main-border {
+    padding: 6px 22px;
+  }
+}
+@media (max-width: 620px) {
+  .main .main-data .main-tab-box .main-left-data .main-border {
+    padding: 4px 16px;
   }
 }
 .main .main-data .main-tab-box .main-left-data .main-border h3 {
@@ -199,10 +214,22 @@ header .header-data .header-right h4::before {
     line-height: 26px;
   }
 }
+@media (max-width: 767px) {
+  .main .main-data .main-tab-box .main-left-data .main-border h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 @media (max-width: 699px) {
   .main .main-data .main-tab-box .main-left-data .main-border h3 {
     font-size: 14px;
     line-height: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .main .main-data .main-tab-box .main-left-data .main-border h3 {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 .main .main-data .modal {
