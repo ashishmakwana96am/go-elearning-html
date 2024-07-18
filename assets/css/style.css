@@ -1176,6 +1176,12 @@ footer .footer-data .footer-right li:last-child::after {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 767px) {
+  .right-sidebar .message-data .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 26px;
+  }
+}
 @media (max-width: 575px) {
   .right-sidebar .message-data .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -4569,7 +4575,7 @@ button:focus:not(:focus-visible) {
     padding-right: 39px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .event-detail .event-detail-data p {
     padding-right: 0;
   }
@@ -4944,7 +4950,7 @@ button:focus:not(:focus-visible) {
 .online-register-title ul li a.active {
   color: #F6774E;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-register-title ul li a .span-div {
     max-width: 130px;
   }
@@ -4977,6 +4983,11 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 575px) {
   .online-register {
+    margin-bottom: 92px !important;
+  }
+}
+@media (max-width: 575px) {
+  .online-register {
     width: 100%;
     padding: 41px 11px 46px 11px;
     margin-bottom: 92px !important;
@@ -5006,7 +5017,7 @@ button:focus:not(:focus-visible) {
     margin-bottom: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-register .reg-form .form-div {
     flex-direction: column;
     align-items: start;
@@ -5112,6 +5123,11 @@ button:focus:not(:focus-visible) {
 .online-register .subscrib-form .d-flex {
   gap: 32px;
 }
+@media (max-width: 575px) {
+  .online-register .subscrib-form .d-flex {
+    gap: 9px;
+  }
+}
 .online-register .subscrib-form .sub-data {
   display: flex;
   gap: 16px;
@@ -5119,7 +5135,7 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 575px) {
   .online-register .subscrib-form .sub-data {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
   }
 }
 .online-register .subscrib-form .sub-data:last-child {
@@ -5233,6 +5249,7 @@ button:focus:not(:focus-visible) {
 @media (max-width: 768px) {
   .online-register-page {
     width: 580px;
+    margin-bottom: 70px !important;
   }
 }
 @media (max-width: 575px) {
@@ -5376,7 +5393,7 @@ button:focus:not(:focus-visible) {
   align-items: center;
   margin-bottom: 15px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-form-list li {
     flex-direction: column;
     align-items: start;
@@ -5408,7 +5425,7 @@ button:focus:not(:focus-visible) {
   gap: 29px;
   margin: 0 auto;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .btn-grp {
     flex-direction: column;
     width: max-content;
@@ -5852,7 +5869,7 @@ button:focus:not(:focus-visible) {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .edmall-list .edmall-list-data {
     flex-direction: column;
     padding: 6px 39px 15px 39px;
@@ -5864,13 +5881,19 @@ button:focus:not(:focus-visible) {
   gap: 24px;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .edmall-list .edmall-list-data .list-left {
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 18px;
+    gap: 10px;
   }
 }
 @media (max-width: 575px) {
+  .edmall-list .edmall-list-data .list-left {
+    gap: 5px;
+  }
+}
+@media (max-width: 767px) {
   .edmall-list .edmall-list-data .list-left img {
     margin: 0 auto;
   }

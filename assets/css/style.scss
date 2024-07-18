@@ -1287,6 +1287,10 @@ footer {
       @media (max-width: #{$xl}) {
         grid-template-columns: repeat(2, 1fr);
       }
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 26px;
+      }
       @media (max-width: #{$sm}) {
         grid-template-columns: repeat(1, 1fr);
         gap: 26px;
@@ -4196,7 +4200,7 @@ padding-right: 43px;
 @media (max-width: #{$xlll}) {
   padding-right: 39px;
   }
-@media (max-width: #{$sm}) {
+@media (max-width: 767px) {
   padding-right: 0;
   }
     }
@@ -4506,9 +4510,10 @@ letter-spacing: 3px    }
         #F6774E;
       }
       .span-div{
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           max-width: 130px;
           }
+
       }
       h4{
         padding-left: 4px;
@@ -4541,6 +4546,9 @@ letter-spacing: 3px    }
   padding: 54px 125px 58px 100px;
   margin-bottom: 199px !important;
   @media (max-width: #{$sm}) {
+    margin-bottom: 92px !important;
+    }
+  @media (max-width: #{$sm}) {
    width: 100%;
    padding: 41px 11px 46px 11px;
    margin-bottom: 92px !important;
@@ -4568,7 +4576,7 @@ letter-spacing: 3px    }
          margin-bottom: 0;
            }
       }
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
        flex-direction: column;
        align-items: start;
        gap: 7px;
@@ -4670,13 +4678,16 @@ margin-bottom: 6px;
     }
     .d-flex{
       gap: 32px;
+      @media (max-width: #{$sm}) {
+        gap: 9px;
+      }
     }
     .sub-data{
       display: flex;
       gap: 16px;
       margin-bottom: 10px;
       @media (max-width: #{$sm}) {
-        margin-bottom: 35px;
+        margin-bottom: 27px;
       }
       &:last-child{
         margin-bottom: 0;
@@ -4785,6 +4796,7 @@ color: #787878;
   }
 @media (max-width: #{$med}) {
     width: 580px;
+    margin-bottom: 70px !important;
   }
 @media (max-width: #{$sm}) {
     width: 100%;
@@ -4907,7 +4919,7 @@ color: #787878;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       flex-direction: column;
       align-items: start;
       margin-bottom: 27px;
@@ -4938,7 +4950,7 @@ color: #787878;
   justify-content: center;
   gap: 29px;
   margin: 0 auto;  
-  @media (max-width: #{$sm}) {
+  @media (max-width: 767px) {
     flex-direction: column;
     width: max-content;
   }
@@ -5341,7 +5353,7 @@ border-radius: 30px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-@media (max-width: #{$sm}) {
+@media (max-width: 767px) {
  flex-direction: column;
  padding: 6px 39px 15px 39px;
  margin-bottom: 19px;
@@ -5350,12 +5362,16 @@ align-items: center;
   display: flex;
   gap: 24px;
   align-items: center;
-  @media (max-width: #{$sm}) {
-   flex-wrap: wrap;
+  @media (max-width: 767px) {
+   flex-direction: column;
    margin-bottom: 18px;
+   gap: 10px;
+      }
+  @media (max-width: 575px) {
+   gap: 5px;
       }
       img{
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
         margin: 0 auto;
              }
       }
