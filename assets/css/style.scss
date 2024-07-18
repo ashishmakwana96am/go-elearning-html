@@ -4059,6 +4059,8 @@ $dot-bg-color: transparent;
    display: block;
  }
 }
+
+
 .mobile-show-btn{
   margin-top: 9px;
 }
@@ -6271,4 +6273,18 @@ margin-bottom: 24px;
 }
 :focus-visible {
   outline: none;
+}
+.wizard-step{
+  .reg-form{
+
+   h3{
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 29px;
+      color: 
+      #F6774E;
+    }
+  }
 }

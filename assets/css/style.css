@@ -6798,4 +6798,13 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
+.wizard-step .reg-form h3 {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 29px;
+  color: #F6774E;
+}
+
 /*# sourceMappingURL=style.css.map */
