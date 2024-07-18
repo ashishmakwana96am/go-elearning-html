@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
   
 // Open popup function
 function openPopup(popupId) {
+    // Close all open popups
+    document.querySelectorAll('.popup').forEach(popup => {
+        popup.style.display = 'none';
+    });
+    // Display the overlay and the new popup
     document.getElementById('popupOverlay').style.display = 'block';
     document.getElementById(popupId).style.display = 'block';
 }

@@ -3477,7 +3477,7 @@ button:focus:not(:focus-visible) {
   font-size: 20px;
   line-height: 27px;
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #444444;
   margin-bottom: 37px;
 }
@@ -3495,7 +3495,6 @@ button:focus:not(:focus-visible) {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 5px;
   color: #31b762;
   margin-bottom: 62px;
 }

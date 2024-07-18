@@ -3226,7 +3226,7 @@ p{
     font-size: 20px;
     line-height: 27px;
     font-weight: 600;
-    @include latter-space();
+   letter-spacing: 3px;
     color: 
     #444444;
     margin-bottom: 37px;
@@ -3241,7 +3241,7 @@ p{
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    @include latter-space();
+    // @include latter-space();
   color: $green-color;
     margin-bottom: 62px;
     @media (max-width: #{$sm}) {
