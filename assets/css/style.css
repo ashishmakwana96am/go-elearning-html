@@ -2565,7 +2565,7 @@ footer .footer-data .footer-right li:last-child::after {
     padding: 35px 80px 57px 80px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-qr .record-detail.online_record {
     width: 100%;
     padding: 35px 23px 57px 23px;
@@ -2583,7 +2583,7 @@ footer .footer-data .footer-right li:last-child::after {
     padding: 35px 80px 57px 80px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-qr .record-detail {
     width: 100%;
     padding: 35px 23px 57px 23px;
@@ -2595,7 +2595,7 @@ footer .footer-data .footer-right li:last-child::after {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-qr .record-detail .qr-img img {
     width: 269px;
     height: 269px;
@@ -2619,7 +2619,7 @@ footer .footer-data .footer-right li:last-child::after {
 .record-list.mb-34 {
   margin-bottom: 34px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-list.mb-34 {
     margin-bottom: 59px;
   }
@@ -2632,7 +2632,7 @@ footer .footer-data .footer-right li:last-child::after {
 .record-list.mb-71 {
   margin-bottom: 71px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-list.mb-71 {
     margin-bottom: 59px;
   }
@@ -2665,7 +2665,7 @@ footer .footer-data .footer-right li:last-child::after {
 .record-list ul li h3 {
   width: 170px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-list ul li h3.excep-h3 {
     width: 70px;
   }
@@ -2674,7 +2674,7 @@ footer .footer-data .footer-right li:last-child::after {
   width: 340px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-register-page ul li {
     gap: 10px;
   }
@@ -2682,7 +2682,7 @@ footer .footer-data .footer-right li:last-child::after {
 .online-register-page .record-list.mb-36 {
   margin-bottom: 36px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-register-page .record-list.mb-36 {
     margin-bottom: 38px;
   }
@@ -2690,7 +2690,7 @@ footer .footer-data .footer-right li:last-child::after {
 .online-register-page .record-list.mb-34 {
   margin-bottom: 34px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .online-register-page .record-list.mb-34 {
     margin-bottom: 38px;
   }
@@ -2702,7 +2702,7 @@ footer .footer-data .footer-right li:last-child::after {
   align-items: center;
   gap: 41px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-btn {
     flex-direction: column;
     gap: 33px;
@@ -2733,7 +2733,7 @@ footer .footer-data .footer-right li:last-child::after {
     padding: 8px 28px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .record-btn .btn {
     width: 207px;
     height: 60px;
@@ -5369,6 +5369,11 @@ button:focus:not(:focus-visible) {
   .online-register-page .record-btn .btn {
     width: 160px;
     padding: 8px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .online-register-page .record-btn .btn {
+    padding: 20px 10px;
   }
 }
 @media (max-width: 575px) {

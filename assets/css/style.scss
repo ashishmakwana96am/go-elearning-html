@@ -2476,7 +2476,7 @@ footer {
       width: 580px;
       padding: 35px 80px 57px 80px;
     }
- @media (max-width: #{$sm}) {
+ @media (max-width: 767px) {
       width: 100%;
       padding: 35px 23px 57px 23px;
     }
@@ -2489,7 +2489,7 @@ footer {
         width: 580px;
         padding: 35px 80px 57px 80px;
       }
-   @media (max-width: #{$sm}) {
+   @media (max-width: 767px) {
         width: 100%;
         padding: 35px 23px 57px 23px;
       }
@@ -2499,7 +2499,7 @@ footer {
   flex-direction: column;
   align-items: center;
   img{
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       width: 269px;
       height: 269px;
       margin-bottom: 30px;
@@ -2523,7 +2523,7 @@ footer {
   }
   &.mb-34{
     margin-bottom: 34px;
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       margin-bottom: 59px;
      }
      @media (max-width: #{$xss}) {
@@ -2532,7 +2532,7 @@ footer {
   }
   &.mb-71{
     margin-bottom: 71px;
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       margin-bottom: 59px;
      }
      @media (max-width: #{$xss}) {
@@ -2564,7 +2564,7 @@ footer {
       h3{
         width: 170px;
         &.excep-h3{
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             width: 70px;
            }
         }
@@ -2577,20 +2577,20 @@ footer {
 }
 .online-register-page{
   ul li{
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       gap: 10px;
      }
   }
   .record-list{
     &.mb-36{
       margin-bottom: 36px;
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         margin-bottom: 38px;
        }
     }
     &.mb-34{
       margin-bottom: 34px;
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         margin-bottom: 38px;
        }
     }
@@ -2601,7 +2601,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 41px;
-  @media (max-width: #{$sm}) {
+  @media (max-width: 767px) {
    flex-direction: column;
    gap: 33px;
   }
@@ -2630,7 +2630,7 @@ footer {
     @media (max-width: #{$med}) {
      padding: 8px 28px;
      }
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
      width: 207px;
      height: 60px;
     padding: 0;
@@ -4891,6 +4891,9 @@ color: #787878;
       width: 160px;
       padding: 8px 10px;
       }
+    @media (max-width: 767px) {
+      padding: 20px 10px;
+      }
     @media (max-width: #{$sm}) {
       width: 207px;
       padding: 17px 32px 16px 33px;
@@ -5813,7 +5816,6 @@ gap: 28px;
               margin-bottom: 0;
               @media (max-width: #{$xl}) {
                width: 178px;
-                 
                     }
               span{
                 color: 
