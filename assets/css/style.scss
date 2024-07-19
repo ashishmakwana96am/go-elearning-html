@@ -3439,7 +3439,7 @@ p{
     @media (max-width: #{$med}) {
       margin:0 19px 0 19px;
        }
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       margin:0;
        }
     .form-list-data{
@@ -3472,7 +3472,7 @@ p{
         border: 1px solid #555555;
         border-radius: 2px;
         margin-right: 4px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
          width: 30px;
          height: 30px;
         }
@@ -3490,7 +3490,7 @@ p{
           &:checked ~ .checkmark:after {
             display: block;
           }
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
          width: 30px;
          height: 30px;
         }
@@ -3515,7 +3515,7 @@ p{
     border: solid #F6774E;
     border-width: 0 3px 3px 0;
             transform: rotate(45deg);
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
             left: 9px;
     top: 2px;
     width: 10px;
@@ -3552,7 +3552,7 @@ p{
               // width: 140px;
               padding: 10px 4px;
             }
-            @media (max-width: #{$sm}) {
+            @media (max-width: 767px) {
               border-radius: 40px;
               width: 140px;
               margin-right: 32px;
@@ -3568,7 +3568,7 @@ p{
               @media (max-width: #{$xlll}) {
                 padding: 10px 10px 10px 16px;
               }
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
                width: 99px;
               }
       }
@@ -3591,7 +3591,7 @@ p{
            display: flex;
            gap: 15px;
            margin-bottom: 21px;
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
       flex-direction: column;
       }
            &:last-child{
@@ -3615,7 +3615,7 @@ p{
             display: flex;
             flex-wrap: wrap;
             width: 800px; 
-             @media (max-width: #{$sm}) {
+             @media (max-width: 767px) {
      width: auto;
       }
             &.col01{
@@ -3623,7 +3623,7 @@ p{
             }
             &.col02{
               gap: 10px;
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
              gap: 29px;
                  }
             }
@@ -3633,7 +3633,7 @@ p{
               font-size: 16px;
               line-height: 22px;
               font-weight: 500;
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
                 align-items: center;
                  }
               input{
@@ -3683,16 +3683,24 @@ p{
   @media (max-width: 767px) {
     padding-left: 0;
      }
-  .container-fluid{
-    @media (max-width: #{$sm}) {
-   padding: 0 20px !important;
-    }
-  }
+
   @media (max-width: #{$sm}) {
     padding-left: 0;
   }
+  .left-data{
+    @media (max-width: 767px) {
+      padding: 0 20px;
+     }
+  }
+  .right-data{
+    @media (max-width: 767px) {
+     padding-left: 20px;
+     padding-right: 0;
+     }
+  }
   .list-slider-left{
     position: relative;
+   
     .left-img{
       width: 65%;
       @media (max-width: #{$xlll}) {
@@ -3710,7 +3718,7 @@ p{
        margin-bottom: 20px;
        width: 75%;
       }
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
      width: 58%;
           }
     }
@@ -3734,6 +3742,10 @@ p{
           }
       @media (max-width: #{$xl}) {
         right: -60px;
+          }
+      @media (max-width: 767px) {
+        right: 0;
+        top: 68px;
           }
      
        @media (max-width: #{$sm}) {
@@ -3848,6 +3860,15 @@ p{
     }
   }
 }
+.btn-section{
+  .container{
+    @media (max-width: 767px) {
+     max-width: 100%;
+     margin-left: 0;
+     margin-right: 0;
+    }
+  }
+}
 .btm-slider{
   background-color: 
   #F0F9F3;
@@ -3856,7 +3877,7 @@ p{
   @media (max-width: 767px) {
     padding-right: 0;
   }
-     @media (max-width: #{$sm}) {
+     @media (max-width: 767px) {
         margin-top: 35px;
         padding:0;
         padding-top: 30px;
@@ -3865,6 +3886,9 @@ p{
       }
   .left-btm-data{
     position: relative;
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
     .empty {
       @media (max-width: #{$sm}) {
         padding-left: 50px;
@@ -3920,6 +3944,12 @@ p{
       width: 100%;
       max-width: 100px;
       
+    }
+  }
+  .right-btm-data{
+    @media (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 0;
     }
   }
   .btn-yel2{
@@ -4086,7 +4116,7 @@ $dot-bg-color: transparent;
 .click-btn-data {
   visibility: hidden;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .click-btn-data-data {
     display: none;
   }

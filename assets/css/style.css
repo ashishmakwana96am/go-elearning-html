@@ -3729,7 +3729,7 @@ button:focus:not(:focus-visible) {
     margin: 0 19px 0 19px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list {
     margin: 0;
   }
@@ -3765,7 +3765,7 @@ button:focus:not(:focus-visible) {
   border-radius: 2px;
   margin-right: 4px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .custom-checkbox {
     width: 30px;
     height: 30px;
@@ -3785,7 +3785,7 @@ button:focus:not(:focus-visible) {
 .register-list-form .form-list .form-list-data .custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .custom-checkbox input {
     width: 30px;
     height: 30px;
@@ -3811,7 +3811,7 @@ button:focus:not(:focus-visible) {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .custom-checkbox .checkmark:after {
     left: 9px;
     top: 2px;
@@ -3848,7 +3848,7 @@ button:focus:not(:focus-visible) {
     padding: 10px 4px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .btn1 {
     border-radius: 40px;
     width: 140px;
@@ -3868,7 +3868,7 @@ button:focus:not(:focus-visible) {
     padding: 10px 10px 10px 16px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .btn2 {
     width: 99px;
   }
@@ -3896,7 +3896,7 @@ button:focus:not(:focus-visible) {
   gap: 15px;
   margin-bottom: 21px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .form-list-content .form-data {
     flex-direction: column;
   }
@@ -3921,7 +3921,7 @@ button:focus:not(:focus-visible) {
   flex-wrap: wrap;
   width: 800px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .form-list-content .form-data ul {
     width: auto;
   }
@@ -3932,7 +3932,7 @@ button:focus:not(:focus-visible) {
 .register-list-form .form-list .form-list-data .form-list-content .form-data ul.col02 {
   gap: 10px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .form-list-content .form-data ul.col02 {
     gap: 29px;
   }
@@ -3944,7 +3944,7 @@ button:focus:not(:focus-visible) {
   line-height: 22px;
   font-weight: 500;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .register-list-form .form-list .form-list-data .form-list-content .form-data ul li {
     align-items: center;
   }
@@ -4001,13 +4001,19 @@ button:focus:not(:focus-visible) {
   }
 }
 @media (max-width: 575px) {
-  .list-slider .container-fluid {
-    padding: 0 20px !important;
-  }
-}
-@media (max-width: 575px) {
   .list-slider {
     padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .list-slider .left-data {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .list-slider .right-data {
+    padding-left: 20px;
+    padding-right: 0;
   }
 }
 .list-slider .list-slider-left {
@@ -4039,7 +4045,7 @@ button:focus:not(:focus-visible) {
     width: 75%;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .list-slider .list-slider-left .left-img {
     width: 58%;
   }
@@ -4066,6 +4072,12 @@ button:focus:not(:focus-visible) {
 @media (max-width: 1024px) {
   .list-slider .list-slider-left h2 {
     right: -60px;
+  }
+}
+@media (max-width: 767px) {
+  .list-slider .list-slider-left h2 {
+    right: 0;
+    top: 68px;
   }
 }
 @media (max-width: 575px) {
@@ -4198,6 +4210,14 @@ button:focus:not(:focus-visible) {
   text-overflow: ellipsis;
 }
 
+@media (max-width: 767px) {
+  .btn-section .container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .btm-slider {
   background-color: #F0F9F3;
   padding: 28px 75px 48px 40px;
@@ -4208,7 +4228,7 @@ button:focus:not(:focus-visible) {
     padding-right: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .btm-slider {
     margin-top: 35px;
     padding: 0;
@@ -4217,6 +4237,11 @@ button:focus:not(:focus-visible) {
 }
 .btm-slider .left-btm-data {
   position: relative;
+}
+@media (max-width: 767px) {
+  .btm-slider .left-btm-data {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 575px) {
   .btm-slider .left-btm-data .empty {
@@ -4282,6 +4307,12 @@ button:focus:not(:focus-visible) {
   border-radius: 20px;
   width: 100%;
   max-width: 100px;
+}
+@media (max-width: 767px) {
+  .btm-slider .right-btm-data {
+    padding-left: 20px;
+    padding-right: 0;
+  }
 }
 .btm-slider .btn-yel2 {
   background-color: #FBEE6C;
@@ -4441,7 +4472,7 @@ button:focus:not(:focus-visible) {
   visibility: hidden;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .click-btn-data-data {
     display: none;
   }
