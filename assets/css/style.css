@@ -118,7 +118,7 @@ header .header-data .header-right h4::before {
     padding: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main .main-data {
     flex-direction: row;
     justify-content: space-between;
@@ -131,7 +131,7 @@ header .header-data .header-right h4::before {
     width: 180px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main .main-data .logo-img {
     width: 153px;
     height: 46px;
@@ -237,6 +237,7 @@ header .header-data .header-right h4::before {
 }
 .main .main-data .modal .modal-dialog {
   margin: 0;
+  max-width: 100% !important;
 }
 .main .main-data .modal .modal-header {
   padding: 0;

@@ -297,7 +297,7 @@ header {
       gap: 51px;
       padding: 0;
     }
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       flex-direction: row;
       justify-content: space-between;
       padding-left: 6px;
@@ -308,7 +308,7 @@ header {
         // margin-bottom: 30px;
         width: 180px;
       }
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         width: 153px;
         height: 46px;
         margin-bottom: 0;
@@ -400,6 +400,7 @@ header {
       background-color: $white-color;
       .modal-dialog {
         margin: 0;
+        max-width: 100% !important;
       }
       .modal-header {
         padding: 0;
