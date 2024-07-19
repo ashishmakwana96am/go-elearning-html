@@ -351,6 +351,11 @@ header .header-data .header-right h4::before {
   width: 208px;
   height: 120vh;
 }
+@media (max-width: 1440px) {
+  .left-sidebar {
+    height: auto;
+  }
+}
 .left-sidebar.partner {
   height: auto;
 }
@@ -1981,6 +1986,11 @@ footer .footer-data .footer-right li:last-child::after {
 }
 .quontation-table .que-body .que-tr .que-gray-flex.action-mobile {
   gap: 12px;
+}
+@media (max-width: 767px) {
+  .quontation-table .que-body .que-tr .que-gray-flex.action-mobile {
+    justify-content: center;
+  }
 }
 .quontation-table .que-body .que-tr .que-gray-flex.action-mobile .action-btn {
   display: flex;
