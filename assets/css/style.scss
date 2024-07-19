@@ -706,14 +706,14 @@ header {
   }
   .yellow-btn {
     &.profile_yellow {
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         text-align: center;
       }
       a {
         @include latter-space();
         padding: 17px 38px;
         margin-bottom: 0;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           padding: 17px 24px;
         }
       }
@@ -1145,7 +1145,7 @@ footer {
     @media (max-width: #{$med}) {
       width: 100%;
     }
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       padding: 47px 23px 52px 23px;
       margin-bottom: 90px;
     }
@@ -1161,7 +1161,7 @@ footer {
       @include latter-space();
       color: $green-color;
       font-weight: 700;
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         margin-bottom: 19px;
       }
     }
@@ -1174,7 +1174,7 @@ footer {
           }
         }
       }
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         margin-bottom: 26px;
       }
       @media (max-width: #{$xss}) {
@@ -1182,13 +1182,13 @@ footer {
       }
       &.mb-35 {
         margin-bottom: 35px;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           margin-bottom: 26px;
         }
         li {
           display: flex;
           gap: 55px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             flex-direction: column;
             gap: 6px;
           }
@@ -1196,7 +1196,7 @@ footer {
       }
       .dot-style {
         padding-left: 10px;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           margin-bottom: 62px;
         }
         li {
@@ -1214,18 +1214,18 @@ footer {
         }
       }
       li {
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           gap: 20px;
         }
         .login-detail {
           display: flex;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             flex-direction: column;
             margin-bottom: 15px;
           }
           h4 {
             width: 150px;
-            @media (max-width: #{$sm}) {
+            @media (max-width: 767px) {
               width: 100%;
             }
           }
@@ -1236,7 +1236,7 @@ footer {
           font-size: 18px;
           line-height: 24px;
           color: #3a3a3a;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             margin-bottom: 4px;
             &.custm-mb {
               margin-bottom: 19px;
@@ -2651,8 +2651,8 @@ letter-spacing: 0 !important;
     @media (max-width: #{$med}) {
       margin-bottom: 40px;
     }
-    @media (max-width: #{$sm}) {
-      justify-content: start;
+    @media (max-width: 767px) {
+      justify-content: center;
       gap: 29px;
       margin-bottom: 10px;
     }
@@ -2686,8 +2686,9 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     margin-bottom: 28px;
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
      margin-bottom: 10px;
+     justify-content: center;
      }
     .status-btn{
       padding: 12px 38px 11px 49px;
@@ -2727,15 +2728,16 @@ margin: 0;
      }
     .bookdata{
 margin-bottom: 51px;
-@media (max-width: #{$sm}) {
+@media (max-width: 767px) {
   .progress-img{
     margin-bottom: 24px;
+    text-align: center;
   }
  }
 
       .progress-right{
         margin-top: 16px;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
          margin-top: 0;
          }
         h2{
@@ -2746,7 +2748,7 @@ margin-bottom: 51px;
           #444444
           ;
           margin-bottom: 34px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             margin-bottom: 22px;
            }
         }
@@ -2808,7 +2810,7 @@ margin-bottom: 51px;
     align-items: center;
     gap: 139px;
     margin-bottom: 34px;
-    @media (max-width: #{$sm}) {
+    @media (max-width:767px) {
      gap: 99px;
       }
     @media (max-width: #{$xss}) {
@@ -2827,7 +2829,7 @@ margin-bottom: 51px;
     height: 27px;     
           background-color: 
           #444444;
-          @media (max-width: #{$sm}) {
+          @media (max-width:767px) {
             right: -57px;
              }
           @media (max-width: #{$xss}) {
