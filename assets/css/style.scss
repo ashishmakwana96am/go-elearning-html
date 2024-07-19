@@ -169,7 +169,7 @@ margin-bottom: 14px;
   @media (max-width: #{$xlll}) {
     width: 260px;
   }
-  @media (max-width: #{$sm}) {
+  @media (max-width:767px) {
     width: 100%;
   }
 }
@@ -1597,8 +1597,9 @@ footer {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 33px;
-      @media (max-width: #{$med}) {
+      @media (max-width: 992px) {
        align-items: start;
+       flex-direction: column;
       }
        &.partner-title{
         margin-bottom: 20px;
@@ -1895,7 +1896,7 @@ footer {
        gap: 10px;
        padding: 10px;
       }
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
       flex-direction: column;
       align-items: start;
       padding: 19px 10px;
@@ -1927,7 +1928,7 @@ footer {
           font-size: 14px;
           line-height: 18px;
         }
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           width: 300px;
           line-height: 25px;
         font-size: 16px;
@@ -1981,7 +1982,7 @@ footer {
         &.exception-tab {
           @include table-width-3rd();
         }
-        @media (max-width: #{$sm}) {
+        @media (max-width:767px) {
           display: flex;
           width: 100%;
           // justify-content: space-between;
@@ -1998,7 +1999,7 @@ footer {
           width: 120px;
           letter-spacing: 4px;
           line-height: 22px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
           display: block;
           width: 170px;
           }
