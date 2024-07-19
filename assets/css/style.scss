@@ -3712,10 +3712,11 @@ p{
       }
       @media (max-width: #{$xl}) {
         width: 75%;
+        margin-top: 0;
+        margin-bottom: 60px;  
       }
       @media (max-width: #{$med}) {
        margin-top: 0;
-       margin-bottom: 20px;
        width: 75%;
       }
       @media (max-width: 767px) {
@@ -3743,6 +3744,7 @@ p{
       @media (max-width: #{$xl}) {
         right: -60px;
           }
+     
       @media (max-width: 767px) {
         right: 0;
         top: 68px;
@@ -3786,6 +3788,9 @@ p{
      @media (max-width: #{$xl}) {
     right: 0;
     }
+    @media (max-width: 991px) {
+      bottom: 20px;
+         }
     &.btn-yel-parent{
       @media (max-width: #{$med}) {
         display: none;
@@ -4148,7 +4153,7 @@ $dot-bg-color: transparent;
      @media (max-width: #{$xlll}) {
        margin:0 53px 0 81px;
         }
-     @media (max-width: #{$sm}) {
+     @media (max-width: 767px) {
        margin:0 ;
         }
    }
@@ -4167,10 +4172,13 @@ $dot-bg-color: transparent;
 @media (max-width: #{$xlll}) {
 grid-template-columns: repeat(4, 1fr);
 }
+@media (max-width: 992px) {
+grid-template-columns: repeat(3, 1fr);
+}
 @media (max-width: #{$med}) {
 grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: #{$sm}) {
+@media (max-width: 767px) {
 grid-template-columns: repeat(1, 1fr);
 }
 .slide-card{
