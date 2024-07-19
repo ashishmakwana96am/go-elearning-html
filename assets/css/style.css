@@ -6110,7 +6110,7 @@ button:focus:not(:focus-visible) {
 .partner-table-head .partner-body .que-tr .que-gray-flex {
   width: 190px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner-table-head .partner-body .que-tr .que-gray-flex {
     display: flex;
     width: 100%;
@@ -6125,7 +6125,7 @@ button:focus:not(:focus-visible) {
 .partner-table-head .partner-body .que-tr .que-gray-flex:first-child {
   width: 100px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner-table-head .partner-body .que-tr .que-gray-flex:first-child {
     display: flex;
     width: 100%;
@@ -6135,7 +6135,7 @@ button:focus:not(:focus-visible) {
 .partner-table-head .partner-body .que-tr .que-gray-flex.med-flex {
   width: 115px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner-table-head .partner-body .que-tr .que-gray-flex.med-flex {
     display: flex;
     width: 100%;
@@ -6145,7 +6145,7 @@ button:focus:not(:focus-visible) {
 .partner-table-head .partner-body .que-tr .que-gray-flex.small-flex {
   width: 110px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner-table-head .partner-body .que-tr .que-gray-flex.small-flex {
     display: flex;
     width: 100%;
@@ -6206,7 +6206,7 @@ button:focus:not(:focus-visible) {
     width: 190px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner-table-head .partner-body .que-tr .res-view {
     display: flex;
     width: 100%;

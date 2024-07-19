@@ -5608,7 +5608,7 @@ gap: 28px;
       .que-gray-flex{
         width: 190px;
        
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           display: flex;
           width: 100%;
           gap: 10px;
@@ -5618,7 +5618,7 @@ gap: 28px;
           }
         &:first-child{
           width: 100px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             display: flex;
             width: 100%;
             gap: 10px;
@@ -5626,7 +5626,7 @@ gap: 28px;
         }
         &.med-flex{
           width: 115px;
-          @media (max-width: #{$sm}) {
+          @media (max-width:767px) {
             display: flex;
             width: 100%;
             gap: 10px;
@@ -5634,7 +5634,7 @@ gap: 28px;
         }
         &.small-flex{
           width: 110px;
-          @media (max-width: #{$sm}) {
+          @media (max-width:767px) {
             display: flex;
             width: 100%;
             gap: 10px;
@@ -5689,7 +5689,7 @@ gap: 28px;
         width: 190px;
         
            }
-           @media (max-width: #{$sm}) {
+           @media (max-width:767px) {
             display: flex;
             width: 100%;
             gap: 10px;
