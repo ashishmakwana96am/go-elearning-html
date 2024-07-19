@@ -5714,13 +5714,11 @@ gap: 28px;
   margin-bottom: 200px;
   @media (max-width: #{$lg}) {
     margin-bottom: 50px;
-      
          }
   .nav{
   display: flex;
   justify-content: center;
   margin-bottom: 0 !important;
-
   }
   .nav-item{
     .nav-link{
@@ -5734,6 +5732,9 @@ gap: 28px;
       }
       @media (max-width: #{$xl}) {
         padding: 14px 54px;
+            }
+      @media (max-width: 992px) {
+        padding: 14px 35px;
             }
       @media (max-width: #{$sm}) {
         padding: 10px 14px;
@@ -5780,7 +5781,7 @@ gap: 28px;
             gap: 10px;
             margin-bottom: 18px;
             align-items: center;
-            @media (max-width: #{$sm}) {
+            @media (max-width: 767px) {
               flex-direction: column;
               align-items: start;
               }
@@ -5894,7 +5895,7 @@ gap: 28px;
     #FDFAF8;
     padding: 37px 117px 36px 51px;
     border-radius: 20px;
-    @media (max-width: #{$sm}) {
+    @media (max-width: 767px) {
       padding: 37px 30px 36px 30px;
       }
   
@@ -5925,7 +5926,7 @@ gap: 28px;
           gap: 23px;
           width: 100%;
           align-items: center;
-          @media (max-width: #{$sm}) {
+          @media (max-width:767px) {
             flex-direction: column;
             align-items: start;
             }
@@ -5990,7 +5991,7 @@ gap: 28px;
         display: flex;
         justify-content: center;
         gap: 32px;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
           flex-direction: column;
           align-items: start;
           gap: 10px;
@@ -6088,7 +6089,7 @@ gap: 28px;
       .form-div{
         display: flex;
         align-items: start;
-        @media (max-width: #{$sm}) {
+        @media (max-width: 767px) {
          flex-direction: column;
           }
         .form-label{
@@ -6149,7 +6150,7 @@ gap: 28px;
           margin-bottom: 40px;
           display: flex;
           gap: 28px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
        flex-direction: column;
        gap: 10px;
        margin-bottom: 17px;
@@ -6230,7 +6231,7 @@ margin-bottom: 24px;
       background-color: #FBF8F4;
       padding: 36px 74px 20px 45px;
       border-radius: 10px;
-      @media (max-width: #{$sm}) {
+      @media (max-width: 767px) {
         padding: 36px 34px 20px 36px;
         }
         @media (max-width: #{$xss}) {
@@ -6241,7 +6242,7 @@ margin-bottom: 24px;
           display: flex;
           align-items: center;
           margin-bottom: 17px;
-          @media (max-width: #{$sm}) {
+          @media (max-width: 767px) {
             flex-direction: column;
             align-items: start;
             }
@@ -6269,14 +6270,14 @@ margin-bottom: 24px;
           .grp-select{
             display: flex;
             gap: 18px;
-            @media (max-width: #{$sm}) {
+            @media (max-width: 767px) {
               flex-direction: column;
               width: 100%;
               }
             .form-control{
               width: 100%;
               max-width: 223px;
-              @media (max-width: #{$sm}) {
+              @media (max-width: 767px) {
                 max-width: 100%;
                 }
             }
@@ -6298,7 +6299,7 @@ margin-bottom: 24px;
               #BFBFBF;
               padding: 9px 18px;
             }
-            @media (max-width: #{$sm}) {
+            @media (max-width: 767px) {
               max-width: 100%;
               }
           }
@@ -6312,7 +6313,7 @@ margin-bottom: 24px;
     gap: 26px;
     justify-content: center;
     align-items: center;
-    @media (max-width: #{$sm}) {
+    @media (max-width:992px) {
       margin: 35px 0 16px;
       flex-wrap: wrap;
       gap: 9px;

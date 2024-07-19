@@ -6253,6 +6253,11 @@ button:focus:not(:focus-visible) {
     padding: 14px 54px;
   }
 }
+@media (max-width: 992px) {
+  .prtner-tab .nav-item .nav-link {
+    padding: 14px 35px;
+  }
+}
 @media (max-width: 575px) {
   .prtner-tab .nav-item .nav-link {
     padding: 10px 14px;
@@ -6305,7 +6310,7 @@ button:focus:not(:focus-visible) {
   margin-bottom: 18px;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .prtner-tab .tab-content .tab-one-data .data-list form .list-div {
     flex-direction: column;
     align-items: start;
@@ -6412,7 +6417,7 @@ button:focus:not(:focus-visible) {
   padding: 37px 117px 36px 51px;
   border-radius: 20px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .btm-data .btm-content {
     padding: 37px 30px 36px 30px;
   }
@@ -6446,7 +6451,7 @@ button:focus:not(:focus-visible) {
   width: 100%;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .btm-data .btm-content form .list-div .date-div {
     flex-direction: column;
     align-items: start;
@@ -6509,7 +6514,7 @@ button:focus:not(:focus-visible) {
   justify-content: center;
   gap: 32px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .btm-data .btm-content form .form-btn {
     flex-direction: column;
     align-items: start;
@@ -6608,7 +6613,7 @@ button:focus:not(:focus-visible) {
   display: flex;
   align-items: start;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .form-data form .form-div {
     flex-direction: column;
   }
@@ -6674,7 +6679,7 @@ button:focus:not(:focus-visible) {
   display: flex;
   gap: 28px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .form-data form .form-div .grp-btn {
     flex-direction: column;
     gap: 10px;
@@ -6756,7 +6761,7 @@ button:focus:not(:focus-visible) {
   padding: 36px 74px 20px 45px;
   border-radius: 10px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .btm-list .list-content {
     padding: 36px 34px 20px 36px;
   }
@@ -6771,7 +6776,7 @@ button:focus:not(:focus-visible) {
   align-items: center;
   margin-bottom: 17px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .btm-list .list-content form .btm-div {
     flex-direction: column;
     align-items: start;
@@ -6798,7 +6803,7 @@ button:focus:not(:focus-visible) {
   display: flex;
   gap: 18px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .btm-list .list-content form .btm-div .grp-select {
     flex-direction: column;
     width: 100%;
@@ -6808,7 +6813,7 @@ button:focus:not(:focus-visible) {
   width: 100%;
   max-width: 223px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .btm-list .list-content form .btm-div .grp-select .form-control {
     max-width: 100%;
   }
@@ -6828,7 +6833,7 @@ button:focus:not(:focus-visible) {
   color: #BFBFBF;
   padding: 9px 18px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tab-two-data .btm-list .list-content form .btm-div .form-select {
     max-width: 100%;
   }
@@ -6840,7 +6845,7 @@ button:focus:not(:focus-visible) {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 992px) {
   .tab-two-data .btm-btn {
     margin: 35px 0 16px;
     flex-wrap: wrap;
