@@ -6029,7 +6029,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   padding-left: 30px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .edmall-pop .popup-data .pop-list p {
     padding-left: 0;
     margin-top: 20px;
@@ -6040,6 +6040,13 @@ button:focus:not(:focus-visible) {
   display: flex;
   align-items: center;
   gap: 28px;
+}
+@media (max-width: 767px) {
+  .edmall-pop .popup-data .pop-form form .mb {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
 }
 .edmall-pop .popup-data .pop-form form label {
   font-size: 16px;
